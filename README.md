@@ -2,7 +2,7 @@
 
 # XGBoost Full Experiments Results
 
-In Tables \ref{tab:xgboost_signopt_exp_table}, \ref{tab:xgboost_opt_exp_table} \ref{tab:xgboost_hsja_exp_table}, \ref{tab:xgboost_cube_exp_table}, and \ref{tab:xgboost_lt_exp_table} we can see the raw metrics of the experiments for each dataset, attack method, and norm for the XGBoost target experiments. In bold is the method or methods that achieved the highest value. Rows that fill in hyphens are cases where the adversarial sample creation process failed.
+In Tables 1,2,3,4,5 we can see the raw metrics of the experiments for each dataset, attack method, and norm for the XGBoost target experiments. In bold is the method or methods that achieved the highest value. Rows that fill in hyphens are cases where the adversarial sample creation process failed.
 
 <details>
 <summary>Sign-OPT XGBoost Experiments Results</summary>
