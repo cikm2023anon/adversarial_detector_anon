@@ -617,7 +617,7 @@ In Tables 1,2,3,4 and 5 we can see the raw metrics of the experiments for each d
 
 ### Table 3: HSJA XGBoost Experiments Results
 
-</table>
+<table>
   <thead>
     <tr>
       <th rowspan="2"></th>
