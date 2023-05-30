@@ -1540,6 +1540,17 @@ In Tables 6,7,8,9 and 10 we can see the raw metrics of the experiments for each 
 <table>
   <thead>
     <tr>
+      <th rowspan="2"></th>
+      <th colspan="6">Sign-OPT $L_2$ </th>
+      <th colspan="6">Sign-OPT $L_\infty$ </th>
+    </tr>
+    <tr>
+      <th colspan="3">PRC-AUC</th>
+      <th colspan="3">ROC-AUC</th>
+      <th colspan="3">PRC-AUC</th>
+      <th colspan="3">ROC-AUC</th>
+    </tr>
+    <tr>
       <th>Dataset</th>
       <th>New</th>
       <th>Original</th>
@@ -1833,6 +1844,17 @@ In Tables 6,7,8,9 and 10 we can see the raw metrics of the experiments for each 
 
 <table>
   <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th colspan="6">OPT $L_2$ </th>
+      <th colspan="6">OPT $L_\infty$ </th>
+    </tr>
+    <tr>
+      <th colspan="3">PRC-AUC</th>
+      <th colspan="3">ROC-AUC</th>
+      <th colspan="3">PRC-AUC</th>
+      <th colspan="3">ROC-AUC</th>
+    </tr>
     <tr>
       <th>Dataset</th>
       <th>New</th>
@@ -2129,6 +2151,17 @@ In Tables 6,7,8,9 and 10 we can see the raw metrics of the experiments for each 
 <table>
   <thead>
     <tr>
+      <th rowspan="2"></th>
+      <th colspan="6">HSJA $L_2$ </th>
+      <th colspan="6">HSJA $L_\infty$ </th>
+    </tr>
+    <tr>
+      <th colspan="3">PRC-AUC</th>
+      <th colspan="3">ROC-AUC</th>
+      <th colspan="3">PRC-AUC</th>
+      <th colspan="3">ROC-AUC</th>
+    </tr>
+    <tr>
       <th>Dataset</th>
       <th>New</th>
       <th>Original</th>
@@ -2423,6 +2456,17 @@ In Tables 6,7,8,9 and 10 we can see the raw metrics of the experiments for each 
 <table>
   <thead>
     <tr>
+      <th rowspan="2"></th>
+      <th colspan="6">Cube $L_2$ </th>
+      <th colspan="6">Cube $L_\infty$ </th>
+    </tr>
+    <tr>
+      <th colspan="3">PRC-AUC</th>
+      <th colspan="3">ROC-AUC</th>
+      <th colspan="3">PRC-AUC</th>
+      <th colspan="3">ROC-AUC</th>
+    </tr>
+    <tr>
       <th>Dataset</th>
       <th>New</th>
       <th>Original</th>
@@ -2716,6 +2760,17 @@ In Tables 6,7,8,9 and 10 we can see the raw metrics of the experiments for each 
 
 <table>
   <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th colspan="6">Leaf-Tuple $L_2$ </th>
+      <th colspan="6">Leaf-Tuple $L_\infty$ </th>
+    </tr>
+    <tr>
+      <th colspan="3">PRC-AUC</th>
+      <th colspan="3">ROC-AUC</th>
+      <th colspan="3">PRC-AUC</th>
+      <th colspan="3">ROC-AUC</th>
+    </tr>
     <tr>
       <th>Dataset</th>
       <th>New</th>
