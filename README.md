@@ -309,6 +309,7 @@ In Tables \ref{tab:xgboost_signopt_exp_table}, \ref{tab:xgboost_opt_exp_table} \
     </tr>
   </tbody>
 </table>
+  
 </details>
 
 <details>
