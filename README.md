@@ -4,8 +4,7 @@
 
 In Tables 1,2,3,4,5 we can see the raw metrics of the experiments for each dataset, attack method, and norm for the XGBoost target experiments. In bold is the method or methods that achieved the highest value. Rows that fill in hyphens are cases where the adversarial sample creation process failed.
 
-<details>
-<summary>Sign-OPT XGBoost Experiments Results</summary>
+### Sign-OPT XGBoost Experiments Results
 
 <table>
   <thead>
@@ -310,10 +309,8 @@ In Tables 1,2,3,4,5 we can see the raw metrics of the experiments for each datas
   </tbody>
 </table>
   
-</details>
 
-<details>
-<summary>OPT XGBoost Experiments Results</summary>
+### OPT XGBoost Experiments Results
 
 | Dataset          | New    |  Original  | OC-score  |  New   | Original | OC-score  | New    |  Original  | OC-score |  New   | Original | OC-score |
 |------|------|---------|----|------|-------|-----|------|--------|---|----|----|------|
@@ -336,4 +333,3 @@ In Tables 1,2,3,4,5 we can see the raw metrics of the experiments for each datas
 | wind |	 0.476	 |	 **<u>0.7908</u>**	 |	 0.210	 |	 0.777	 |	 **<u>0.9054</u>**	 |	 0.785	 |	 0.423	 |	 **<u>0.7694</u>**	 |	 0.176	 |	 0.755	 |	 **<u>0.8653</u>**	 |	 0.729 |
 | speech 	 |	 **<u>0.9917</u>**	 |	 0.983	 |	 0.973	 |	 **<u>0.9986</u>**	 |	 0.997	 |	 0.998	 |	 **<u>0.9957</u>**	 |	 0.799	 |	 0.984	 |	 0.9996	 |	 0.977	 |	 **<u>1.0</u>** |
 
-</details>
