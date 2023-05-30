@@ -1,6 +1,8 @@
 # Adversarial Evasion Attacks Detection for Tree-Based Ensembles: A Representation Learning Approach - Full Experiments Results
 
-# XGBoost Full Experiments Results
+# Table of Contents
+
+## XGBoost Full Experiments Results
 
 In Tables 1,2,3,4 and 5 we can see the raw metrics of the experiments for each dataset, attack method, and norm for the XGBoost target experiments. In bold is the method or methods that achieved the highest value. Rows that fill in hyphens are cases where the adversarial sample creation process failed.
 
@@ -1531,7 +1533,7 @@ In Tables 1,2,3,4 and 5 we can see the raw metrics of the experiments for each d
   </tbody>
 </table>
 
-# RandomForest Full Experiments Results
+## RandomForest Full Experiments Results
 
 In Tables 6,7,8,9 and 10 we can see the raw metrics of the experiments for each dataset, attack method, and norm for the RandomForest target experiments. In bold is the method or methods that achieved the highest value. Rows that fill in hyphens are cases where the adversarial sample creation process failed.
 
