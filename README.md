@@ -1530,3 +1530,19 @@ In Tables 1,2,3,4 and 5 we can see the raw metrics of the experiments for each d
     </tr>
   </tbody>
 </table>
+
+# RandomForest Full Experiments Results
+
+In Tables 6,7,8,9 and 10 we can see the raw metrics of the experiments for each dataset, attack method, and norm for the RandomForest target experiments. In bold is the method or methods that achieved the highest value. Rows that fill in hyphens are cases where the adversarial sample creation process failed.
+
+### Table 6: Sign-OPT RandomForest Experiments Results
+
+### Table 2: OPT RandomForest Experiments Results
+
+### Table 3: HSJA RandomForest Experiments Results
+
+### Table 4: Cube RandomForest Experiments Results
+
+### Table 5: Leaf-Tuple RandomForest Experiments Results
+
+
