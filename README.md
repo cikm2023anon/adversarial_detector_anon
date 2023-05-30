@@ -2,9 +2,9 @@
 
 # XGBoost Full Experiments Results
 
-In Tables 1,2,3,4,5 we can see the raw metrics of the experiments for each dataset, attack method, and norm for the XGBoost target experiments. In bold is the method or methods that achieved the highest value. Rows that fill in hyphens are cases where the adversarial sample creation process failed.
+In Tables 1,2,3,4 and 5 we can see the raw metrics of the experiments for each dataset, attack method, and norm for the XGBoost target experiments. In bold is the method or methods that achieved the highest value. Rows that fill in hyphens are cases where the adversarial sample creation process failed.
 
-### Sign-OPT XGBoost Experiments Results
+### Table 1: Sign-OPT XGBoost Experiments Results
 
 <table>
   <thead>
@@ -310,7 +310,7 @@ In Tables 1,2,3,4,5 we can see the raw metrics of the experiments for each datas
 </table>
   
 
-### OPT XGBoost Experiments Results
+### Table 2: OPT XGBoost Experiments Results
 
 <table>
   <thead>
