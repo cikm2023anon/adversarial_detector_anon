@@ -1537,12 +1537,12 @@ In Tables 6,7,8,9 and 10 we can see the raw metrics of the experiments for each 
 
 ### Table 6: Sign-OPT RandomForest Experiments Results
 
-### Table 2: OPT RandomForest Experiments Results
+### Table 7: OPT RandomForest Experiments Results
 
-### Table 3: HSJA RandomForest Experiments Results
+### Table 8: HSJA RandomForest Experiments Results
 
-### Table 4: Cube RandomForest Experiments Results
+### Table 9: Cube RandomForest Experiments Results
 
-### Table 5: Leaf-Tuple RandomForest Experiments Results
+### Table 10: Leaf-Tuple RandomForest Experiments Results
 
 
