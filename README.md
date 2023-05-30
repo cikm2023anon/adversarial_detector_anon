@@ -10,8 +10,8 @@ In Tables 1,2,3,4,5 we can see the raw metrics of the experiments for each datas
   <thead>
     <tr>
       <th rowspan="2"></th>
-      <th colspan="6">Sign-OPT $L_2$</th>
-      <th colspan="6">Sign-OPT $L_\infty$</th>
+      <th colspan="6">Sign-OPT $L_2$ </th>
+      <th colspan="6">Sign-OPT $L_\infty$ </th>
     </tr>
     <tr>
       <th colspan="3">PRC-AUC</th>
@@ -312,24 +312,306 @@ In Tables 1,2,3,4,5 we can see the raw metrics of the experiments for each datas
 
 ### OPT XGBoost Experiments Results
 
-| Dataset          | New    |  Original  | OC-score  |  New   | Original | OC-score  | New    |  Original  | OC-score |  New   | Original | OC-score |
-|------|------|---------|----|------|-------|-----|------|--------|---|----|----|------|
-| breast-cancer   |	 0.992	 |	 **<u>0.9956</u>**	 |	 0.867	 |	 0.992	 |	 **<u>0.9952</u>**	 |	 0.925	 |	 0.973	 |	 **<u>0.9737</u>**	 |	 0.920	 |	 **<u>0.9788</u>**	 |	 0.978	 |	 0.968 |
-| covtype   		 |	 **<u>1.0</u>**	 |	 **<u>1.0</u>**	 |	 0.056	 |	 **<u>1.0</u>**	 |	 **<u>1.0</u>**	 |	 0.768	 |	 **<u>1.0</u>**	 |	 **<u>1.0</u>**	 |	 0.072	 |	 **<u>1.0</u>**	 |	 **<u>1.0</u>**	 |	 0.856 |
-| cod-rna 	 |	 **<u>0.804</u>**	 |	 0.716	 |	 0.183	 |	 **<u>0.9808</u>**	 |	 0.958	 |	 0.892	 |	 **<u>0.8035</u>**	 |	 0.647	 |	 0.234	 |	 **<u>0.9774</u>**	 |	 0.953	 |	 0.907 |
-| diabetes   	 |	 0.652	 |	 **<u>0.8434</u>**	 |	 0.594	 |	 0.675	 |	 **<u>0.8612</u>**	 |	 0.741	 |	 **<u>0.8455</u>**	 |	 0.751	 |	 0.699	 |	 **<u>0.8174</u>**	 |	 0.745	 |	 0.736 |
-| Fashion-MNIST 	 |	 **<u>1.0</u>**	 |	 **<u>1.0</u>**	 |	 0.370	 |	 **<u>1.0</u>**	 |	 **<u>1.0</u>**	 |	 0.923	 |	 **<u>1.0</u>**	 |	 **<u>1.0</u>**	 |	 0.445	 |	 **<u>1.0</u>**	 |	 **<u>1.0</u>**	 |	 0.936 |
-| ijcnn1	 |	 **<u>1.0</u>**	 |	 **<u>1.0</u>**	 |	 0.273	 |	 **<u>1.0</u>**	 |	 **<u>1.0</u>**	 |	 0.926	 |	 **<u>1.0</u>**	 |	 **<u>1.0</u>**	 |	 0.246	 |	 **<u>1.0</u>**	 |	 **<u>1.0</u>**	 |	 0.941 |
-| MNIST   		 |	 **<u>1.0</u>**	 |	 **<u>1.0</u>**	 |	 0.476	 |	 **<u>1.0</u>**	 |	 **<u>1.0</u>**	 |	 0.971	 |	 **<u>1.0</u>**	 |	 **<u>1.0</u>**	 |	 0.566	 |	 **<u>1.0</u>**	 |	 **<u>1.0</u>**	 |	 0.975 |
-| MNIST2-6 |	 **<u>1.0</u>**	 |	 **<u>1.0</u>**	 |	 0.996	 |	 **<u>1.0</u>**	 |	 **<u>1.0</u>**	 |	  **<u>1.0</u>**	 |	 **<u>1.0</u>**	 |	 **<u>1.0</u>**	 |	 0.986	 |	 **<u>1.0</u>**	 |	 **<u>1.0</u>**	 |	 0.999 |
-| sensorless 	 |	 **<u>0.9929</u>**	 |	 0.974	 |	 0.883	 |	 **<u>0.9998</u>**	 |	 0.999	 |	 0.999	 |	 **<u>0.9871</u>**	 |	 0.965	 |	 0.877	 |	 **<u>0.999</u>**	 |	 0.993	 |	 0.998 |
-| webspam 	 |	 **<u>1.0</u>**	 |	 **<u>1.0</u>**	 |	 0.399	 |	 **<u>1.0</u>**	 |	 **<u>1.0</u>**	 |	 0.992	 |	 **<u>1.0</u>**	 |	 **<u>1.0</u>**	 |	 0.387	 |	 **<u>1.0</u>**	 |	 **<u>1.0</u>**	 |	 0.991 |
-| electricity 	 |	 0.774	 |	 **<u>0.8818</u>**	 |	 0.248	 |	 0.948	 |	 **<u>0.982</u>**	 |	 0.887	 |	 0.852	 |	 **<u>0.891</u>**	 |	 0.286	 |	 **<u>0.9731</u>**	 |	 0.960	 |	 0.904 |
-| drybean |	 **<u>0.9536</u>**	 |	 0.935	 |	 0.848	 |	 **<u>0.9861</u>**	 |	 0.969	 |	 0.984	 |	 **<u>0.9396</u>**	 |	 0.934	 |	 0.877	 |	 0.964	 |	 0.970	 |	 **<u>0.9869</u>** |
-| adult 	 |	 **<u>1.0</u>**	 |	 **<u>1.0</u>**	 |	 0.076	 |	 **<u>1.0</u>**	 |	 **<u>1.0</u>**	 |	 0.791	 |	 **<u>1.0</u>**	 |	 **<u>1.0</u>**	 |	 0.058	 |	 **<u>1.0</u>**	 |	 **<u>1.0</u>**	 |	 0.702 |
-| banknote  		 |	 **<u>0.9893</u>**	 |	 0.950	 |	 0.911	 |	 **<u>0.9906</u>**	 |	 0.984	 |	 0.976	 |	 **<u>0.956</u>**	 |	 0.942	 |	 0.876	 |	 0.974	 |	 0.967	 |	 **<u>0.9767</u>** |
-| gender-by-voice 	 |	 0.964	 |	 **<u>0.9943</u>**	 |	 0.812	 |	 0.981	 |	 **<u>0.9964</u>**	 |	 0.964	 |	 0.976	 |	 **<u>0.9926</u>**	 |	 0.842	 |	 0.987	 |	 **<u>0.9951</u>**	 |	 0.974 |
-| waveform  	 |	 0.538	 |	 **<u>0.6195</u>**	 |	 0.392	 |	 0.784	 |	 0.777	 |	 **<u>0.8524</u>**	 |	 0.590	 |	 **<u>0.6673</u>**	 |	 0.395	 |	 0.819	 |	 0.800	 |	 **<u>0.8813</u>** |
-| wind |	 0.476	 |	 **<u>0.7908</u>**	 |	 0.210	 |	 0.777	 |	 **<u>0.9054</u>**	 |	 0.785	 |	 0.423	 |	 **<u>0.7694</u>**	 |	 0.176	 |	 0.755	 |	 **<u>0.8653</u>**	 |	 0.729 |
-| speech 	 |	 **<u>0.9917</u>**	 |	 0.983	 |	 0.973	 |	 **<u>0.9986</u>**	 |	 0.997	 |	 0.998	 |	 **<u>0.9957</u>**	 |	 0.799	 |	 0.984	 |	 0.9996	 |	 0.977	 |	 **<u>1.0</u>** |
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th colspan="6">OPT $L_2$ </th>
+      <th colspan="6">OPT $L_\infty$ </th>
+    </tr>
+    <tr>
+      <th colspan="3">PRC-AUC</th>
+      <th colspan="3">ROC-AUC</th>
+      <th colspan="3">PRC-AUC</th>
+      <th colspan="3">ROC-AUC</th>
+    </tr>
+    <tr>
+      <th>Dataset</th>
+      <th>New</th>
+      <th>Original</th>
+      <th>OC-score</th>
+      <th>New</th>
+      <th>Original</th>
+      <th>OC-score</th>
+      <th>New</th>
+      <th>Original</th>
+      <th>OC-score</th>
+      <th>New</th>
+      <th>Original</th>
+      <th>OC-score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>breast-cancer</td>
+      <td>0.992</td>
+      <td><strong><u>0.9956</u></strong></td>
+      <td>0.867</td>
+      <td>0.992</td>
+      <td><strong><u>0.9952</u></strong></td>
+      <td>0.925</td>
+      <td>0.973</td>
+      <td><strong><u>0.9737</u></strong></td>
+      <td>0.920</td>
+      <td><strong><u>0.9788</u></strong></td>
+      <td>0.978</td>
+      <td>0.968</td>
+    </tr>
+    <tr>
+      <td>covtype</td>
+      <td><strong><u>1.0</u></strong></td>
+      <td><strong><u>1.0</u></strong></td>
+      <td>0.056</td>
+      <td><strong><u>1.0</u></strong></td>
+      <td><strong><u>1.0</u></strong></td>
+      <td>0.768</td>
+      <td><strong><u>1.0</u></strong></td>
+      <td><strong><u>1.0</u></strong></td>
+      <td>0.072</td>
+      <td><strong><u>1.0</u></strong></td>
+      <td><strong><u>1.0</u></strong></td>
+      <td>0.856</td>
+    </tr>
+    <tr>
+      <td>cod-rna</td>
+      <td><strong><u>0.804</u></strong></td>
+      <td>0.716</td>
+      <td>0.183</td>
+      <td><strong><u>0.9808</u></strong></td>
+      <td>0.958</td>
+      <td>0.892</td>
+      <td><strong><u>0.8035</u></strong></td>
+      <td>0.647</td>
+      <td>0.234</td>
+      <td><strong><u>0.9774</u></strong></td>
+      <td>0.953</td>
+      <td>0.907</td>
+    </tr>
+    <tr>
+      <td>diabetes</td>
+      <td>0.652</td>
+      <td><strong><u>0.8434</u></strong></td>
+      <td>0.594</td>
+      <td>0.675</td>
+      <td><strong><u>0.8612</u></strong></td>
+      <td>0.741</td>
+      <td><strong><u>0.8455</u></strong></td>
+      <td>0.751</td>
+      <td>0.699</td>
+      <td><strong><u>0.8174</u></strong></td>
+      <td>0.745</td>
+      <td>0.736</td>
+    </tr>
+    <tr>
+      <td>Fashion-MNIST</td>
+      <td><strong><u>1.0</u></strong></td>
+      <td><strong><u>1.0</u></strong></td>
+      <td>0.370</td>
+      <td><strong><u>1.0</u></strong></td>
+      <td><strong><u>1.0</u></strong></td>
+      <td>0.923</td>
+      <td><strong><u>1.0</u></strong></td>
+      <td><strong><u>1.0</u></strong></td>
+      <td>0.445</td>
+      <td><strong><u>1.0</u></strong></td>
+      <td><strong><u>1.0</u></strong></td>
+      <td>0.936</td>
+    </tr>
+    <tr>
+      <td>ijcnn1</td>
+      <td><strong><u>1.0</u></strong></td>
+      <td><strong><u>1.0</u></strong></td>
+      <td>0.273</td>
+      <td><strong><u>1.0</u></strong></td>
+      <td><strong><u>1.0</u></strong></td>
+      <td>0.926</td>
+      <td><strong><u>1.0</u></strong></td>
+      <td><strong><u>1.0</u></strong></td>
+      <td>0.246</td>
+      <td><strong><u>1.0</u></strong></td>
+      <td><strong><u>1.0</u></strong></td>
+      <td>0.941</td>
+    </tr>
+    <tr>
+      <td>MNIST</td>
+      <td><strong><u>1.0</u></strong></td>
+      <td><strong><u>1.0</u></strong></td>
+      <td>0.476</td>
+      <td><strong><u>1.0</u></strong></td>
+      <td><strong><u>1.0</u></strong></td>
+      <td>0.971</td>
+      <td><strong><u>1.0</u></strong></td>
+      <td><strong><u>1.0</u></strong></td>
+      <td>0.566</td>
+      <td><strong><u>1.0</u></strong></td>
+      <td><strong><u>1.0</u></strong></td>
+      <td>0.975</td>
+    </tr>
+    <tr>
+      <td>MNIST2-6</td>
+      <td><strong><u>1.0</u></strong></td>
+      <td><strong><u>1.0</u></strong></td>
+      <td>0.996</td>
+      <td><strong><u>1.0</u></strong></td>
+      <td><strong><u>1.0</u></strong></td>
+      <td><strong><u>1.0</u></strong></td>
+      <td><strong><u>1.0</u></strong></td>
+      <td><strong><u>1.0</u></strong></td>
+      <td>0.986</td>
+      <td><strong><u>1.0</u></strong></td>
+      <td><strong><u>1.0</u></strong></td>
+      <td>0.999</td>
+    </tr>
+    <tr>
+      <td>sensorless</td>
+      <td><strong><u>0.9929</u></strong></td>
+      <td>0.974</td>
+      <td>0.883</td>
+      <td><strong><u>0.9998</u></strong></td>
+      <td>0.999</td>
+      <td>0.999</td>
+      <td><strong><u>0.9871</u></strong></td>
+      <td>0.965</td>
+      <td>0.877</td>
+      <td><strong><u>0.999</u></strong></td>
+      <td>0.993</td>
+      <td>0.998</td>
+    </tr>
+    <tr>
+      <td>webspam</td>
+      <td><strong><u>1.0</u></strong></td>
+      <td><strong><u>1.0</u></strong></td>
+      <td>0.399</td>
+      <td><strong><u>1.0</u></strong></td>
+      <td><strong><u>1.0</u></strong></td>
+      <td>0.992</td>
+      <td><strong><u>1.0</u></strong></td>
+      <td><strong><u>1.0</u></strong></td>
+      <td>0.387</td>
+      <td><strong><u>1.0</u></strong></td>
+      <td><strong><u>1.0</u></strong></td>
+      <td>0.991</td>
+    </tr>
+    <tr>
+      <td>electricity</td>
+      <td>0.774</td>
+      <td><strong><u>0.8818</u></strong></td>
+      <td>0.248</td>
+      <td>0.948</td>
+      <td><strong><u>0.982</u></strong></td>
+      <td>0.887</td>
+      <td>0.852</td>
+      <td><strong><u>0.891</u></strong></td>
+      <td>0.286</td>
+      <td><strong><u>0.9731</u></strong></td>
+      <td>0.960</td>
+      <td>0.904</td>
+    </tr>
+    <tr>
+      <td>drybean</td>
+      <td><strong><u>0.9536</u></strong></td>
+      <td>0.935</td>
+      <td>0.848</td>
+      <td><strong><u>0.9861</u></strong></td>
+      <td>0.969</td>
+      <td>0.984</td>
+      <td><strong><u>0.9396</u></strong></td>
+      <td>0.934</td>
+      <td>0.877</td>
+      <td>0.964</td>
+      <td>0.970</td>
+      <td><strong><u>0.9869</u></strong></td>
+    </tr>
+    <tr>
+      <td>adult</td>
+      <td><strong><u>1.0</u></strong></td>
+      <td><strong><u>1.0</u></strong></td>
+      <td>0.076</td>
+      <td><strong><u>1.0</u></strong></td>
+      <td><strong><u>1.0</u></strong></td>
+      <td>0.791</td>
+      <td><strong><u>1.0</u></strong></td>
+      <td><strong><u>1.0</u></strong></td>
+      <td>0.058</td>
+      <td><strong><u>1.0</u></strong></td>
+      <td><strong><u>1.0</u></strong></td>
+      <td>0.702</td>
+    </tr>
+    <tr>
+      <td>banknote</td>
+      <td><strong><u>0.9893</u></strong></td>
+      <td>0.950</td>
+      <td>0.911</td>
+      <td><strong><u>0.9906</u></strong></td>
+      <td>0.984</td>
+      <td>0.976</td>
+      <td><strong><u>0.956</u></strong></td>
+      <td>0.942</td>
+      <td>0.876</td>
+      <td>0.974</td>
+      <td>0.967</td>
+      <td><strong><u>0.9767</u></strong></td>
+    </tr>
+    <tr>
+      <td>gender-by-voice</td>
+      <td>0.964</td>
+      <td><strong><u>0.9943</u></strong></td>
+      <td>0.812</td>
+      <td>0.981</td>
+      <td><strong><u>0.9964</u></strong></td>
+      <td>0.964</td>
+      <td>0.976</td>
+      <td><strong><u>0.9926</u></strong></td>
+      <td>0.842</td>
+      <td>0.987</td>
+      <td><strong><u>0.9951</u></strong></td>
+      <td>0.974</td>
+    </tr>
+    <tr>
+      <td>waveform</td>
+      <td>0.538</td>
+      <td><strong><u>0.6195</u></strong></td>
+      <td>0.392</td>
+      <td>0.784</td>
+      <td>0.777</td>
+      <td><strong><u>0.8524</u></strong></td>
+      <td>0.590</td>
+      <td><strong><u>0.6673</u></strong></td>
+      <td>0.395</td>
+      <td>0.819</td>
+      <td>0.800</td>
+      <td><strong><u>0.8813</u></strong></td>
+    </tr>
+    <tr>
+      <td>wind</td>
+      <td>0.476</td>
+      <td><strong><u>0.7908</u></strong></td>
+      <td>0.210</td>
+      <td>0.777</td>
+      <td><strong><u>0.9054</u></strong></td>
+      <td>0.785</td>
+      <td>0.423</td>
+      <td><strong><u>0.7694</u></strong></td>
+      <td>0.176</td>
+      <td>0.755</td>
+      <td><strong><u>0.8653</u></strong></td>
+      <td>0.729</td>
+    </tr>
+    <tr>
+      <td>speech</td>
+      <td><strong><u>0.9917</u></strong></td>
+      <td>0.983</td>
+      <td>0.973</td>
+      <td><strong><u>0.9986</u></strong></td>
+      <td>0.997</td>
+      <td>0.998</td>
+      <td><strong><u>0.9957</u></strong></td>
+      <td>0.799</td>
+      <td>0.984</td>
+      <td>0.9996</td>
+      <td>0.977</td>
+      <td><strong><u>1.0</u></strong></td>
+    </tr>
+  </tbody>
+</table>
 
