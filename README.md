@@ -12,9 +12,9 @@ In Tables \ref{tab:xgboost_signopt_exp_table}, \ref{tab:xgboost_opt_exp_table} \
 # Sign-OPT XGBoost Experiments Results
 
 
-|Dataset <div style="width:500px">property</div>        | New    |  Original  | OC-score  |  New   | Original | OC-score  | New   | Original  | OC-score |  New   | Original | OC-score|
+| Dataset  | New    |  Original  | OC-score  |  New   | Original | OC-score  | New   | Original  | OC-score |  New   | Original | OC-score|
 |----------------|--------|------------|-----------|--------|----------|-----------|-------|-----------|----------|--------|----------|----------|
-|  breast-cancer    |	0.988 |	 <u>0.9919</u>	|	 0.958	 |	 0.987	 |	 <u>0.9919</u>	 |	 0.965	 |	 <u>0.9971</u>	 |	 0.997	 |	 0.960	 |	<u>0.997</u>	 |	 <u>0.997</u>	 |	 0.970|
+|  breast-cancer    |	0.988 |	 **<u>0.9919</u>**	|	 0.958	 |	 0.987	 |	 **<u>0.9919</u>**	 |	 0.965	 |	 **<u>0.9971</u>**	 |	 0.997	 |	 0.960	 |	**<u>0.997</u>**	 |	 **<u>0.997</u>**	 |	 0.970|
 covtype 	 &	 \underline{\textbf{1.0}}	 &	 \underline{\textbf{1.0}}	 &	 0.049	 &	 \underline{\textbf{1.0}}	 &	 \underline{\textbf{1.0}}	 &	 0.843	 &	 \underline{\textbf{1.0}}	 &	 \underline{\textbf{1.0}}	 &	 0.053	 &	 \underline{\textbf{1.0}}	 &	 \underline{\textbf{1.0}}	 &	 0.833 \\
 cod-rna 	 &	 0.743	 &	 \underline{\textbf{0.7655}}	 &	 0.161	 &	 \underline{\textbf{0.9795}}	 &	 0.955	 &	 0.880	 &	 \underline{\textbf{0.7773}}	 &	 0.599	 &	 0.238	 &	 \underline{\textbf{0.9808}}	 &	 0.936	 &	 0.889\\
 diabetes 	 &	 0.672	 &	 \underline{\textbf{0.855}}	 &	 0.730	 &	 0.707	 &	 \underline{\textbf{0.8432}}	 &	 0.772	 &	 0.580	 &	 \underline{\textbf{0.8668}}	 &	 0.445	 &	 0.702	 &	 \underline{\textbf{0.8678}}	 &	 0.615\\
