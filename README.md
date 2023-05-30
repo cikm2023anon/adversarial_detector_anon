@@ -617,8 +617,8 @@ In Tables 1,2,3,4 and 5 we can see the raw metrics of the experiments for each d
 
 ### Table 3: HSJA XGBoost Experiments Results
 
-|Dataset          | New    |  Original  | OC-score  |  New   | Original | OC-score  | New    |  Original  | OC-score |  New   | Original | OC-score
-|----|----|----|----|----|----|----|----|----|----|----|----|----|----|
+|Dataset          | New    |  Original  | OC-score  |  New   | Original | OC-score  | New    |  Original  | OC-score |  New   | Original | OC-score |
+|----|----|----|----|----|----|----|----|----|----|----|----|----|
 breast-cancer    	 |	 **<u>0.9909</u>**	 |	 0.988	 |	 0.799	 |	 **<u>0.9905</u>**	 |	 0.988	 |	 0.923	 |	 0.982	 |	 **<u>0.9956</u>**	 |	 0.934	 |	 0.987	 |	 **<u>0.9958</u>**	 |	 0.954|
 covtype |	 **<u>1.0</u>**	 |	 **<u>1.0</u>**	 |	 0.159	 |	 **<u>1.0</u>**	 |	 **<u>1.0</u>**	 |	 0.832	 |	 **<u>1.0</u>**	 |	 **<u>1.0</u>**	 |	 0.230	 |	 **<u>1.0</u>**	 |	 **<u>1.0</u>**	 |	 0.811|
 cod-rna 	 |	 **<u>0.8193</u>**	 |	 0.669	 |	 0.107	 |	 **<u>0.9879</u>**	 |	 0.926	 |	 0.817	 |	 **<u>0.8389</u>**	 |	 0.594	 |	 0.185	 |	 **<u>0.9891</u>**	 |	 0.944	 |	 0.847|
