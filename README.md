@@ -10,8 +10,8 @@ In Tables 1,2,3,4 and 5 we can see the raw metrics of the experiments for each d
   <thead>
     <tr>
       <th rowspan="2"></th>
-      <th colspan="6">Sign-OPT $L_2$ </th>
-      <th colspan="6">Sign-OPT $L_\infty$ </th>
+      <th colspan="6">Sign-OPT `$L_2$` </th>
+      <th colspan="6">Sign-OPT `$L_\infty$` </th>
     </tr>
     <tr>
       <th colspan="3">PRC-AUC</th>
@@ -316,8 +316,8 @@ In Tables 1,2,3,4 and 5 we can see the raw metrics of the experiments for each d
   <thead>
     <tr>
       <th rowspan="2"></th>
-      <th colspan="6">OPT $L_2$ </th>
-      <th colspan="6">OPT $L_\infty$ </th>
+      <th colspan="6">OPT `$L_2$` </th>
+      <th colspan="6">OPT `$L_\infty$` </th>
     </tr>
     <tr>
       <th colspan="3">PRC-AUC</th>
