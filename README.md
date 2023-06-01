@@ -12,12 +12,16 @@ Here are all the different figures comparing our method to OC-Score and a detect
 
 ### Figure 1: 
 
-{ROC-AUC differences for XGBoost experiments between our method and OC-score for $L_2$ norm:
+ROC-AUC differences for XGBoost experiments between our method and OC-score for $L_2$ norm:
 
-<center><img src="hidden_sizes_ablation_codrna_opt_2_pr.png" alt="" width="600" height="500"></center>
-
+<center><img src="xgboost_roc_diff_per_attack_2.png" alt="" width="600" height="500"></center>
 
 ### Figure 2: 
+
+PRC-AUC differences for XGBoost experiments between our method and OC-score for $L_2$ norm:
+
+<center><img src="xgboost_pr_diff_per_attack_2.png" alt="" width="600" height="500"></center>
+
 ### Figure 3: 
 ### Figure 4: 
 ### Figure 5: 
