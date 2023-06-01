@@ -3067,4 +3067,4 @@ In Tables 6,7,8,9 and 10 we can see the raw metrics of the experiments for each 
 </table>
 
 
-<center><img src="hidden_sizes_ablation_codrna_opt_2_pr.png" alt="" width="500" height="500"></center>
+<center><img src="hidden_sizes_ablation_codrna_opt_2_pr.png" alt="" width="600" height="500"></center>
