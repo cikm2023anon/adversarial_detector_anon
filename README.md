@@ -6,6 +6,34 @@
 2. [RandomForest Full Experiments Results](#randomforest-full-experiments-results)
 3. [Detector Ablation Study](#detector-ablation-study)
 
+## Full Metrics Differences Figures
+
+Here are all the different figures comparing our method to OC-Score and a detector based on the original representations of the dataset. For the experiments compared to the OC-score (Figures 1, 2, 3, 4, 5, 6, 7, and 8) the total mean and the median of each section is positive in all of them, which means that our metrics yielded better results for the new representation in most of our experiments. When looking at figures that compare our new method to the original representations (Figures 9, 10, 11, 12, 13, 14, 15 and 16) we can see the ROC-AUC and PR-AUC overall mean of the experiments is positive beside the experiments targeted XGBoost with $L_\infty$ norm which the overall mean is negative.
+
+### Figure 1: 
+
+{ROC-AUC differences for XGBoost experiments between our method and OC-score for $L_2$ norm:
+
+<center><img src="hidden_sizes_ablation_codrna_opt_2_pr.png" alt="" width="600" height="500"></center>
+
+
+### Figure 2: 
+### Figure 3: 
+### Figure 4: 
+### Figure 5: 
+### Figure 6: 
+### Figure 7: 
+### Figure 8: 
+### Figure 9: 
+### Figure 10: 
+### Figure 11: 
+### Figure 12: 
+### Figure 13: 
+### Figure 14: 
+### Figure 15: 
+### Figure 16:
+
+
 ## XGBoost Full Experiments Results
 
 In Tables 1,2,3,4 and 5 we can see the raw metrics of the experiments for each dataset, attack method, and norm for the XGBoost target experiments. In bold is the method or methods that achieved the highest value. Rows that fill in hyphens are cases where the adversarial sample creation process failed.
