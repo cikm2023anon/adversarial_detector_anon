@@ -3376,11 +3376,95 @@ In Tables 11, 12, 13, 14, and 15 we can see the adversarial samples statistics f
 
 #### Table 12: XGBoost OPT perturbations statistics
 
+|Dataset name | Max #features changed | Mean #features changed | Mean \|\|$L_2\|\| perturbations | Max #features changed | Mean #features changed | Mean \|\|$L_{\infty}$\|\| perturbations  |
+|---|----|----|----|----|----|----|
+|breast-cancer 	 |	 10 	 |	 10.0 	 |	 0.2288	 |	 10 	 |	 10.0 	 |	 0.2274 |
+|covtype      	 |	 54 	 |	 54.0 	 |	 0.0568	 |	 54 	 |	 54.0 	 |	 0.0494 | 
+|cod-rna  	 |	 8 	 |	 8.0 	 |	 0.0436	 |	 8 	 |	 8.0 	 |	 0.039 | 
+|diabetes  	 |	 8 	 |	 8.0 	 |	 0.0462	 |	 8 	 |	 8.0 	 |	 0.0613 | 
+|Fashion-MNIST  	 |	 784 	 |	 784.0 	 |	 0.0973	 |	 784 	 |	 784.0 	 |	 0.1023 | 
+|ijcnn1  	 |	 22 	 |	 22.0 	 |	 0.0519	 |	 22 	 |	 22.0 	 |	 0.0418| 
+|MNIST  	 |	 784 	 |	 784.0 	 |	 0.089	 |	 784 	 |	 784.0 	 |	 0.1551 |
+|sensorless 	 |	 48 	 |	 48.0 	 |	 0.0201	 |	 48 	 |	 48.0 	 |	 0.0233| 
+|webspam 	 |	 254 	 |	 254.0 	 |	 0.0132	 |	 254 	 |	 254.0 	 |	 0.0095 |
+|MNIST 2 vs. 6  	 |	 784 	 |	 784.0 	 |	 0.2615	 |	 784 	 |	 784.0 	 |	 0.4055 | 
+|electricity 	 |	 8 	 |	 8.0 	 |	 0.0081	 |	 8 	 |	 8.0 	 |	 0.0107| 
+|drybean   	 |	 16 	 |	 16.0 	 |	 0.0069	 |	 16 	 |	 16.0 	 |	 0.0481|
+|adult  	 |	 14 	 |	 14.0 	 |	 0.8486	 |	 14 	 |	 14.0 	 |	 0.7598| 
+|banknote  	 |	 4 	 |	 4.0 	 |	 1.8506	 |	 4 	 |	 4.0 	 |	 1.3701 | 
+|gender-by-voice  	 |	 20 	 |	 20.0 	 |	 0.0288	 |	 20 	 |	 20.0 	 |	 0.0294| 
+|waveform   	 |	 40 	 |	 40.0 	 |	 0.8439	 |	 40 	 |	 40.0 	 |	 0.7449 | 
+|wind   	 |	 14 	 |	 14.0 	 |	 0.886	 |	 14 	 |	 14.0 	 |	 0.876| 
+|speech  	 |	 400 	 |	 400.0 	 |	 1.3453	 |	 400 	 |	 400.0 	 |	 1.6119| 
+
 #### Table 13: XGBoost HSJA perturbations statistics
+
+|Dataset name | Max #features changed | Mean #features changed | Mean \|\|$L_2\|\| perturbations | Max #features changed | Mean #features changed | Mean \|\|$L_{\infty}$\|\| perturbations  |
+|---|----|----|----|----|----|----|
+|breast-cancer 	 |	 10 	 |	 9.8537 	 |	 0.3335	 |	 10 	 |	 9.8049 	 |	 0.2454| 
+|covtype      	 |	 53 	 |	 43.42 	 |	 0.1805	 |	 52 	 |	 43.49 	 |	 0.199| 
+|cod-rna  	 |	 8 	 |	 7.98 	 |	 0.0854	 |	 8 	 |	 8.0 	 |	 0.1099 | 
+|diabetes  	 |	 8 	 |	 7.9091 	 |	 0.0546	 |	 8 	 |	 7.8235 	 |	 0.0668| 
+|Fashion-MNIST  	 |	 773 	 |	 736.66 	 |	 1.8948	 |	 776 	 |	 740.18 	 |	 3.2664| 
+|ijcnn1  	 |	 22 	 |	 20.09 	 |	 0.0961	 |	 22 	 |	 19.95 	 |	 0.1031| 
+|MNIST  	 |	 768 	 |	 707.41 	 |	 4.0607	 |	 762 	 |	 705.16 	 |	 1.0578 | 
+|sensorless  	 |	 48 	 |	 48.0 	 |	 0.0669	 |	 48 	 |	 48.0 	 |	 0.0747| 
+|webspam  	 |	 253 	 |	 231.35 	 |	 0.1992	 |	 253 	 |	 233.32 	 |	 0.4914| 
+|MNIST 2 vs. 6  	 |	 769 	 |	 709.69 	 |	 14.8869	 |	 763 	 |	 723.38 	 |	 38.2944| 
+|electricity 	 |	 8 	 |	 7.78 	 |	 0.0199	 |	 8 	 |	 7.88 	 |	 0.0185 | 
+|drybean   	 |	 16 	 |	 14.46 	 |	 1683.5416	 |	 16 	 |	 14.45 	 |	 2061.8314 | 
+|adult  	 |	 14 	 |	 13.31 	 |	 95.9496	 |	 14 	 |	 13.42 	 |	 383.9427 | 
+|banknote  	 |	 4 	 |	 4.0 	 |	 4.3192	 |	 4 	 |	 4.0 	 |	 4.3699 |
+|gender-by-voice  	 |	 20 	 |	 19.85 	 |	 0.0441	 |	 20 	 |	 19.79 	 |	 0.046 | 
+|waveform   	 |	 40 	 |	 40.0 	 |	 4.5889	 |	 40 	 |	 39.96 	 |	 4.7256|
+|wind   	 |	 14 	 |	 13.8 	 |	 7.9845	 |	 14 	 |	 13.77 	 |	 9.142 | 
+|speech   	 |	 400 	 |	 400.0 	 |	 66.9408	 |	 400 	 |	 400.0 	 |	 86.5313 |
 
 #### Table 14: XGBoost Cube perturbations statistics
 
+|Dataset name | Max #features changed | Mean #features changed | Mean \|\|$L_2\|\| perturbations | Max #features changed | Mean #features changed | Mean \|\|$L_{\infty}$\|\| perturbations  |
+|---|----|----|----|----|----|----|
+|breast-cancer 	 |	 4 	 |	 2.7778 	 |	 0.3549	 |	 10 	 |	 9.1875 	 |	 0.6094 | 
+|covtype      	 |	 6 	 |	 2.52 	 |	 0.0556	 |	 39 	 |	 31.66 	 |	 0.0592 | 
+|cod-rna  	 |	 6 	 |	 2.92 	 |	 0.0657	 |	 8 	 |	 7.77 	 |	 0.1299 |
+|diabetes  	 |	 4 	 |	 2.2 	 |	 0.0398	 |	 8 	 |	 7.0 	 |	 0.0687 |
+|Fashion-MNIST  	 |	 79 	 |	 16.05 	 |	 0.0172	 |	 658 	 |	 555.6 	 |	 0.0154|
+|ijcnn1 	 |	 10 	 |	 4.02 	 |	 0.071	 |	 21 	 |	 16.3 	 |	 0.0389| 
+|MNIST  	 |	 31 	 |	 11.2344 	 |	 0.0087	 |	 485 	 |	 445.4375 	 |	 0.0055| 
+|sensorless 	 |	 26 	 |	 3.9259 	 |	 0.0065	 |	 48 	 |	 45.77 	 |	 0.0049 |
+|webspam 	 |	 18 	 |	 9.44 	 |	 0.0032	 |	 193 	 |	 165.21 	 |	 0.0038| 
+|MNIST 2 vs. 6  	 |	 55 	 |	 25.69 	 |	 0.1066	 |	 537 	 |	 478.7344 	 |	 0.1532| 
+|electricity 	 |	 8 	 |	 3.26 	 |	 1.9474	 |	 8 	 |	 7.6 	 |	 3.1336|
+|drybean  	 |	 12 	 |	 4.3333 	 |	 35279.2292	 |	 16 	 |	 12.93 	 |	 65949.48 | 
+|adult  	 |	 11 	 |	 6.1042 	 |	 168527.4792	 |	 14 	 |	 11.9667 	 |	 178961.0333| 
+|banknote  	 |	 3 	 |	 1.6 	 |	 3.2732	 |	 4 	 |	 3.9474 	 |	 5.7962 | 
+|gender-by-voice  	 |	 14 	 |	 3.8788 	 |	 2.9815	 |	 20 	 |	 19.7368 	 |	 46.5609 |
+|waveform   	 |	 25 	 |	 7.94 	 |	 3.8412	 |	 40 	 |	 39.3085 	 |	 4.509 | 
+|wind  	 |	 14 	 |	 5.7111 	 |	 39.8756	 |	 14 	 |	 13.9167 	 |	 68.9444 | 
+
 #### Table 15: XGBoost Leaf-Tuple perturbations statistics
+
+
+|Dataset name | Max #features changed | Mean #features changed | Mean \|\|$L_2\|\| perturbations | Max #features changed | Mean #features changed | Mean \|\|$L_{\infty}$\|\| perturbations  |
+|---|----|----|----|----|----|----|
+|breast-cancer |	 8 	 |	 5.85 	 |	 0.2015	 |	 10 	 |	 6.1282 	 |	 0.228 | 
+|covtype      |	 7 	 |	 2.717 	 |	 0.044	 |	 9 	 |	 3.7392 	 |	 0.0404 | 
+|cod-rna  |	 8 	 |	 7.9905 	 |	 0.0399	 |	 8 	 |	 7.9832 	 |	 0.035 | 
+|diabetes  |	 7 	 |	 4.25 	 |	 0.048	 |	 7 	 |	 4.6296 	 |	 0.0556 | 
+|Fashion-MNIST  |	 703 	 |	 420.8461 	 |	 0.8065	 |	 715 	 |	 429.9784 	 |	 0.8169 | 
+|ijcnn1  |	 12 	 |	 11.999 	 |	 0.0385	 |	 12 	 |	 12.0 	 |	 0.0338| 
+|MNIST  |	 357 	 |	 179.9864 	 |	 0.8689	 |	 301 	 |	 181.6677 	 |	 0.8722 |
+|sensorless |	 16 	 |	 4.2944 	 |	 0.0244	 |	 20 	 |	 6.2854 	 |	 0.0209 | 
+|webspam |	 34 	 |	 17.6316 	 |	 0.4336	 |	 31 	 |	 18.2457 	 |	 0.4364| 
+|MNIST 2 vs. 6 |	 324 	 |	 196.8853 	 |	 0.8665	 |	 297 	 |	 193.2404 	 |	 0.8729 | 
+|electricity |	 7 	 |	 2.8221 	 |	 2.9138	 |	 7 	 |	 3.5814 	 |	 3.0857 | 
+|drybean   |	 16 	 |	 16.0 	 |	 39343.4913	 |	 16 	 |	 15.9892 	 |	 36040.6187 | 
+|adult  |	 13 	 |	 11.179 	 |	 188393.0498	 |	 12 	 |	 10.9213 	 |	 198588.9907 | 
+|banknote  |	 4 	 |	 2.4746 	 |	 4.2745	 |	 4 	 |	 2.9167 	 |	 4.4112 | \hline
+|gender-by-voice  |	 20 	 |	 18.1538 	 |	 55.5696	 |	 20 	 |	 18.3013 	 |	 31.3279| 
+|waveform   |	 24 	 |	 19.3467 	 |	 3.9899	 |	 29 	 |	 22.764 	 |	 4.0157 | 
+|wind   |	 14 	 |	 13.7389 	 |	 67.9944	 |	 14 	 |	 13.8936 	 |	 68.1223 | 
+|speech  |	 99 	 |	 69.6374 	 |	 2.3355	 |	 100 	 |	 71.9725 	 |	 2.37 | 
 
 
 ### RandomForest Perturbation Statistics
