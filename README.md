@@ -27,36 +27,42 @@ PRC-AUC differences for XGBoost experiments between our method and OC-score for 
 
 ROC-AUC differences for XGBoost experiments between our method and OC-score for $L_{\infty}$ norm:
 
-<center><img src="roc_xgboost_norm_inf_metrics_differences_oc_score_appendix.png" alt="" width="700" height="400"></center>
+<center><img src="xgboost_roc_diff_per_attack_inf.png" alt="" width="700" height="400"></center>
 
 ### Figure 4: 
 
 PRC-AUC differences for XGBoost experiments between our method and OC-score for $L_{\infty}$ norm:
 
-<center><img src="xgboost_roc_diff_per_attack_2_old_rep.png" alt="" width="700" height="400"></center>
+<center><img src="xgboost_pr_diff_per_attack_inf.png" alt="" width="700" height="400"></center>
 
 ### Figure 5: 
 
 PRC-AUC differences for XGBoost experiments between the new method and original representation for $L_2$ norm:
 
-<center><img src="xgboost_pr_diff_per_attack_2_old_rep.png" alt="" width="700" height="400"></center>
+<center><img src="xgboost_roc_diff_per_attack_2_old_rep.png" alt="" width="700" height="400"></center>
 
 
 ### Figure 6: 
 
 ROC-AUC differences for XGBoost experiments between the new method and original representation for $L_{\infty}$ norm:
 
-<center><img src="roc_xgboost_norm_inf_metrics_differences_old_rep_appendix.png" alt="" width="700" height="400"></center>
+<center><img src="xgboost_pr_diff_per_attack_2_old_rep.png" alt="" width="700" height="400"></center>
 
 
 ### Figure 7: 
 
 RC-AUC differences for XGBoost experiments between the new method and original representation for $L_{\infty}$ norm:
 
-<center><img src="pr_xgboost_norm_inf_metrics_differences_old_rep_appendix.png" alt="" width="700" height="400"></center>
+<center><img src="xgboost_pr_diff_per_attack_2_old_rep.png" alt="" width="700" height="400"></center>
 
 
 ### Figure 8: 
+
+PRC-AUC differences for XGBoost experiments between the new method and original representation for $L_{\infty}$ norm:
+
+<center><img src="xgboost_pr_diff_per_attack_inf_old_rep.png" alt="" width="700" height="400"></center>
+
+
 ### Figure 9: 
 ### Figure 10: 
 ### Figure 11: 
