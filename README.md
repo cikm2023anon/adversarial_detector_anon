@@ -4137,6 +4137,11 @@ In Tables 16, 17, 18, 19, and 20 we can see the adversarial samples statistics f
 <table>
   <thead>
     <tr>
+      <th rowspan="1"></th>
+      <th colspan="3">Sign-OPT $L_2$ </th>
+      <th colspan="3">Sign-OPT $L_\infty$ </th>
+    </tr>
+    <tr>
       <th>Dataset name</th>
       <th>Max #features changed</th>
       <th>Mean #features changed</th>
@@ -4316,6 +4321,11 @@ In Tables 16, 17, 18, 19, and 20 we can see the adversarial samples statistics f
 
 <table>
   <thead>
+     <tr>
+      <th rowspan="1"></th>
+      <th colspan="3">OPT $L_2$ </th>
+      <th colspan="3">OPT $L_\infty$ </th>
+    </tr>
     <tr>
       <th>Dataset name</th>
       <th>Max #features changed</th>
@@ -4497,6 +4507,11 @@ In Tables 16, 17, 18, 19, and 20 we can see the adversarial samples statistics f
 <table>
   <thead>
     <tr>
+      <th rowspan="1"></th>
+      <th colspan="3">HSJA $L_2$ </th>
+      <th colspan="3">HSJA $L_\infty$ </th>
+    </tr>
+    <tr>
       <th>Dataset name</th>
       <th>Max #features changed</th>
       <th>Mean #features changed</th>
@@ -4677,6 +4692,11 @@ In Tables 16, 17, 18, 19, and 20 we can see the adversarial samples statistics f
 <table>
   <thead>
     <tr>
+      <th rowspan="1"></th>
+      <th colspan="3">Cube $L_2$ </th>
+      <th colspan="3">Cube $L_\infty$ </th>
+    </tr>
+    <tr>
       <th>Dataset name</th>
       <th>Max #features changed</th>
       <th>Mean #features changed</th>
@@ -4856,6 +4876,11 @@ In Tables 16, 17, 18, 19, and 20 we can see the adversarial samples statistics f
 
 <table>
   <thead>
+    <tr>
+      <th rowspan="1"></th>
+      <th colspan="3">Leaf-Tuple $L_2$ </th>
+      <th colspan="3">Leaf-Tuple $L_\infty$ </th>
+    </tr>
     <tr>
       <th>Dataset name</th>
       <th>Max #features changed</th>
