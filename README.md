@@ -3066,7 +3066,29 @@ In Tables 6,7,8,9 and 10 we can see the raw metrics of the experiments for each 
   </tbody>
 </table>
 
-## Ablation Study 
+## Detector Ablation Study
+
+We wanted to investigate how three aspects of our detector affect
+our metrics results: 
+1. The dimensions of our new representations (for the samples and for the nodes).
+2. The machine learning classifier that was chosen as the final adversarial detector.
+3. Key hyperparameters of the final adversarial detector. 
+
+To do our tests, we took two different experiments and showed their results:
+
+* XGBoost target with codrna dataset and OPT attack method.
+* RandomForest target with sensorless dataset and HopSkipJumpAttack attack method.
+
+Each one of the above with the two different norms.
+
+### Different Classifier & Hyperparameters
+
+We checked three different classifiers as our models for our adversarial evasion attack detector: XGBoost, RandomForest, and K-nearest neighbors (KNN). For the tree ensemble classifiers, we checked how much the number of estimators and their depth impacts the performance of the detector. For the KNN classifier, we tested the results with different values of K.
+
+#### XGBoost Detector Hyperparameters.
+
+As we can see from the
+results in Figures 26, 27, 28, 29, 30, 31, 32, and 33 that in general the number of estimators has a significant impact on both ROC-AUC and on PR-AUC until a certain point which around 50 estimators and above usually there is improvements, but relatively smaller. In most cases, the maximum depth of the trees has a very light impact on the results when the number of estimators is 50 or more. 
 
 <center><img src="hidden_sizes_ablation_codrna_opt_2_pr.png" alt="" width="600" height="500"></center>
 
