@@ -64,13 +64,56 @@ PRC-AUC differences for XGBoost experiments between the new method and original 
 
 
 ### Figure 9: 
+
+ROC-AUC differences for RandomForest experiments between our method and OC-score for $L_2$ norm:
+
+<center><img src="rf_roc_diff_per_attack_2.png" alt="" width="700" height="400"></center>
+
 ### Figure 10: 
+
+PRC-AUC differences for RandomForest experiments between our method and OC-score for $L_2$ norm:
+
+<center><img src="rf_pr_diff_per_attack_2.png" alt="" width="700" height="400"></center>
+
 ### Figure 11: 
+
+OC-AUC differences for RandomForest experiments between our method and OC-score for $L_{\infty}$ norm:
+
+<center><img src="rf_roc_diff_per_attack_inf.png" alt="" width="700" height="400"></center>
+
 ### Figure 12: 
+
+PRC-AUC differences for RandomForest experiments between our method and OC-score for $L_{\infty}$ norm:
+
+<center><img src="rf_pr_diff_per_attack_inf.png" alt="" width="700" height="400"></center>
+
 ### Figure 13: 
+
+ROC-AUC differences for RandomForest experiments between the new method and original representation for $L_2$ norm:
+
+<center><img src="rf_roc_diff_per_attack_2_old_rep.png" alt="" width="700" height="400"></center>
+
+
 ### Figure 14: 
+
+PRC-AUC differences for RandomForest experiments between the new method and original representation for $L_2$ norm:
+
+<center><img src="rf_pr_diff_per_attack_2_old_rep.png" alt="" width="700" height="400"></center>
+
+
 ### Figure 15: 
+
+ROC-AUC differences for RandomForest experiments between the new method and original representation for $L_{\infty}$ norm:
+
+<center><img src="rf_roc_diff_per_attack_inf_old_rep.png" alt="" width="700" height="400"></center>
+
+
 ### Figure 16:
+
+PRC-AUC differences for RandomForest experiments between the new method and original representation for $L_{\infty}$ norm:
+
+<center><img src="rf_pr_diff_per_attack_inf_old_rep.png" alt="" width="700" height="400"></center>
+
 
 
 ## XGBoost Full Experiments Results
