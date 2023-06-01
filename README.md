@@ -4134,121 +4134,903 @@ In Tables 16, 17, 18, 19, and 20 we can see the adversarial samples statistics f
 
 #### Table 16: RandomForest Sign-OPT perturbations statistics
 
-|Dataset name | Max #features changed | Mean #features changed | Mean \|\|$L_2\|\| perturbations | Max #features changed | Mean #features changed | Mean \|\|$L_{\infty}$\|\| perturbations  |
-|---|----|----|----|----|----|----|
-|breast-cancer 	 |	 10 	 |	 10.0 	 |	 0.3264	 |	 10 	 |	 10.0 	 |	 0.2304| 
-|covtype      	 |	 54 	 |	 54.0 	 |	 0.0682	 |	 54 	 |	 54.0 	 |	 0.0699| 
-|cod-rna  	 |	 8 	 |	 8.0 	 |	 0.0537	 |	 8 	 |	 8.0 	 |	 0.0514| 
-|diabetes  	 |	 8 	 |	 8.0 	 |	 0.0845	 |	 8 	 |	 8.0 	 |	 0.0839| 
-|Fashion-MNIST  	 |	 784 	 |	 784.0 	 |	 0.0358	 |	 784 	 |	 784.0 	 |	 0.0258| 
-|ijcnn1  	 |	 22 	 |	 22.0 	 |	 0.0776	 |	 22 	 |	 22.0 	 |	 0.059| 
-|MNIST  	 |	 784 	 |	 784.0 	 |	 0.0161	 |	 784 	 |	 784.0 	 |	 0.0105|
-|sensorless  	 |	 48 	 |	 48.0 	 |	 0.018	 |	 48 	 |	 48.0 	 |	 0.0236 | 
-|webspam  	 |	 254 	 |	 254.0 	 |	 0.0032	 |	 254 	 |	 254.0 	 |	 0.0019| 
-|MNIST 2 vs. 6  	 |	 784 	 |	 784.0 	 |	 0.2535	 |	 784 	 |	 784.0 	 |	 0.076 | 
-|electricity  	 |	 8 	 |	 8.0 	 |	 0.0189	 |	 8 	 |	 8.0 	 |	 0.0177 | 
-|drybean   	 |	 16 	 |	 16.0 	 |	 0.0145	 |	 16 	 |	 16.0 	 |	 0.0119| 
-|adult   	 |	 14 	 |	 14.0 	 |	 0.96	 |	 14 	 |	 14.0 	 |	 1.115 | 
-|banknote  	 |	 4 	 |	 4.0 	 |	 1.5134	 |	 4 	 |	 4.0 	 |	 1.4708 | 
-|gender-by-voice 	 |	 20 	 |	 20.0 	 |	 0.0294	 |	 20 	 |	 20.0 	 |	 0.027 | 
-|waveform  	 |	 40 	 |	 40.0 	 |	 0.9492	 |	 40 	 |	 40.0 	 |	 0.7961 | 
-|wind   	 |	 14 	 |	 14.0 	 |	 1.1805	 |	 14 	 |	 14.0 	 |	 1.1561| 
-|speech    | -  | - | - | - | -  | - | 
+<table>
+  <thead>
+    <tr>
+      <th>Dataset name</th>
+      <th>Max #features changed</th>
+      <th>Mean #features changed</th>
+      <th>Mean ||$L_2|| perturbations</th>
+      <th>Max #features changed</th>
+      <th>Mean #features changed</th>
+      <th>Mean ||$L_{\infty}$|| perturbations</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>breast-cancer</td>
+      <td>10</td>
+      <td>10.0</td>
+      <td>0.3264</td>
+      <td>10</td>
+      <td>10.0</td>
+      <td>0.2304</td>
+    </tr>
+    <tr>
+      <td>covtype</td>
+      <td>54</td>
+      <td>54.0</td>
+      <td>0.0682</td>
+      <td>54</td>
+      <td>54.0</td>
+      <td>0.0699</td>
+    </tr>
+    <tr>
+      <td>cod-rna</td>
+      <td>8</td>
+      <td>8.0</td>
+      <td>0.0537</td>
+      <td>8</td>
+      <td>8.0</td>
+      <td>0.0514</td>
+    </tr>
+    <tr>
+      <td>diabetes</td>
+      <td>8</td>
+      <td>8.0</td>
+      <td>0.0845</td>
+      <td>8</td>
+      <td>8.0</td>
+      <td>0.0839</td>
+    </tr>
+    <tr>
+      <td>Fashion-MNIST</td>
+      <td>784</td>
+      <td>784.0</td>
+      <td>0.0358</td>
+      <td>784</td>
+      <td>784.0</td>
+      <td>0.0258</td>
+    </tr>
+    <tr>
+      <td>ijcnn1</td>
+      <td>22</td>
+      <td>22.0</td>
+      <td>0.0776</td>
+      <td>22</td>
+      <td>22.0</td>
+      <td>0.059</td>
+    </tr>
+    <tr>
+      <td>MNIST</td>
+      <td>784</td>
+      <td>784.0</td>
+      <td>0.0161</td>
+      <td>784</td>
+      <td>784.0</td>
+      <td>0.0105</td>
+    </tr>
+    <tr>
+      <td>sensorless</td>
+      <td>48</td>
+      <td>48.0</td>
+      <td>0.018</td>
+      <td>48</td>
+      <td>48.0</td>
+      <td>0.0236</td>
+    </tr>
+    <tr>
+      <td>webspam</td>
+      <td>254</td>
+      <td>254.0</td>
+      <td>0.0032</td>
+      <td>254</td>
+      <td>254.0</td>
+      <td>0.0019</td>
+    </tr>
+    <tr>
+      <td>MNIST 2 vs. 6</td>
+      <td>784</td>
+      <td>784.0</td>
+      <td>0.2535</td>
+      <td>784</td>
+      <td>784.0</td>
+      <td>0.076</td>
+    </tr>
+    <tr>
+      <td>electricity</td>
+      <td>8</td>
+      <td>8.0</td>
+      <td>0.0189</td>
+      <td>8</td>
+      <td>8.0</td>
+      <td>0.0177</td>
+    </tr>
+    <tr>
+      <td>drybean</td>
+      <td>16</td>
+      <td>16.0</td>
+      <td>0.0145</td>
+      <td>16</td>
+      <td>16.0</td>
+      <td>0.0119</td>
+    </tr>
+    <tr>
+      <td>adult</td>
+      <td>14</td>
+      <td>14.0</td>
+      <td>0.96</td>
+      <td>14</td>
+      <td>14.0</td>
+      <td>1.115</td>
+    </tr>
+    <tr>
+      <td>banknote</td>
+      <td>4</td>
+      <td>4.0</td>
+      <td>1.5134</td>
+      <td>4</td>
+      <td>4.0</td>
+      <td>1.4708</td>
+    </tr>
+    <tr>
+      <td>gender-by-voice</td>
+      <td>20</td>
+      <td>20.0</td>
+      <td>0.0294</td>
+      <td>20</td>
+      <td>20.0</td>
+      <td>0.027</td>
+    </tr>
+    <tr>
+      <td>waveform</td>
+      <td>40</td>
+      <td>40.0</td>
+      <td>0.9492</td>
+      <td>40</td>
+      <td>40.0</td>
+      <td>0.7961</td>
+    </tr>
+    <tr>
+      <td>wind</td>
+      <td>14</td>
+      <td>14.0</td>
+      <td>1.1805</td>
+      <td>14</td>
+      <td>14.0</td>
+      <td>1.1561</td>
+    </tr>
+    <tr>
+      <td>speech</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
 
 #### Table 17: RandomForest OPT perturbations statistics
 
-|Dataset name | Max #features changed | Mean #features changed | Mean \|\|$L_2\|\| perturbations | Max #features changed | Mean #features changed | Mean \|\|$L_{\infty}$\|\| perturbations  |
-|---|----|----|----|----|----|----|
-|breast-cancer 	 |	 10 	 |	 10.0 	 |	 0.3403	 |	 10 	 |	 10.0 	 |	 0.2835| 
-|covtype     	 |	 54 	 |	 54.0 	 |	 0.0691	 |	 54 	 |	 54.0 	 |	 0.0675 | 
-|cod-rna  	 |	 8 	 |	 8.0 	 |	 0.0604	 |	 8 	 |	 8.0 	 |	 0.0599|
-|diabetes  	 |	 8 	 |	 8.0 	 |	 0.0976	 |	 8 	 |	 8.0 	 |	 0.0989|
-|Fashion-MNIST  	 |	 784 	 |	 784.0 	 |	 0.0459	 |	 784 	 |	 784.0 	 |	 0.0444 | 
-|ijcnn1  	 |	 22 	 |	 22.0 	 |	 0.0665	 |	 22 	 |	 22.0 	 |	 0.0641| 
-|MNIST  	 |	 784 	 |	 784.0 	 |	 0.0253	 |	 784 	 |	 784.0 	 |	 0.0126 | 
-|sensorless 	 |	 48 	 |	 48.0 	 |	 0.0403	 |	 48 	 |	 48.0 	 |	 0.0266 | 
-|webspam 	 |	 254 	 |	 254.0 	 |	 0.0028	 |	 254 	 |	 254.0 	 |	 0.0027 | 
-|MNIST 2 vs. 6  	 |	 784 	 |	 784.0 	 |	 0.1705	 |	 784 	 |	 784.0 	 |	 0.1734 | 
-|electricity 	 |	 8 	 |	 8.0 	 |	 0.0214	 |	 8 	 |	 8.0 	 |	 0.0185| 
-|drybean   |	 16 	 |	 16.0 	 |	 0.0239	 |	 16 	 |	 16.0 	 |	 0.0247 | 
-|adult   |	 14 	 |	 14.0 	 |	 0.9111	 |	 14 	 |	 14.0 	 |	 0.785 | 
-|banknote  |	 4 	 |	 4.0 	 |	 1.5897	 |	 4 	 |	 4.0 	 |	 1.5036 |
-|gender-by-voice  |	 20 	 |	 20.0 	 |	 0.0308	 |	 20 	 |	 20.0 	 |	 0.0271 | 
-|waveform   |	 40 	 |	 40.0 	 |	 1.0321	 |	 40 	 |	 40.0 	 |	 0.8934| 
-|wind   |	 14 	 |	 14.0 	 |	 1.3465	 |	 14 	 |	 14.0 	 |	 0.9985 | 
-|speech   | -  | - | - | - | -  | - | 
-
+<table>
+  <thead>
+    <tr>
+      <th>Dataset name</th>
+      <th>Max #features changed</th>
+      <th>Mean #features changed</th>
+      <th>Mean ||$L_2|| perturbations</th>
+      <th>Max #features changed</th>
+      <th>Mean #features changed</th>
+      <th>Mean ||$L_{\infty}$|| perturbations</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>breast-cancer</td>
+      <td>10</td>
+      <td>10.0</td>
+      <td>0.3403</td>
+      <td>10</td>
+      <td>10.0</td>
+      <td>0.2835</td>
+    </tr>
+    <tr>
+      <td>covtype</td>
+      <td>54</td>
+      <td>54.0</td>
+      <td>0.0691</td>
+      <td>54</td>
+      <td>54.0</td>
+      <td>0.0675</td>
+    </tr>
+    <tr>
+      <td>cod-rna</td>
+      <td>8</td>
+      <td>8.0</td>
+      <td>0.0604</td>
+      <td>8</td>
+      <td>8.0</td>
+      <td>0.0599</td>
+    </tr>
+    <tr>
+      <td>diabetes</td>
+      <td>8</td>
+      <td>8.0</td>
+      <td>0.0976</td>
+      <td>8</td>
+      <td>8.0</td>
+      <td>0.0989</td>
+    </tr>
+    <tr>
+      <td>Fashion-MNIST</td>
+      <td>784</td>
+      <td>784.0</td>
+      <td>0.0459</td>
+      <td>784</td>
+      <td>784.0</td>
+      <td>0.0444</td>
+    </tr>
+    <tr>
+      <td>ijcnn1</td>
+      <td>22</td>
+      <td>22.0</td>
+      <td>0.0665</td>
+      <td>22</td>
+      <td>22.0</td>
+      <td>0.0641</td>
+    </tr>
+    <tr>
+      <td>MNIST</td>
+      <td>784</td>
+      <td>784.0</td>
+      <td>0.0253</td>
+      <td>784</td>
+      <td>784.0</td>
+      <td>0.0126</td>
+    </tr>
+    <tr>
+      <td>sensorless</td>
+      <td>48</td>
+      <td>48.0</td>
+      <td>0.0403</td>
+      <td>48</td>
+      <td>48.0</td>
+      <td>0.0266</td>
+    </tr>
+    <tr>
+      <td>webspam</td>
+      <td>254</td>
+      <td>254.0</td>
+      <td>0.0028</td>
+      <td>254</td>
+      <td>254.0</td>
+      <td>0.0027</td>
+    </tr>
+    <tr>
+      <td>MNIST 2 vs. 6</td>
+      <td>784</td>
+      <td>784.0</td>
+      <td>0.1705</td>
+      <td>784</td>
+      <td>784.0</td>
+      <td>0.1734</td>
+    </tr>
+    <tr>
+      <td>electricity</td>
+      <td>8</td>
+      <td>8.0</td>
+      <td>0.0214</td>
+      <td>8</td>
+      <td>8.0</td>
+      <td>0.0185</td>
+    </tr>
+    <tr>
+      <td>drybean</td>
+      <td>16</td>
+      <td>16.0</td>
+      <td>0.0239</td>
+      <td>16</td>
+      <td>16.0</td>
+      <td>0.0247</td>
+    </tr>
+    <tr>
+      <td>adult</td>
+      <td>14</td>
+      <td>14.0</td>
+      <td>0.9111</td>
+      <td>14</td>
+      <td>14.0</td>
+      <td>0.785</td>
+    </tr>
+    <tr>
+      <td>banknote</td>
+      <td>4</td>
+      <td>4.0</td>
+      <td>1.5897</td>
+      <td>4</td>
+      <td>4.0</td>
+      <td>1.5036</td>
+    </tr>
+    <tr>
+      <td>gender-by-voice</td>
+      <td>20</td>
+      <td>20.0</td>
+      <td>0.0308</td>
+      <td>20</td>
+      <td>20.0</td>
+      <td>0.0271</td>
+    </tr>
+    <tr>
+      <td>waveform</td>
+      <td>40</td>
+      <td>40.0</td>
+      <td>1.0321</td>
+      <td>40</td>
+      <td>40.0</td>
+      <td>0.8934</td>
+    </tr>
+    <tr>
+      <td>wind</td>
+      <td>14</td>
+      <td>14.0</td>
+      <td>1.3465</td>
+      <td>14</td>
+      <td>14.0</td>
+      <td>0.9985</td>
+    </tr>
+    <tr>
+      <td>speech</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
 
 #### Table 18: RandomForest HSJA perturbations statistics
 
-|Dataset name | Max #features changed | Mean #features changed | Mean \|\|$L_2\|\| perturbations | Max #features changed | Mean #features changed | Mean \|\|$L_{\infty}$\|\| perturbations  |
-|---|----|----|----|----|----|----|
-|breast-cancer |	 10 	 |	 9.3714 	 |	 0.4717	 |	 10 	 |	 9.5926 	 |	 0.6591 | 
-|covtype      |	 50 	 |	 43.42 	 |	 0.2901	 |	 54 	 |	 43.36 	 |	 0.2679 |
-|cod-rna    | -  | - | - | - | -  | - | 
-|diabetes    | -  | - | - | - | -  | -  | 
-|Fashion-MNIST  |	 783 	 |	 724.22 	 |	 3.6077	 |	 766 	 |	 720.79 	 |	 0.9142| 
-|ijcnn1  |	 22 	 |	 19.98 	 |	 0.1871	 |	 22 	 |	 20.0 	 |	 0.2578| 
-|MNIST  |	 756 	 |	 672.46 	 |	 0.5509	 |	 753 	 |	 669.0 	 |	 0.5491 | 
-|sensorless |	 48 	 |	 48.0 	 |	 0.089	 |	 48 	 |	 48.0 	 |	 0.0641 | 
-|webspam  |	 246 	 |	 219.8 	 |	 0.1553	 |	 254 	 |	 218.81 	 |	 0.1238 |
-|MNIST 2 vs. 6  |	 768 	 |	 667.37 	 |	 9.4532	 |	 763 	 |	 692.16 	 |	 1.8106
-|electricity |	 8 	 |	 7.79 	 |	 0.039	 |	 8 	 |	 7.83 	 |	 0.031 |
-|drybean   |	 16 	 |	 14.86 	 |	 3.2014	 |	 16 	 |	 14.55 	 |	 4.4453 | 
-|adult   |	 14 	 |	 13.15 	 |	 9.2404	 |	 14 	 |	 13.19 	 |	 6.6426 | 
-|banknote  |	 4 	 |	 4.0 	 |	 3.7265	 |	 4 	 |	 4.0 	 |	 3.035 | 
-|gender-by-voice  |	 20 	 |	 19.78 	 |	 0.0537	 |	 20 	 |	 19.79 	 |	 0.0457 | 
-|waveform  |	 40 	 |	 40.0 	 |	 4.6663	 |	 40 	 |	 39.98 	 |	 3.8479 |
-|wind   |	 14 	 |	 13.67 	 |	 10.386	 |	 14 	 |	 13.76 	 |	 7.8599 | 
-|speech   | -  | - | - | - | -  | - | 
+<table>
+  <thead>
+    <tr>
+      <th>Dataset name</th>
+      <th>Max #features changed</th>
+      <th>Mean #features changed</th>
+      <th>Mean ||$L_2|| perturbations</th>
+      <th>Max #features changed</th>
+      <th>Mean #features changed</th>
+      <th>Mean ||$L_{\infty}$|| perturbations</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>breast-cancer</td>
+      <td>10</td>
+      <td>9.3714</td>
+      <td>0.4717</td>
+      <td>10</td>
+      <td>9.5926</td>
+      <td>0.6591</td>
+    </tr>
+    <tr>
+      <td>covtype</td>
+      <td>50</td>
+      <td>43.42</td>
+      <td>0.2901</td>
+      <td>54</td>
+      <td>43.36</td>
+      <td>0.2679</td>
+    </tr>
+    <tr>
+      <td>cod-rna</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>diabetes</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Fashion-MNIST</td>
+      <td>783</td>
+      <td>724.22</td>
+      <td>3.6077</td>
+      <td>766</td>
+      <td>720.79</td>
+      <td>0.9142</td>
+    </tr>
+    <tr>
+      <td>ijcnn1</td>
+      <td>22</td>
+      <td>19.98</td>
+      <td>0.1871</td>
+      <td>22</td>
+      <td>20.0</td>
+      <td>0.2578</td>
+    </tr>
+    <tr>
+      <td>MNIST</td>
+      <td>756</td>
+      <td>672.46</td>
+      <td>0.5509</td>
+      <td>753</td>
+      <td>669.0</td>
+      <td>0.5491</td>
+    </tr>
+    <tr>
+      <td>sensorless</td>
+      <td>48</td>
+      <td>48.0</td>
+      <td>0.089</td>
+      <td>48</td>
+      <td>48.0</td>
+      <td>0.0641</td>
+    </tr>
+    <tr>
+      <td>webspam</td>
+      <td>246</td>
+      <td>219.8</td>
+      <td>0.1553</td>
+      <td>254</td>
+      <td>218.81</td>
+      <td>0.1238</td>
+    </tr>
+    <tr>
+      <td>MNIST 2 vs. 6</td>
+      <td>768</td>
+      <td>667.37</td>
+      <td>9.4532</td>
+      <td>763</td>
+      <td>692.16</td>
+      <td>1.8106</td>
+    </tr>
+    <tr>
+      <td>electricity</td>
+      <td>8</td>
+      <td>7.79</td>
+      <td>0.039</td>
+      <td>8</td>
+      <td>7.83</td>
+      <td>0.031</td>
+    </tr>
+    <tr>
+      <td>drybean</td>
+      <td>16</td>
+      <td>14.86</td>
+      <td>3.2014</td>
+      <td>16</td>
+      <td>14.55</td>
+      <td>4.4453</td>
+    </tr>
+    <tr>
+      <td>adult</td>
+      <td>14</td>
+      <td>13.15</td>
+      <td>9.2404</td>
+      <td>14</td>
+      <td>13.19</td>
+      <td>6.6426</td>
+    </tr>
+    <tr>
+      <td>banknote</td>
+      <td>4</td>
+      <td>4.0</td>
+      <td>3.7265</td>
+      <td>4</td>
+      <td>4.0</td>
+      <td>3.035</td>
+    </tr>
+    <tr>
+      <td>gender-by-voice</td>
+      <td>20</td>
+      <td>19.78</td>
+      <td>0.0537</td>
+      <td>20</td>
+      <td>19.79</td>
+      <td>0.0457</td>
+    </tr>
+    <tr>
+      <td>waveform</td>
+      <td>40</td>
+      <td>40.0</td>
+      <td>4.6663</td>
+      <td>40</td>
+      <td>39.98</td>
+      <td>3.8479</td>
+    </tr>
+    <tr>
+      <td>wind</td>
+      <td>14</td>
+      <td>13.67</td>
+      <td>10.386</td>
+      <td>14</td>
+      <td>13.76</td>
+      <td>7.8599</td>
+    </tr>
+    <tr>
+      <td>speech</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
 
 #### Table 19: RandomForest Cube perturbations statistics
 
-|Dataset name | Max #features changed | Mean #features changed | Mean \|\|$L_2\|\| perturbations | Max #features changed | Mean #features changed | Mean \|\|$L_{\infty}$\|\| perturbations  |
-|---|----|----|----|----|----|----|
-|breast-cancer |	 7 	 |	 2.5556 	 |	 0.3326	 |	 10 	 |	 9.2857 	 |	 0.5759| 
-|covtype      |	 6 	 |	 1.44 	 |	 0.1144	 |	 42 	 |	 32.34 	 |	 0.1195 | 
-|cod-rna  |	 6 	 |	 2.03 	 |	 0.0979	 |	 8 	 |	 7.77 	 |	 0.1724 | 
-|diabetes  |	 3 	 |	 1.75 	 |	 0.1375	 |	 8 	 |	 7.2381 	 |	 0.124 | 
-|Fashion-MNIST  |	 22 	 |	 8.66 	 |	 0.0348	 |	 715 	 |	 552.09 	 |	 0.0251 | 
-|ijcnn1 |	 7 	 |	 2.47 	 |	 0.094	 |	 21 	 |	 15.83 	 |	 0.0804|
-|MNIST  |	 12 	 |	 3.91 	 |	 0.0122	 |	 563 	 |	 461.19 	 |	 0.0131 |
-|sensorless |	 9 	 |	 2.56 	 |	 0.0306	 |	 48 	 |	 44.74 	 |	 0.0235 | 
-|webspam |	 7 	 |	 2.83 	 |	 0.0043	 |	 203 	 |	 164.43 	 |	 0.0042 | 
-|MNIST 2 vs. 6  |	 16 	 |	 7.03 	 |	 0.1644	 |	 581 	 |	 472.78 	 |	 0.1066 |
-|electricity |	 5 	 |	 1.6 	 |	 0.0972	 |	 8 	 |	 7.74 	 |	 3.3875 |
-|drybean  |	 9 	 |	 2.68 	 |	 3976.0933	 |	 16 	 |	 15.66 	 |	 53221.8 | 
-|adult   |	 2 	 |	 1.27 	 |	 9019.91	 |	 12 	 |	 11.24 	 |	 186698.07 |
-|banknote  |	 3 	 |	 2.0 	 |	 5.9102	 |	 4 	 |	 4.0 	 |	 4.8118 |
-|gender-by-voice  |	 15 	 |	 4.8636 	 |	 2.4741	 |	 20 	 |	 19.6341 	 |	 27.7117 | 
-|waveform  |	 30 	 |	 9.2778 	 |	 3.8403	 |	 40 	 |	 34.6364 	 |	 4.5004 |
-|wind    | -  | - | - | - | -  | - | 
-|speech     | -  | - | - | - | -  | - | 
-
+<table>
+  <thead>
+    <tr>
+      <th>Dataset name</th>
+      <th>Max #features changed</th>
+      <th>Mean #features changed</th>
+      <th>Mean ||$L_2|| perturbations</th>
+      <th>Max #features changed</th>
+      <th>Mean #features changed</th>
+      <th>Mean ||$L_{\infty}$|| perturbations</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>breast-cancer</td>
+      <td>7</td>
+      <td>2.5556</td>
+      <td>0.3326</td>
+      <td>10</td>
+      <td>9.2857</td>
+      <td>0.5759</td>
+    </tr>
+    <tr>
+      <td>covtype</td>
+      <td>6</td>
+      <td>1.44</td>
+      <td>0.1144</td>
+      <td>42</td>
+      <td>32.34</td>
+      <td>0.1195</td>
+    </tr>
+    <tr>
+      <td>cod-rna</td>
+      <td>6</td>
+      <td>2.03</td>
+      <td>0.0979</td>
+      <td>8</td>
+      <td>7.77</td>
+      <td>0.1724</td>
+    </tr>
+    <tr>
+      <td>diabetes</td>
+      <td>3</td>
+      <td>1.75</td>
+      <td>0.1375</td>
+      <td>8</td>
+      <td>7.2381</td>
+      <td>0.124</td>
+    </tr>
+    <tr>
+      <td>Fashion-MNIST</td>
+      <td>22</td>
+      <td>8.66</td>
+      <td>0.0348</td>
+      <td>715</td>
+      <td>552.09</td>
+      <td>0.0251</td>
+    </tr>
+    <tr>
+      <td>ijcnn1</td>
+      <td>7</td>
+      <td>2.47</td>
+      <td>0.094</td>
+      <td>21</td>
+      <td>15.83</td>
+      <td>0.0804</td>
+    </tr>
+    <tr>
+      <td>MNIST</td>
+      <td>12</td>
+      <td>3.91</td>
+      <td>0.0122</td>
+      <td>563</td>
+      <td>461.19</td>
+      <td>0.0131</td>
+    </tr>
+    <tr>
+      <td>sensorless</td>
+      <td>9</td>
+      <td>2.56</td>
+      <td>0.0306</td>
+      <td>48</td>
+      <td>44.74</td>
+      <td>0.0235</td>
+    </tr>
+    <tr>
+      <td>webspam</td>
+      <td>7</td>
+      <td>2.83</td>
+      <td>0.0043</td>
+      <td>203</td>
+      <td>164.43</td>
+      <td>0.0042</td>
+    </tr>
+    <tr>
+      <td>MNIST 2 vs. 6</td>
+      <td>16</td>
+      <td>7.03</td>
+      <td>0.1644</td>
+      <td>581</td>
+      <td>472.78</td>
+      <td>0.1066</td>
+    </tr>
+    <tr>
+      <td>electricity</td>
+      <td>5</td>
+      <td>1.6</td>
+      <td>0.0972</td>
+      <td>8</td>
+      <td>7.74</td>
+      <td>3.3875</td>
+    </tr>
+    <tr>
+      <td>drybean</td>
+      <td>9</td>
+      <td>2.68</td>
+      <td>3976.0933</td>
+      <td>16</td>
+      <td>15.66</td>
+      <td>53221.8</td>
+    </tr>
+    <tr>
+      <td>adult</td>
+      <td>2</td>
+      <td>1.27</td>
+      <td>9019.91</td>
+      <td>12</td>
+      <td>11.24</td>
+      <td>186698.07</td>
+    </tr>
+    <tr>
+      <td>banknote</td>
+      <td>3</td>
+      <td>2.0</td>
+      <td>5.9102</td>
+      <td>4</td>
+      <td>4.0</td>
+      <td>4.8118</td>
+    </tr>
+    <tr>
+      <td>gender-by-voice</td>
+      <td>15</td>
+      <td>4.8636</td>
+      <td>2.4741</td>
+      <td>20</td>
+      <td>19.6341</td>
+      <td>27.7117</td>
+    </tr>
+    <tr>
+      <td>waveform</td>
+      <td>30</td>
+      <td>9.2778</td>
+      <td>3.8403</td>
+      <td>40</td>
+      <td>34.6364</td>
+      <td>4.5004</td>
+    </tr>
+    <tr>
+      <td>wind</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>speech</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
 
 #### Table 20: RandomForest Leaf-Tuple perturbations statistics
 
-
-|Dataset name | Max #features changed | Mean #features changed | Mean \|\|$L_2\|\| perturbations | Max #features changed | Mean #features changed | Mean \|\|$L_{\infty}$\|\| perturbations  |
-|---|----|----|----|----|----|----|
-|breast-cancer |	 10 	 |	 6.3902 	 |	 0.2507	 |	 9 	 |	 5.8095 	 |	 0.2807| 
-|covtype     | -  | - | - | - | -  | - | 
-|cod-rna  |	 8 	 |	 7.9845 	 |	 0.0558	 |	 8 	 |	 7.9922 	 |	 0.0557 | 
-|diabetes    | -  | - | - | - | -  | - | 
-|Fashion-MNIST  |	 655 	 |	 424.3636 	 |	 0.8172	 |	 666 	 |	 379.701 	 |	 0.0023 | 
-|ijcnn1 |	 12 	 |	 12.0 	 |	 0.051	 |	 12 	 |	 12.0 	 |	 0.0568| 
-|MNIST  |	 276 	 |	 184.2766 	 |	 0.8699	 |	 303 	 |	 184.1649 	 |	 0.8457 | 
-|sensorless |	 2 	 |	 1.0385 	 |	 0.0002	 |	 3 	 |	 1.1168 	 |	 0.0001 | 
-|webspam |	 23 	 |	 11.7593 	 |	 0.4215	 |	 28 	 |	 13.0909 	 |	 0.4181 | 
-|MNIST 2 vs. 6  |	 324 	 |	 190.5356 	 |	 0.8724	 |	 324 	 |	 191.279 	 |	 0.8709 | 
-|electricity |	 6 	 |	 2.7642 	 |	 3.0778	 |	 7 	 |	 3.5 	 |	 3.1415 | 
-|drybean   |	 16 	 |	 16.0 	 |	 51659.5417	 |	 16 	 |	 16.0 	 |	 50043.6164 | 
-|adult   |	 12 	 |	 10.5597 	 |	 199668.9416	 |	 12 	 |	 10.7183 	 |	 192389.8652 | 
-|banknote  |	 4 	 |	 2.8361 	 |	 5.1703	 |	 4 	 |	 3.1034 	 |	 5.3954 | 
-|gender-by-voice  |	 19 	 |	 18.1154 	 |	 34.3206	 |	 20 	 |	 18.1325 	 |	 32.0345 | 
-|waveform  |	 23 	 |	 17.78 	 |	 4.1968	 |	 25 	 |	 18.5915 	 |	 4.4844 | 
-|wind  |	 14 	 |	 13.7556 	 |	 67.8056	 |	 14 	 |	 13.733 	 |	 68.983 | 
-|speech   | -  | - | - | - | -  | -  | 
+<table>
+  <thead>
+    <tr>
+      <th>Dataset name</th>
+      <th>Max #features changed</th>
+      <th>Mean #features changed</th>
+      <th>Mean ||$L_2|| perturbations</th>
+      <th>Max #features changed</th>
+      <th>Mean #features changed</th>
+      <th>Mean ||$L_{\infty}$|| perturbations</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>breast-cancer</td>
+      <td>10</td>
+      <td>6.3902</td>
+      <td>0.2507</td>
+      <td>9</td>
+      <td>5.8095</td>
+      <td>0.2807</td>
+    </tr>
+    <tr>
+      <td>covtype</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>cod-rna</td>
+      <td>8</td>
+      <td>7.9845</td>
+      <td>0.0558</td>
+      <td>8</td>
+      <td>7.9922</td>
+      <td>0.0557</td>
+    </tr>
+    <tr>
+      <td>diabetes</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Fashion-MNIST</td>
+      <td>655</td>
+      <td>424.3636</td>
+      <td>0.8172</td>
+      <td>666</td>
+      <td>379.701</td>
+      <td>0.0023</td>
+    </tr>
+    <tr>
+      <td>ijcnn1</td>
+      <td>12</td>
+      <td>12.0</td>
+      <td>0.051</td>
+      <td>12</td>
+      <td>12.0</td>
+      <td>0.0568</td>
+    </tr>
+    <tr>
+      <td>MNIST</td>
+      <td>276</td>
+      <td>184.2766</td>
+      <td>0.8699</td>
+      <td>303</td>
+      <td>184.1649</td>
+      <td>0.8457</td>
+    </tr>
+    <tr>
+      <td>sensorless</td>
+      <td>2</td>
+      <td>1.0385</td>
+      <td>0.0002</td>
+      <td>3</td>
+      <td>1.1168</td>
+      <td>0.0001</td>
+    </tr>
+    <tr>
+      <td>webspam</td>
+      <td>23</td>
+      <td>11.7593</td>
+      <td>0.4215</td>
+      <td>28</td>
+      <td>13.0909</td>
+      <td>0.4181</td>
+    </tr>
+    <tr>
+      <td>MNIST 2 vs. 6</td>
+      <td>324</td>
+      <td>190.5356</td>
+      <td>0.8724</td>
+      <td>324</td>
+      <td>191.279</td>
+      <td>0.8709</td>
+    </tr>
+    <tr>
+      <td>electricity</td>
+      <td>6</td>
+      <td>2.7642</td>
+      <td>3.0778</td>
+      <td>7</td>
+      <td>3.5</td>
+      <td>3.1415</td>
+    </tr>
+    <tr>
+      <td>drybean</td>
+      <td>16</td>
+      <td>16.0</td>
+      <td>51659.5417</td>
+      <td>16</td>
+      <td>16.0</td>
+      <td>50043.6164</td>
+    </tr>
+    <tr>
+      <td>adult</td>
+      <td>12</td>
+      <td>10.5597</td>
+      <td>199668.9416</td>
+      <td>12</td>
+      <td>10.7183</td>
+      <td>192389.8652</td>
+    </tr>
+    <tr>
+      <td>banknote</td>
+      <td>4</td>
+      <td>2.8361</td>
+      <td>5.1703</td>
+      <td>4</td>
+      <td>3.1034</td>
+      <td>5.3954</td>
+    </tr>
+    <tr>
+      <td>gender-by-voice</td>
+      <td>19</td>
+      <td>18.1154</td>
+      <td>34.3206</td>
+      <td>20</td>
+      <td>18.1325</td>
+      <td>32.0345</td>
+    </tr>
+    <tr>
+      <td>waveform</td>
+      <td>23</td>
+      <td>17.78</td>
+      <td>4.1968</td>
+      <td>25</td>
+      <td>18.5915</td>
+      <td>4.4844</td>
+    </tr>
+    <tr>
+      <td>wind</td>
+      <td>14</td>
+      <td>13.7556</td>
+      <td>67.8056</td>
+      <td>14</td>
+      <td>13.733</td>
+      <td>68.983</td>
+    </tr>
+    <tr>
+      <td>speech</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Detector Ablation Study
 
