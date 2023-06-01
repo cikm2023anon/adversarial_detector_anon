@@ -2,9 +2,10 @@
 
 # Table of Contents
 
-1. [XGBoost Full Experiments Results](#xgboost-full-experiments-results)
-2. [RandomForest Full Experiments Results](#randomforest-full-experiments-results)
-3. [Detector Ablation Study](#detector-ablation-study)
+1. [Full Metrics Differences Figures](#full-metrics-differences-figures)
+2. [XGBoost Full Experiments Results](#xgboost-full-experiments-results)
+3. [RandomForest Full Experiments Results](#randomforest-full-experiments-results)
+4. [Detector Ablation Study](#detector-ablation-study)
 
 ## Full Metrics Differences Figures
 
