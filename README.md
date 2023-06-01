@@ -2,8 +2,8 @@
 
 # Table of Contents
 
-1. [XGBoost Full Experiments Results](##xgboost-full-experiments-results)
-2. [RandomForest Full Experiments Results](##randomforest-full-experiments-results)
+1. [XGBoost Full Experiments Results](#xgboost-full-experiments-results)
+2. [RandomForest Full Experiments Results](#randomforest-full-experiments-results)
 
 ## XGBoost Full Experiments Results
 
@@ -3067,4 +3067,4 @@ In Tables 6,7,8,9 and 10 we can see the raw metrics of the experiments for each 
 </table>
 
 
-![image](hidden_sizes_ablation_codrna_opt_2_pr.png)
+<img src="hidden_sizes_ablation_codrna_opt_2_pr.png" alt="" width="50" height="50">
