@@ -5079,9 +5079,59 @@ We checked three different classifiers as our models for our adversarial evasion
 #### XGBoost Detector Hyperparameters.
 
 As we can see from the
-results in Figures 26, 27, 28, 29, 30, 31, 32, and 33 that in general the number of estimators has a significant impact on both ROC-AUC and on PR-AUC until a certain point which around 50 estimators and above usually there is improvements, but relatively smaller. In most cases, the maximum depth of the trees has a very light impact on the results when the number of estimators is 50 or more. 
+results in Figures 17, 18, 19, 20, 21, 22, 23, and 24 that in general the number of estimators has a significant impact on both ROC-AUC and on PR-AUC until a certain point which around 50 estimators and above usually there is improvements, but relatively smaller. In most cases, the maximum depth of the trees has a very light impact on the results when the number of estimators is 50 or more. 
 
-<center><img src="hidden_sizes_ablation_codrna_opt_2_pr.png" alt="" width="600" height="500"></center>
+#### Figure 17: 
+
+Comparing ROC-AUC for detector based on XGBoost classifier with different hyperparameters. Target: XGBoost, dataset: codrna, attack method: OPT, norm: $L_2$:
+
+<center><img src="xgboost_ablation_codrna_opt_2_roc.png" alt="" width="600" height="500"></center>
+
+#### Figure 18: 
+
+Comparing PRC-AUC for detector based on XGBoost classifier with different hyperparameters. Target: XGBoost, dataset: codrna, attack method: OPT, norm: $L_2$:
+
+<center><img src="xgboost_ablation_codrna_opt_2_pr.png" alt="" width="600" height="500"></center>
+
+
+#### Figure 19: 
+
+Comparing ROC-AUC for detector based on XGBoost classifier with different hyperparameters. Target: XGBoost, dataset: codrna, attack method: OPT, norm: $L_{\infty}$:
+
+<center><img src="xgboost_ablation_codrna_opt_inf_roc.png" alt="" width="600" height="500"></center>
+
+#### Figure 20: 
+
+Comparing PRC-AUC for detector based on XGBoost classifier with different hyperparameters. Target: XGBoost, dataset: codrna, attack method: OPT, norm: $L_{\infty}$:
+
+<center><img src="xgboost_ablation_codrna_opt_inf_pr.png" alt="" width="600" height="500"></center>
+
+
+#### Figure 21: 
+
+Comparing ROC-AUC for detector based on XGBoost classifier with different hyperparameters. Target: XGBoost, dataset: sensorless, attack method: HopSkipJumpAttack, norm: $L_2$:
+
+<center><img src="xgboost_ablation_sensorless_hsja_2_roc.png" alt="" width="600" height="500"></center>
+
+
+#### Figure 22: 
+
+Comparing PRC-AUC for detector based on XGBoost classifier with different hyperparameters. Target: XGBoost, dataset: sensorless, attack method: HopSkipJumpAttack, norm: $L_2$:
+
+<center><img src="xgboost_ablation_sensorless_hsja_2_pr.png" alt="" width="600" height="500"></center>
+
+
+#### Figure 23: 
+
+Comparing ROC-AUC for detector based on XGBoost classifier with different hyperparameters. Target: XGBoost, dataset: sensorless, attack method: HopSkipJumpAttack, norm: $L_{\infty}$:
+
+<center><img src="xgboost_ablation_sensorless_hsja_inf_roc.png" alt="" width="600" height="500"></center>
+
+#### Figure 24: 
+
+Comparing PRC-AUC for detector based on XGBoost classifier with different hyperparameters. Target: XGBoost, dataset: sensorless, attack method: HopSkipJumpAttack, norm: $L_{\infty}$:
+
+<center><img src="xgboost_ablation_sensorless_hsja_inf_pr.png" alt="" width="600" height="500"></center>
 
 
 ## Tree Models Performance Using Less Data
