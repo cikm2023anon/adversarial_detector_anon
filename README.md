@@ -5,7 +5,8 @@
 1. [Full Metrics Differences Figures](#full-metrics-differences-figures)
 2. [XGBoost Full Experiments Results](#xgboost-full-experiments-results)
 3. [RandomForest Full Experiments Results](#randomforest-full-experiments-results)
-4. [Detector Ablation Study](#detector-ablation-study)
+4. [Adversarial Samples Information](#adversarial-samples-information)
+5. [Detector Ablation Study](#detector-ablation-study)
 
 ## Full Metrics Differences Figures
 
@@ -3176,6 +3177,30 @@ In Tables 6,7,8,9 and 10 we can see the raw metrics of the experiments for each 
     </tr>
   </tbody>
 </table>
+
+## Adversarial Samples Information 
+
+In the following tables, we calculated several statistics about the perturbations generated in our various experiments split by target model type and attack method. Interesting behaviors we noticed:
+    * We can see that for SignOPT and OPT attacks in all of the experiments, a perturbation was applied to all of the features (max features changed is equal to the mean, which is also equal to the number of features for each dataset).
+    * The mean perturbation size for datasets adult and drybean seem very high for attack methods HopSkipJumpAttack, Cube, and LeafTuple.
+
+### XGBoost Perturbation Statistics
+
+In Tables 11, 12, 13, 14, and 15 we can see the adversarial samples statistics for XGBoost experiments.
+
+#### Table 11: XGBoost Sign-OPT perturbations statistics
+
+#### Table 12: XGBoost OPT perturbations statistics
+
+#### Table 13: XGBoost HSJA perturbations statistics
+
+#### Table 14: XGBoost Cube perturbations statistics
+
+#### Table 15: XGBoost Leaf-Tuple perturbations statistics
+
+
+### RandomForest Perturbation Statistics
+
 
 ## Detector Ablation Study
 
