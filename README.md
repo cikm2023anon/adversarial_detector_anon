@@ -5193,7 +5193,92 @@ Comparing PRC-AUC for detector based on XGBoost classifier with different hyperp
 
 #### KNN
 
+We tested KNN performance with different Ks to investigate how much it changed the detector performance metrics and compared it to the results we got in our original experiments.
+We used KNN based on Facebook AI fast similarity search implemented in DESlib (https://github.com/scikit-learn-contrib/DESlib) due to time consideration for cases where the feature count is relatively high. In Figures 33,34, 35 and 36 we can see a comparison of ROC-AUC and PR-AUC of KNN classifier with different values of k neighbors. Additionally, added the performance of KNN on the original representation of the dataset and the metric values of the original experiments done with our new method with XGBoost classifier as the detector. In all of the experiments, we can see the relative stability of the values with different K values. Additionally, the metric values with the XGBoost classifier are higher.
+
+##### Figure 33:
+
+KNN classifier adversarial detector performance. Attack: OPT | Dataset: codrna | Norm: $L_2$:
+
+<center><img src="different_ks_codrna_opt_2.png" alt="" width="600" height="500"></center>
+
+##### Figure 34:
+
+KNN classifier adversarial detector performance. Attack: OPT | Dataset: codrna | Norm: $L_{\infty}$:
+
+<center><img src="different_ks_codrna_opt_inf.png" alt="" width="600" height="500"></center>
+
+##### Figure 35:
+
+KNN classifier adversarial detector performance. Attack: HopSkipJumpAttack | Dataset: sensorless | Norm: $L_2$:
+
+<center><img src="different_ks_sensorless_hsja_2.png" alt="" width="600" height="500"></center>
+
+##### Figure 36:
+
+KNN classifier adversarial detector performance. Attack: HopSkipJumpAttack | Dataset: sensorless | Norm: $L_{\infty}$:
+
+<center><img src="different_ks_sensorless_hsja_inf.png" alt="" width="600" height="500"></center>
+
 ### Embeddings Dimensions.
+
+Here we tested how much the embedding dimension might affect the performance of our detector. We have two different embeddings - for the samples and for the nodes. In Figures 37, 38, 39, 40, 41, 42, 43, and  44 we can see heatmaps for compare the performance with different embedding size.
+The general pattern from the heatmaps in Figures 37, 38, 39 and 40 is that as our sample hidden size is larger and the node hidden size is lower, the results are better. In Figures 41, 42, 43 and 44 we don't see that pattern.
+
+##### Figure 37:
+
+ROC-AUC of different embedding sizes for samples and nodes. Target: XGBoost, dataset: codrna, attack method: OPT, norm: $L_2$:
+
+<center><img src="hidden_sizes_ablation_codrna_opt_2_roc.png" alt="" width="600" height="500"></center>
+
+##### Figure 38:
+
+PRC-AUC of different embedding sizes for samples and nodes. Target: XGBoost, dataset: codrna, attack method: OPT, norm: $L_2$:
+
+<center><img src="hidden_sizes_ablation_codrna_opt_2_pr.png" alt="" width="600" height="500"></center>
+
+
+##### Figure 39:
+
+ROC-AUC of different embedding sizes for samples and nodes. Target: XGBoost, dataset: codrna, attack method: OPT, norm: $L_\infty$:
+
+<center><img src="hidden_sizes_ablation_codrna_opt_inf_roc.png" alt="" width="600" height="500"></center>
+
+
+##### Figure 40:
+
+PRC-AUC of different embedding sizes for samples and nodes. Target: XGBoost, dataset: codrna, attack method: OPT, norm: $L_\infty$:
+
+<center><img src="hidden_sizes_ablation_codrna_opt_inf_pr.png" alt="" width="600" height="500"></center>
+
+
+##### Figure 41:
+
+ROC-AUC of different embedding sizes for samples and nodes. Target: RandomForest, dataset: sensorless, attack method: HSJA, norm: $L_2$:
+
+<center><img src="hidden_sizes_ablation_sensorless_hsja_2_roc.png" alt="" width="600" height="500"></center>
+
+
+##### Figure 42:
+
+PRC-AUC of different embedding sizes for samples and nodes. Target: RandomForest, dataset: sensorless, attack method: HSJA, norm: $L_2$:
+
+<center><img src="hidden_sizes_ablation_sensorless_hsja_2_pr.png" alt="" width="600" height="500"></center>
+
+
+##### Figure 43:
+
+ROC-AUC of different embedding sizes for samples and nodes. Target: RandomForest, dataset: sensorless, attack method: HSJA, norm: $L_\infty$:
+
+<center><img src="hidden_sizes_ablation_sensorless_hsja_inf_roc.png" alt="" width="600" height="500"></center>
+
+
+##### Figure 44:
+
+PRC-AUC of different embedding sizes for samples and nodes. Target: RandomForest, dataset: sensorless, attack method: HSJA, norm: $L_\infty$:
+
+<center><img src="hidden_sizes_ablation_sensorless_hsja_inf_pr.png" alt="" width="600" height="500"></center>
+
 
 
 ## Tree Models Performance Using Less Data
