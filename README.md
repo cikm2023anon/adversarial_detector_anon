@@ -3190,26 +3190,188 @@ In Tables 11, 12, 13, 14, and 15 we can see the adversarial samples statistics f
 
 #### Table 11: XGBoost Sign-OPT perturbations statistics
 
-|Dataset name | Max #features changed | Mean #features changed | Mean \|\|$L_2$\|\| perturbations | Max #features changed | Mean #features changed | Mean \|\|$L_{\infty}$\|\| perturbations  |
-|---|----|----|----|----|----|----|
-|breast-cancer 	 |	 10 	 |	 10.0 	 |	 0.3148	 |	 10 	 |	 10.0 	 |	 0.2514| 
-|covtype     	 |	 54 	 |	 54.0 	 |	 0.058	 |	 54 	 |	 54.0 	 |	 0.0433 | 
-|cod-rna  	 |	 8 	 |	 8.0 	 |	 0.0405	 |	 8 	 |	 8.0 	 |	 0.0366| 
-|diabetes  	 |	 8 	 |	 8.0 	 |	 0.0567	 |	 8 	 |	 8.0 	 |	 0.0604| 
-|Fashion-MNIST  	 |	 784 	 |	 784.0 	 |	 0.0514	 |	 784 	 |	 784.0 	 |	 0.0423 |
-|ijcnn1  	 |	 22 	 |	 22.0 	 |	 0.0425	 |	 22 	 |	 22.0 	 |	 0.0419| 
-|MNIST  	 |	 784 	 |	 784.0 	 |	 0.06	 |	 784 	 |	 784.0 	 |	 0.048 | 
-|Sensorless 	 |	 48 	 |	 48.0 	 |	 0.0168	 |	 48 	 |	 48.0 	 |	 0.0194| 
-|webspam 	 |	 254 	 |	 254.0 	 |	 0.0051	 |	 254 	 |	 254.0 	 |	 0.0065 |
-|MNIST 2 vs. 6 	 |	 784 	 |	 784.0 	 |	 0.2907	 |	 784 	 |	 784.0 	 |	 0.2869| 
-|electricity 	 |	 8 	 |	 8.0 	 |	 0.01	 |	 8 	 |	 8.0 	 |	 0.0072| 
-|drybean   	 |	 16 	 |	 16.0 	 |	 0.0176	 |	 16 	 |	 16.0 	 |	 0.0103 | 
-|adult   	 |	 14 	 |	 14.0 	 |	 0.93	 |	 14 	 |	 14.0 	 |	 0.745| 
-|banknote  	 |	 4 	 |	 4.0 	 |	 1.6709	 |	 4 	 |	 4.0 	 |	 1.7985| 
-|gender-by-voice  	 |	 20 	 |	 20.0 	 |	 0.0243	 |	 20 	 |	 20.0 	 |	 0.0296 | 
-|waveform   	 |	 40 	 |	 40.0 	 |	 0.8176	 |	 40 	 |	 40.0 	 |	 0.7742 | 
-|wind   	 |	 14 	 |	 14.0 	 |	 1.1833	 |	 14 	 |	 14.0 	 |	 0.8493|
-|speech  	 |	 400 	 |	 400.0 	 |	 1.6003	 |	 400 	 |	 400.0 	 |	 1.1995 | 
+<table>
+  <thead>
+    <tr>
+      <th rowspan="1"></th>
+      <th colspan="3">Sign-OPT $L_2$ </th>
+      <th colspan="3">Sign-OPT $L_\infty$ </th>
+    </tr>
+    <tr>
+      <th>Dataset name</th>
+      <th>Max #features changed</th>
+      <th>Mean #features changed</th>
+      <th>Mean ||$L_2$|| perturbations</th>
+      <th>Max #features changed</th>
+      <th>Mean #features changed</th>
+      <th>Mean ||$L_{\infty}$|| perturbations</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>breast-cancer</td>
+      <td>10</td>
+      <td>10.0</td>
+      <td>0.3148</td>
+      <td>10</td>
+      <td>10.0</td>
+      <td>0.2514</td>
+    </tr>
+    <tr>
+      <td>covtype</td>
+      <td>54</td>
+      <td>54.0</td>
+      <td>0.058</td>
+      <td>54</td>
+      <td>54.0</td>
+      <td>0.0433</td>
+    </tr>
+    <tr>
+      <td>cod-rna</td>
+      <td>8</td>
+      <td>8.0</td>
+      <td>0.0405</td>
+      <td>8</td>
+      <td>8.0</td>
+      <td>0.0366</td>
+    </tr>
+    <tr>
+      <td>diabetes</td>
+      <td>8</td>
+      <td>8.0</td>
+      <td>0.0567</td>
+      <td>8</td>
+      <td>8.0</td>
+      <td>0.0604</td>
+    </tr>
+    <tr>
+      <td>Fashion-MNIST</td>
+      <td>784</td>
+      <td>784.0</td>
+      <td>0.0514</td>
+      <td>784</td>
+      <td>784.0</td>
+      <td>0.0423</td>
+    </tr>
+    <tr>
+      <td>ijcnn1</td>
+      <td>22</td>
+      <td>22.0</td>
+      <td>0.0425</td>
+      <td>22</td>
+      <td>22.0</td>
+      <td>0.0419</td>
+    </tr>
+    <tr>
+      <td>MNIST</td>
+      <td>784</td>
+      <td>784.0</td>
+      <td>0.06</td>
+      <td>784</td>
+      <td>784.0</td>
+      <td>0.048</td>
+    </tr>
+    <tr>
+      <td>Sensorless</td>
+      <td>48</td>
+      <td>48.0</td>
+      <td>0.0168</td>
+      <td>48</td>
+      <td>48.0</td>
+      <td>0.0194</td>
+    </tr>
+    <tr>
+      <td>webspam</td>
+      <td>254</td>
+      <td>254.0</td>
+      <td>0.0051</td>
+      <td>254</td>
+      <td>254.0</td>
+      <td>0.0065</td>
+    </tr>
+    <tr>
+      <td>MNIST 2 vs. 6</td>
+      <td>784</td>
+      <td>784.0</td>
+      <td>0.2907</td>
+      <td>784</td>
+      <td>784.0</td>
+      <td>0.2869</td>
+    </tr>
+    <tr>
+      <td>electricity</td>
+      <td>8</td>
+      <td>8.0</td>
+      <td>0.01</td>
+      <td>8</td>
+      <td>8.0</td>
+      <td>0.0072</td>
+    </tr>
+    <tr>
+      <td>drybean</td>
+      <td>16</td>
+      <td>16.0</td>
+      <td>0.0176</td>
+      <td>16</td>
+      <td>16.0</td>
+      <td>0.0103</td>
+    </tr>
+    <tr>
+      <td>adult</td>
+      <td>14</td>
+      <td>14.0</td>
+      <td>0.93</td>
+      <td>14</td>
+      <td>14.0</td>
+      <td>0.745</td>
+    </tr>
+    <tr>
+      <td>banknote</td>
+      <td>4</td>
+      <td>4.0</td>
+      <td>1.6709</td>
+      <td>4</td>
+      <td>4.0</td>
+      <td>1.7985</td>
+    </tr>
+    <tr>
+      <td>gender-by-voice</td>
+      <td>20</td>
+      <td>20.0</td>
+      <td>0.0243</td>
+      <td>20</td>
+      <td>20.0</td>
+      <td>0.0296</td>
+    </tr>
+    <tr>
+      <td>waveform</td>
+      <td>40</td>
+      <td>40.0</td>
+      <td>0.8176</td>
+      <td>40</td>
+      <td>40.0</td>
+      <td>0.7742</td>
+    </tr>
+    <tr>
+      <td>wind</td>
+      <td>14</td>
+      <td>14.0</td>
+      <td>1.1833</td>
+      <td>14</td>
+      <td>14.0</td>
+      <td>0.8493</td>
+    </tr>
+    <tr>
+      <td>speech</td>
+      <td>400</td>
+      <td>400.0</td>
+      <td>1.6003</td>
+      <td>400</td>
+      <td>400.0</td>
+      <td>1.1995</td>
+    </tr>
+  </tbody>
+</table>
 
 
 #### Table 12: XGBoost OPT perturbations statistics
