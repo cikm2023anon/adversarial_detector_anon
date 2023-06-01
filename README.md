@@ -7,6 +7,8 @@
 3. [RandomForest Full Experiments Results](#randomforest-full-experiments-results)
 4. [Adversarial Samples Information](#adversarial-samples-information)
 5. [Detector Ablation Study](#detector-ablation-study)
+6. [Tree Models Performance Using Less Data](#tree-models-performance-using-less-data)
+7. [Inference Time Addition](#inference-time-addition)
 
 ## Full Metrics Differences Figures
 
@@ -4273,4 +4275,9 @@ As we can see from the
 results in Figures 26, 27, 28, 29, 30, 31, 32, and 33 that in general the number of estimators has a significant impact on both ROC-AUC and on PR-AUC until a certain point which around 50 estimators and above usually there is improvements, but relatively smaller. In most cases, the maximum depth of the trees has a very light impact on the results when the number of estimators is 50 or more. 
 
 <center><img src="hidden_sizes_ablation_codrna_opt_2_pr.png" alt="" width="600" height="500"></center>
+
+
+## Tree Models Performance Using Less Data
+
+## Inference Time Addition
 
