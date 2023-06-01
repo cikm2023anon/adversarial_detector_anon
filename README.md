@@ -3190,6 +3190,28 @@ In Tables 11, 12, 13, 14, and 15 we can see the adversarial samples statistics f
 
 #### Table 11: XGBoost Sign-OPT perturbations statistics
 
+|Dataset name | Max #features changed | Mean #features changed | Mean \|\|$L_2$\|\| perturbations | Max #features changed | Mean #features changed | Mean \|\|$L_{\infty}$\|\| perturbations  |
+|---|----|----|----|----|----|----|
+|breast-cancer 	 |	 10 	 |	 10.0 	 |	 0.3148	 |	 10 	 |	 10.0 	 |	 0.2514| 
+|covtype     	 |	 54 	 |	 54.0 	 |	 0.058	 |	 54 	 |	 54.0 	 |	 0.0433 | 
+|cod-rna  	 |	 8 	 |	 8.0 	 |	 0.0405	 |	 8 	 |	 8.0 	 |	 0.0366| 
+|diabetes  	 |	 8 	 |	 8.0 	 |	 0.0567	 |	 8 	 |	 8.0 	 |	 0.0604| 
+|Fashion-MNIST  	 |	 784 	 |	 784.0 	 |	 0.0514	 |	 784 	 |	 784.0 	 |	 0.0423 |
+|ijcnn1  	 |	 22 	 |	 22.0 	 |	 0.0425	 |	 22 	 |	 22.0 	 |	 0.0419| 
+|MNIST  	 |	 784 	 |	 784.0 	 |	 0.06	 |	 784 	 |	 784.0 	 |	 0.048 | 
+|Sensorless 	 |	 48 	 |	 48.0 	 |	 0.0168	 |	 48 	 |	 48.0 	 |	 0.0194| 
+|webspam 	 |	 254 	 |	 254.0 	 |	 0.0051	 |	 254 	 |	 254.0 	 |	 0.0065 |
+|MNIST 2 vs. 6 	 |	 784 	 |	 784.0 	 |	 0.2907	 |	 784 	 |	 784.0 	 |	 0.2869| 
+|electricity 	 |	 8 	 |	 8.0 	 |	 0.01	 |	 8 	 |	 8.0 	 |	 0.0072| 
+|drybean   	 |	 16 	 |	 16.0 	 |	 0.0176	 |	 16 	 |	 16.0 	 |	 0.0103 | 
+|adult   	 |	 14 	 |	 14.0 	 |	 0.93	 |	 14 	 |	 14.0 	 |	 0.745| 
+|banknote  	 |	 4 	 |	 4.0 	 |	 1.6709	 |	 4 	 |	 4.0 	 |	 1.7985| 
+|gender-by-voice  	 |	 20 	 |	 20.0 	 |	 0.0243	 |	 20 	 |	 20.0 	 |	 0.0296 | 
+|waveform   	 |	 40 	 |	 40.0 	 |	 0.8176	 |	 40 	 |	 40.0 	 |	 0.7742 | 
+|wind   	 |	 14 	 |	 14.0 	 |	 1.1833	 |	 14 	 |	 14.0 	 |	 0.8493|
+|speech  	 |	 400 	 |	 400.0 	 |	 1.6003	 |	 400 	 |	 400.0 	 |	 1.1995 | 
+
+
 #### Table 12: XGBoost OPT perturbations statistics
 
 #### Table 13: XGBoost HSJA perturbations statistics
@@ -3201,6 +3223,17 @@ In Tables 11, 12, 13, 14, and 15 we can see the adversarial samples statistics f
 
 ### RandomForest Perturbation Statistics
 
+In Tables 16, 17, 18, 19, and 20 we can see the adversarial samples statistics for RandomForest experiments.
+
+#### Table 16: RandomForest Sign-OPT perturbations statistics
+
+#### Table 17: RandomForest OPT perturbations statistics
+
+#### Table 18: RandomForest HSJA perturbations statistics
+
+#### Table 19: RandomForest Cube perturbations statistics
+
+#### Table 20: RandomForest Leaf-Tuple perturbations statistics
 
 ## Detector Ablation Study
 
