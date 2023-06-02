@@ -5288,6 +5288,11 @@ PRC-AUC of different embedding sizes for samples and nodes. Target: RandomForest
 <table>
   <thead>
     <tr>
+      <th rowspan="1"></th>
+      <th colspan="3">OPT $L_2$ </th>
+      <th colspan="3">OPT $L_\infty$ </th>
+    </tr>
+    <tr>
       <th>Dataset</th>
       <th>Splitted Dataset</th>
       <th>Original Dataset</th>
@@ -5467,6 +5472,11 @@ PRC-AUC of different embedding sizes for samples and nodes. Target: RandomForest
 
 <table>
   <thead>
+    <tr>
+      <th rowspan="1"></th>
+      <th colspan="3">OPT $L_2$ </th>
+      <th colspan="3">OPT $L_\infty$ </th>
+    </tr>
     <tr>
       <th>Dataset</th>
       <th>Splitted Dataset</th>
@@ -5648,6 +5658,11 @@ PRC-AUC of different embedding sizes for samples and nodes. Target: RandomForest
 <table>
   <thead>
     <tr>
+      <th rowspan="1"></th>
+      <th colspan="3">OPT $L_2$ </th>
+      <th colspan="3">OPT $L_\infty$ </th>
+    </tr>
+    <tr>
       <th>Dataset</th>
       <th>Splitted Dataset</th>
       <th>Original Dataset</th>
@@ -5828,6 +5843,11 @@ PRC-AUC of different embedding sizes for samples and nodes. Target: RandomForest
 <table>
   <thead>
     <tr>
+      <th rowspan="1"></th>
+      <th colspan="3">OPT $L_2$ </th>
+      <th colspan="3">OPT $L_\infty$ </th>
+    </tr>
+    <tr>
       <th>Dataset</th>
       <th>Splitted Dataset</th>
       <th>Original Dataset</th>
@@ -5998,6 +6018,11 @@ PRC-AUC of different embedding sizes for samples and nodes. Target: RandomForest
 
 <table>
   <thead>
+    <tr>
+      <th rowspan="1"></th>
+      <th colspan="3">OPT $L_2$ </th>
+      <th colspan="3">OPT $L_\infty$ </th>
+    </tr>
     <tr>
       <th>Dataset</th>
       <th>Splitted Dataset</th>
@@ -6179,6 +6204,11 @@ PRC-AUC of different embedding sizes for samples and nodes. Target: RandomForest
 <table>
   <thead>
     <tr>
+      <th rowspan="1"></th>
+      <th colspan="3">OPT $L_2$ </th>
+      <th colspan="3">OPT $L_\infty$ </th>
+    </tr>
+    <tr>
       <th>Dataset</th>
       <th>Splitted Dataset</th>
       <th>Original Dataset</th>
@@ -6358,6 +6388,11 @@ PRC-AUC of different embedding sizes for samples and nodes. Target: RandomForest
 
 <table>
   <thead>
+    <tr>
+      <th rowspan="1"></th>
+      <th colspan="3">OPT $L_2$ </th>
+      <th colspan="3">OPT $L_\infty$ </th>
+    </tr>
     <tr>
       <th>Dataset</th>
       <th>Splitted Dataset</th>
@@ -6539,6 +6574,11 @@ PRC-AUC of different embedding sizes for samples and nodes. Target: RandomForest
 <table>
   <thead>
     <tr>
+      <th rowspan="1"></th>
+      <th colspan="3">OPT $L_2$ </th>
+      <th colspan="3">OPT $L_\infty$ </th>
+    </tr>
+    <tr>
       <th>Dataset</th>
       <th>Splitted Dataset</th>
       <th>Original Dataset</th>
@@ -6718,6 +6758,11 @@ PRC-AUC of different embedding sizes for samples and nodes. Target: RandomForest
 
 <table>
   <thead>
+    <tr>
+      <th rowspan="1"></th>
+      <th colspan="3">OPT $L_2$ </th>
+      <th colspan="3">OPT $L_\infty$ </th>
+    </tr>
     <tr>
       <th>Dataset</th>
       <th>Splitted Dataset</th>
@@ -6900,6 +6945,11 @@ PRC-AUC of different embedding sizes for samples and nodes. Target: RandomForest
 
 <table>
   <thead>
+    <tr>
+      <th rowspan="1"></th>
+      <th colspan="3">OPT $L_2$ </th>
+      <th colspan="3">OPT $L_\infty$ </th>
+    </tr>
     <tr>
       <th>Dataset</th>
       <th>Splitted Dataset</th>
