@@ -5283,6 +5283,7 @@ PRC-AUC of different embedding sizes for samples and nodes. Target: RandomForest
 
 ## Tree Models Performance Using Less Data
 
+### Table 21: Sign-OPT XGBoost Experiments - ROC-AUC Degradation
 
 |Dataset       | Splitted Dataset    |  Original Dataset | ROC-AUC Delta  | Splitted Dataset    |  Original Dataset | ROC-AUC Delta |
 |----|----|----|----|-----|-----|-----|
@@ -5305,6 +5306,7 @@ PRC-AUC of different embedding sizes for samples and nodes. Target: RandomForest
 |wind 	 |	 0.9301 	 |	 0.9391 	 |	 0.009 	 | 	 0.9294 	 |	 0.9424 	 |	 0.013 |
 |speech 	 |	 0.959 	 |	 0.9126 	 |	 -0.0464 	 | 	 0.4699 	 |	 0.9208 	 |	 0.4509 |
 
+### Table 22: OPT XGBoost Experiments - ROC-AUC Degradation
 
 |Dataset       | Splitted Dataset    |  Original Dataset | ROC-AUC Delta  | Splitted Dataset    |  Original Dataset | ROC-AUC Delta |
 |----|----|----|----|-----|-----|-----|
@@ -5327,6 +5329,7 @@ PRC-AUC of different embedding sizes for samples and nodes. Target: RandomForest
 |wind 	 |	 0.9258 	 |	 0.9395 	 |	 0.0137 	 | 	 0.9171 	 |	 0.9336 	 |	 0.0165 |
 |speech 	 |	 0.6603 	 |	 0.8665 	 |	 0.2062 	 | 	 0.8167 	 |	 0.8467 	 |	 0.03 |
 
+### Table 23: HSJA XGBoost Experiments - ROC-AUC Degradation
 
 |Dataset       | Splitted Dataset    |  Original Dataset | ROC-AUC Delta  | Splitted Dataset    |  Original Dataset | ROC-AUC Delta |
 |----|----|----|----|-----|-----|-----|
@@ -5349,6 +5352,7 @@ PRC-AUC of different embedding sizes for samples and nodes. Target: RandomForest
 |wind 	 |	 0.9246 	 |	 0.9282 	 |	 0.0036 	 | 	 0.9347 	 |	 0.9463 	 |	 0.0116 |
 |speech 	 |	 0.7473 	 |	 0.7711 	 |	 0.0238 	 | 	 0.8587 	 |	 1.0 	 |	 0.1413 |
 
+### Table 24: Cube XGBoost Experiments - ROC-AUC Degradation
 
 |Dataset       | Splitted Dataset    |  Original Dataset | ROC-AUC Delta  | Splitted Dataset    |  Original Dataset | ROC-AUC Delta |
 |----|----|----|----|-----|-----|-----|
@@ -5370,7 +5374,7 @@ PRC-AUC of different embedding sizes for samples and nodes. Target: RandomForest
 |waveform 	 |	 0.9475 	 |	 0.9599 	 |	 0.0124 	 | 	 0.9581 	 |	 0.9612 	 |	 0.0031 |
 |wind 	 |	 0.9373 	 |	 0.9451 	 |	 0.0078 	 | 	 0.9425 	 |	 0.937 	 |	 -0.0055 |
 
-
+### Table 25: Leaf-Tuple XGBoost Experiments - ROC-AUC Degradation
 
 |Dataset       | Splitted Dataset    |  Original Dataset | ROC-AUC Delta  | Splitted Dataset    |  Original Dataset | ROC-AUC Delta |
 |----|----|----|----|-----|-----|-----|
@@ -5393,6 +5397,7 @@ PRC-AUC of different embedding sizes for samples and nodes. Target: RandomForest
 |wind 	 |	 0.9328 	 |	 0.9529 	 |	 0.0201 	 | 	 0.9215 	 |	 0.9434 	 |	 0.0219 |
 |speech 	 |	 0.5328 	 |	 0.8716 	 |	 0.3388 	 | 	 0.6808 	 |	 0.8616 	 |	 0.1808 |
 
+### Table 26: Sign-OPT RandomForest Experiments - ROC-AUC Degradation
 
 |Dataset       | Splitted Dataset    |  Original Dataset | ROC-AUC Delta  | Splitted Dataset    |  Original Dataset | ROC-AUC Delta |
 |----|----|----|----|-----|-----|-----|
@@ -5415,6 +5420,7 @@ PRC-AUC of different embedding sizes for samples and nodes. Target: RandomForest
 |wind 	 |	 0.9179 	 |	 0.9196 	 |	 0.0017 	 | 	 0.9176 	 |	 0.9366 	 |	 0.019 |
 |speech 	 |	 -	 |	-	 |	 -	 |	- |	 -	 |	- |
 
+### Table 27: OPT RandomForest Experiments - ROC-AUC Degradation
 
 |Dataset       | Splitted Dataset    |  Original Dataset | ROC-AUC Delta  | Splitted Dataset    |  Original Dataset | ROC-AUC Delta |
 |----|----|----|----|-----|-----|-----|
@@ -5437,6 +5443,8 @@ PRC-AUC of different embedding sizes for samples and nodes. Target: RandomForest
 |wind 	 |	 0.9389 	 |	 0.9436 	 |	 0.0047 	 | 	 0.9452 	 |	 0.9553 	 |	 0.0101 |
 |speech |	 -	 |	-	 |	 -	 |	- |	 -	 |	-|
 
+### Table 28: HSJA RandomForest Experiments - ROC-AUC Degradation
+
 |Dataset       | Splitted Dataset    |  Original Dataset | ROC-AUC Delta  | Splitted Dataset    |  Original Dataset | ROC-AUC Delta |
 |----|----|----|----|-----|-----|-----|
 |breast\_cancer 	 |	 0.998 	 |	 0.9975 	 |	 -0.0005 	 | 	 0.9997 	 |	 0.9983 	 |	 -0.0014 |
@@ -5458,6 +5466,8 @@ PRC-AUC of different embedding sizes for samples and nodes. Target: RandomForest
 |wind 	 |	 0.9345 	 |	 0.9432 	 |	 0.0087 	 | 	 0.9292 	 |	 0.9321 	 |	 0.0029 |
 |speech |	 -	 |	-	 |	 -	 |	- |	 -	 |	-|
 
+### Table 29: Cube RandomForest Experiments - ROC-AUC Degradation
+
 |Dataset       | Splitted Dataset    |  Original Dataset | ROC-AUC Delta  | Splitted Dataset    |  Original Dataset | ROC-AUC Delta |
 |----|----|----|----|-----|-----|-----|
 |breast\_cancer 	 |	 0.998 	 |	 0.9969 	 |	 -0.0011 	 | 	 1.0 	 |	 0.9964 	 |	 -0.0036 |
@@ -5478,6 +5488,10 @@ PRC-AUC of different embedding sizes for samples and nodes. Target: RandomForest
 |waveform 	 |	 0.9731 	 |	 0.975 	 |	 0.0019 	 | 	 0.9567 	 |	 0.9676 	 |	 0.0109 |
 |wind |	 -	 |	-	 |	 -	 |	- |	 -	 |	-|
 |speech |	 -	 |	-	 |	 -	 |	- |	 -	 |	-|
+
+
+### Table 30: Leaf-Tuple RandomForest Experiments - ROC-AUC Degradation
+
 
 |Dataset       | Splitted Dataset    |  Original Dataset | ROC-AUC Delta  | Splitted Dataset    |  Original Dataset | ROC-AUC Delta |
 |----|----|----|----|-----|-----|-----|
