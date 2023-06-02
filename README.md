@@ -7137,47 +7137,40 @@ Our method adds new steps for the inference phase since we need to extract the n
 
 ### Original Inference Time
 
-First, we check how much time it takes to extract a prediction without any of our method steps. We can see the histogram in Figure \ref{fig:prediction_time_original}, which is the time of getting a prediction from a tree ensemble classifier.
+First, we check how much time it takes to extract a prediction without any of our method steps. We can see the histogram in Figure 45, which is the time of getting a prediction from a tree ensemble classifier.
 
-\begin{figure}
-  \centering
-  \includegraphics[width=\linewidth]{images/prediction_time_original.png}
-  \caption{Histogram of original representation prediction time latency in the resolution of seconds. }
-  \label{fig:prediction_time_original}
-  \Description{An histogram with a mean of 0.009 and std of 0.009 shows how long it takes to extract tree ensemble prediction without our method.}
-\end{figure}
+##### Figure 45: Histogram of original representation prediction time latency in the resolution of seconds
+
+<center><img src="prediction_time_original.png" alt="" width="600" height="500"></center>
 
 
-\subsection{Dataset Preperation} In Figure \ref{fig:prepare_dataset}, we can see the histogram in the resolution of seconds of how much time constructing a dataset of 1 million samples (a hyperparameter that needs to be optimized for each case) of sampled triplets as described in Subsection \ref{subsec:new_samples_embedding}.
 
-\begin{figure}
-  \centering
-  \includegraphics[width=\linewidth]{images/prepare_dataset.png}
-  \caption{Histogram of dataset preparation time latency in the resolution of seconds. }
-  \label{fig:prepare_dataset}
-  \Description{An histogram with a mean of 5.660 and std of 1.270 shows how long it takes to prepare a new dataset to optimize the new sample representations.}
-\end{figure}
+### Dataset Preperation 
+
+In Figure 46, we can see the histogram in the resolution of seconds of how much time constructing a dataset of 1 million samples (a hyperparameter that needs to be optimized for each case) of sampled triplets as described in the paper.
+
+##### Figure 46: Histogram of dataset preparation time latency in the resolution of seconds.
+
+<center><img src="prepare_dataset.png" alt="" width="600" height="500"></center>
 
 
-\subsection{Representation Optimization} When optimizing the representation of new samples using the embedding model, it is a gradient descent process to update a random initialized embeddings matrix. In Figure \ref{fig:rep_opt_time_addition}, we can see the histogram in the resolution of seconds of how much time the optimization phase adds. As we can see, extracting the new sample representation takes around 8 seconds on average. These numbers are for our experiments in which we used three epochs on a dataset of 1 million samples.
+##### Representation Optimization
 
-\begin{figure}
-  \centering
-  \includegraphics[width=\linewidth]{images/optimizing_reps_hist.png}
-  \caption{Histogram of representation optimization time latency in the resolution of seconds. }
-  \label{fig:rep_opt_time_addition}
-  \Description{An histogram with a mean of 8.441 and std of 2.125 shows how long it takes to optimize the new sample representations.}
-\end{figure}
+When optimizing the representation of new samples using the embedding model, it is a gradient descent process to update a random initialized embeddings matrix. In Figure 47, we can see the histogram in the resolution of seconds of how much time the optimization phase adds. As we can see, extracting the new sample representation takes around 8 seconds on average. These numbers are for our experiments in which we used three epochs on a dataset of 1 million samples.
 
-\subsection{New Vector Inference Time} In Figure \ref{fig:prediction_time_ratio}, we can see the histogram of the ratio between the original prediction time latency and the prediction time latency of the new sample vector, which is a concatenation of our new representation and the original vector. As we can see, on average, the prediction time is about twice the original time, but there are cases the prediction time decreases, although we add 250 features (the size of samples embedding in our experiments). 
 
-\begin{figure}
-  \centering
-  \includegraphics[width=\linewidth]{images/prediction_time_ratio.png}
-  \caption{Histogram of the ratio between new and original vector prediction time.}
-  \label{fig:prediction_time_ratio}
-  \Description{An histogram with a mean of 1.746 and std of 2.384 shows the ratio between the original prediction latency time to the new samples after contamination of the new embedding vector to the original features.}
-\end{figure}
+##### Figure 47: Histogram of representation optimization time latency in the resolution of seconds.
+
+<center><img src="optimizing_reps_hist.png" alt="" width="600" height="500"></center>
+
+
+###### New Vector Inference Time
+
+In Figure 48, we can see the histogram of the ratio between the original prediction time latency and the prediction time latency of the new sample vector, which is a concatenation of our new representation and the original vector. As we can see, on average, the prediction time is about twice the original time, but there are cases the prediction time decreases, although we add 250 features (the size of samples embedding in our experiments). 
+
+##### Figure 48: Histogram of the ratio between new and original vector prediction time.
+
+<center><img src="prediction_time_ratio.png" alt="" width="600" height="500"></center>
 
 
 As a final note, we would like to comment that in all of the implementations we developed, there was no focus on creating optimized code. We believe this can be highly optimized by redesigning the code and choosing the relevant hyperparameters. 
