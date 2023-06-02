@@ -3389,7 +3389,7 @@ In Tables 11, 12, 13, 14, and 15 we can see the adversarial samples statistics f
       <th>Dataset name</th>
       <th>Max #features changed</th>
       <th>Mean #features changed</th>
-      <th>Mean ||$L2|| perturbations</th>
+      <th>Mean ||L2|| perturbations</th>
       <th>Max #features changed</th>
       <th>Mean #features changed</th>
       <th>Mean ||L infinity || perturbations</th>
@@ -3574,7 +3574,7 @@ In Tables 11, 12, 13, 14, and 15 we can see the adversarial samples statistics f
       <th>Dataset name</th>
       <th>Max #features changed</th>
       <th>Mean #features changed</th>
-      <th>Mean ||$L2|| perturbations</th>
+      <th>Mean ||L2|| perturbations</th>
       <th>Max #features changed</th>
       <th>Mean #features changed</th>
       <th>Mean ||L infinity || perturbations</th>
@@ -3759,7 +3759,7 @@ In Tables 11, 12, 13, 14, and 15 we can see the adversarial samples statistics f
       <th>Dataset name</th>
       <th>Max #features changed</th>
       <th>Mean #features changed</th>
-      <th>Mean ||$L2|| perturbations</th>
+      <th>Mean ||L2|| perturbations</th>
       <th>Max #features changed</th>
       <th>Mean #features changed</th>
       <th>Mean ||L infinity || perturbations</th>
@@ -3936,7 +3936,7 @@ In Tables 11, 12, 13, 14, and 15 we can see the adversarial samples statistics f
       <th>Dataset name</th>
       <th>Max #features changed</th>
       <th>Mean #features changed</th>
-      <th>Mean ||$L2|| perturbations</th>
+      <th>Mean ||L2|| perturbations</th>
       <th>Max #features changed</th>
       <th>Mean #features changed</th>
       <th>Mean ||L infinity || perturbations</th>
@@ -4145,7 +4145,7 @@ In Tables 16, 17, 18, 19, and 20 we can see the adversarial samples statistics f
       <th>Dataset name</th>
       <th>Max #features changed</th>
       <th>Mean #features changed</th>
-      <th>Mean ||$L2|| perturbations</th>
+      <th>Mean ||L2|| perturbations</th>
       <th>Max #features changed</th>
       <th>Mean #features changed</th>
       <th>Mean ||L infinity || perturbations</th>
@@ -4330,7 +4330,7 @@ In Tables 16, 17, 18, 19, and 20 we can see the adversarial samples statistics f
       <th>Dataset name</th>
       <th>Max #features changed</th>
       <th>Mean #features changed</th>
-      <th>Mean ||$L2|| perturbations</th>
+      <th>Mean ||L2|| perturbations</th>
       <th>Max #features changed</th>
       <th>Mean #features changed</th>
       <th>Mean ||L infinity || perturbations</th>
@@ -4515,7 +4515,7 @@ In Tables 16, 17, 18, 19, and 20 we can see the adversarial samples statistics f
       <th>Dataset name</th>
       <th>Max #features changed</th>
       <th>Mean #features changed</th>
-      <th>Mean ||$L2|| perturbations</th>
+      <th>Mean ||L2|| perturbations</th>
       <th>Max #features changed</th>
       <th>Mean #features changed</th>
       <th>Mean ||L infinity || perturbations</th>
@@ -4700,7 +4700,7 @@ In Tables 16, 17, 18, 19, and 20 we can see the adversarial samples statistics f
       <th>Dataset name</th>
       <th>Max #features changed</th>
       <th>Mean #features changed</th>
-      <th>Mean ||$L2|| perturbations</th>
+      <th>Mean ||L2|| perturbations</th>
       <th>Max #features changed</th>
       <th>Mean #features changed</th>
       <th>Mean ||L infinity || perturbations</th>
@@ -4885,7 +4885,7 @@ In Tables 16, 17, 18, 19, and 20 we can see the adversarial samples statistics f
       <th>Dataset name</th>
       <th>Max #features changed</th>
       <th>Mean #features changed</th>
-      <th>Mean ||$L2|| perturbations</th>
+      <th>Mean ||L2|| perturbations</th>
       <th>Max #features changed</th>
       <th>Mean #features changed</th>
       <th>Mean ||L infinity || perturbations</th>
