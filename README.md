@@ -5200,25 +5200,25 @@ We used KNN based on Facebook AI fast similarity search implemented in DESlib (h
 
 KNN classifier adversarial detector performance. Attack: OPT | Dataset: codrna | Norm: $L_2$:
 
-<center><img src="different_ks_codrna_opt_2.png" alt="" width="700" height="500"></center>
+<center><img src="different_ks_codrna_opt_2.png" alt="" width="800" height="500"></center>
 
 ##### Figure 34:
 
 KNN classifier adversarial detector performance. Attack: OPT | Dataset: codrna | Norm: $L_{\infty}$:
 
-<center><img src="different_ks_codrna_opt_inf.png" alt="" width="700" height="500"></center>
+<center><img src="different_ks_codrna_opt_inf.png" alt="" width="800" height="500"></center>
 
 ##### Figure 35:
 
 KNN classifier adversarial detector performance. Attack: HopSkipJumpAttack | Dataset: sensorless | Norm: $L_2$:
 
-<center><img src="different_ks_sensorless_hsja_2.png" alt="" width="700" height="500"></center>
+<center><img src="different_ks_sensorless_hsja_2.png" alt="" width="800" height="500"></center>
 
 ##### Figure 36:
 
 KNN classifier adversarial detector performance. Attack: HopSkipJumpAttack | Dataset: sensorless | Norm: $L_{\infty}$:
 
-<center><img src="different_ks_sensorless_hsja_inf.png" alt="" width="700" height="500"></center>
+<center><img src="different_ks_sensorless_hsja_inf.png" alt="" width="800" height="500"></center>
 
 ### Embeddings Dimensions.
 
