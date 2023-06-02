@@ -5283,9 +5283,270 @@ PRC-AUC of different embedding sizes for samples and nodes. Target: RandomForest
 
 ## Tree Models Performance Using Less Data
 
-TODO!!!
+
+|Dataset       | Splitted Dataset    |  Original Dataset | ROC-AUC Delta  | Splitted Dataset    |  Original Dataset | ROC-AUC Delta |
+|----|----|----|----|-----|-----|-----|
+|breast\_cancer 	 |	 0.9958 	 |	 0.9975 	 |	 0.0017 	 | 	 1.0 	 |	 0.9989 	 |	 -0.0011 |
+|covtype 	 |	 0.9843 	 |	 0.9865 	 |	 0.0022 	 | 	 0.9847 	 |	 0.9868 	 |	 0.0021 |
+|codrna 	 |	 0.9928 	 |	 0.994 	 |	 0.0012 	 | 	 0.9928 	 |	 0.994 	 |	 0.0012 |
+|diabetes 	 |	 0.7706 	 |	 0.8154 	 |	 0.0448 	 | 	 0.8108 	 |	 0.8075 	 |	 -0.0033 |
+|fashion 	 |	 0.9903 	 |	 0.9924 	 |	 0.0021 	 | 	 0.9899 	 |	 0.9925 	 |	 0.0026 |
+|ijcnn1 	 |	 0.9954 	 |	 0.9961 	 |	 0.0007 	 | 	 0.9951 	 |	 0.9962 	 |	 0.0011 |
+|mnist 	 |	 0.9991 	 |	 0.9997 	 |	 0.0006 	 | 	 0.9991 	 |	 0.9997 	 |	 0.0006 |
+|mnist26 	 |	 0.9995 	 |	 0.9999 	 |	 0.0004 	 | 	 0.9997 	 |	 0.9999 	 |	 0.0002 |
+|sensorless 	 |	 1.0 	 |	 1.0 	 |	 0.0 	 | 	 1.0 	 |	 1.0 	 |	 0.0 |
+|webspam 	 |	 0.9989 	 |	 0.9992 	 |	 0.0003 	 | 	 0.9989 	 |	 0.9992 	 |	 0.0003 |
+|electricity 	 |	 0.9614 	 |	 0.9783 	 |	 0.0169 	 | 	 0.9579 	 |	 0.9782 	 |	 0.0203 |
+|drybean 	 |	 0.9957 	 |	 0.9964 	 |	 0.0007 	 | 	 0.9941 	 |	 0.9953 	 |	 0.0012 |
+|adult 	 |	 0.913 	 |	 0.9254 	 |	 0.0124 	 | 	 0.9149 	 |	 0.9235 	 |	 0.0086 |
+|banknote 	 |	 1.0 	 |	 0.9992 	 |	 -0.0008 	 | 	 0.9983 	 |	 1.0 	 |	 0.0017 |
+|voice 	 |	 0.9957 	 |	 0.9992 	 |	 0.0035 	 | 	 0.9806 	 |	 0.9817 	 |	 0.0011 |
+|waveform 	 |	 0.962 	 |	 0.9847 	 |	 0.0227 	 | 	 0.9274 	 |	 0.9322 	 |	 0.0048 |
+|wind 	 |	 0.9301 	 |	 0.9391 	 |	 0.009 	 | 	 0.9294 	 |	 0.9424 	 |	 0.013 |
+|speech 	 |	 0.959 	 |	 0.9126 	 |	 -0.0464 	 | 	 0.4699 	 |	 0.9208 	 |	 0.4509 |
+
+
+|Dataset       | Splitted Dataset    |  Original Dataset | ROC-AUC Delta  | Splitted Dataset    |  Original Dataset | ROC-AUC Delta |
+|----|----|----|----|-----|-----|-----|
+|breast\_cancer 	 |	 0.9958 	 |	 0.9969 	 |	 0.0011 	 | 	 0.9978 	 |	 0.9978 	 |	 0.0 |
+|covtype 	 |	 0.9846 	 |	 0.9868 	 |	 0.0022 	 | 	 0.9845 	 |	 0.9864 	 |	 0.0019 |
+|codrna 	 |	 0.9926 	 |	 0.9939 	 |	 0.0013 	 | 	 0.9929 	 |	 0.9941 	 |	 0.0012 |
+|diabetes 	 |	 0.7669 	 |	 0.8217 	 |	 0.0548 	 | 	 0.8103 	 |	 0.8055 	 |	 -0.0048 |
+|fashion 	 |	 0.99 	 |	 0.9924 	 |	 0.0024 	 | 	 0.9903 	 |	 0.9926 	 |	 0.0023 |
+|ijcnn1 	 |	 0.9942 	 |	 0.996 	 |	 0.0018 	 | 	 0.9941 	 |	 0.9959 	 |	 0.0018 |
+|mnist 	 |	 0.9992 	 |	 0.9997 	 |	 0.0005 	 | 	 0.9992 	 |	 0.9997 	 |	 0.0005 |
+|mnist26 	 |	 0.9997 	 |	 0.9999 	 |	 0.0002 	 | 	 0.9997 	 |	 0.9999 	 |	 0.0002 |
+|sensorless 	 |	 1.0 	 |	 1.0 	 |	 0.0 	 | 	 1.0 	 |	 1.0 	 |	 0.0 |
+|webspam 	 |	 0.9989 	 |	 0.9992 	 |	 0.0003 	 | 	 0.999 	 |	 0.9993 	 |	 0.0003 |
+|electricity 	 |	 0.9529 	 |	 0.9767 	 |	 0.0238 	 | 	 0.9546 	 |	 0.9735 	 |	 0.0189 |
+|drybean 	 |	 0.9945 	 |	 0.9967 	 |	 0.0022 	 | 	 0.9951 	 |	 0.9967 	 |	 0.0016 |
+|adult 	 |	 0.9191 	 |	 0.9291 	 |	 0.01 	 | 	 0.8808 	 |	 0.8952 	 |	 0.0144 |
+|banknote 	 |	 1.0 	 |	 1.0 	 |	 0.0 	 | 	 1.0 	 |	 1.0 	 |	 0.0 |
+|voice 	 |	 0.9986 	 |	 0.9997 	 |	 0.0011 	 | 	 1.0 	 |	 1.0 	 |	 0.0 |
+|waveform 	 |	 0.9287 	 |	 0.9341 	 |	 0.0054 	 | 	 0.9662 	 |	 0.9777 	 |	 0.0115 |
+|wind 	 |	 0.9258 	 |	 0.9395 	 |	 0.0137 	 | 	 0.9171 	 |	 0.9336 	 |	 0.0165 |
+|speech 	 |	 0.6603 	 |	 0.8665 	 |	 0.2062 	 | 	 0.8167 	 |	 0.8467 	 |	 0.03 |
+
+
+|Dataset       | Splitted Dataset    |  Original Dataset | ROC-AUC Delta  | Splitted Dataset    |  Original Dataset | ROC-AUC Delta |
+|----|----|----|----|-----|-----|-----|
+|breast\_cancer 	 |	 0.9994 	 |	 0.9969 	 |	 -0.0025 	 | 	 0.9997 	 |	 0.9989 	 |	 -0.0005 |
+|covtype 	 |	 0.9851 	 |	 0.9856 	 |	 0.0005 	 | 	 0.9843 	 |	 0.9867 	 |	 0.0024 |
+|codrna 	 |	 0.9929 	 |	 0.9941 	 |	 0.0012 	 | 	 0.9927 	 |	 0.9939 	 |	 0.0012 |
+|diabetes 	 |	 0.7996 	 |	 0.8215 	 |	 0.0219 	 | 	 0.8119 	 |	 0.82 	 |	 0.0204 |
+|fashion 	 |	 0.99 	 |	 0.9925 	 |	 0.0025 	 | 	 0.9901 	 |	 0.9926 	 |	 0.0025 |
+|ijcnn1 	 |	 0.9949 	 |	 0.9956 	 |	 0.0007 	 | 	 0.9945 	 |	 0.9959 	 |	 0.0014 |
+|mnist 	 |	 0.9991 	 |	 0.9997 	 |	 0.0006 	 | 	 0.9992 	 |	 0.9997 	 |	 0.0005 |
+|mnist26 	 |	 0.9996 	 |	 0.9999 	 |	 0.0003 	 | 	 0.9998 	 |	 0.9999 	 |	 0.0001 |
+|sensorless 	 |	 1.0 	 |	 1.0 	 |	 0.0 	 | 	 1.0 	 |	 1.0 	 |	 0.0 |
+|webspam 	 |	 0.9989 	 |	 0.9992 	 |	 0.0003 	 | 	 0.9989 	 |	 0.9992 	 |	 0.0003 |
+|electricity 	 |	 0.9526 	 |	 0.9733 	 |	 0.0207 	 | 	 0.9567 	 |	 0.98 	 |	 0.0233 |
+|dry_bean 	 |	 0.9924 	 |	 0.9949 	 |	 0.0025 	 | 	 0.9939 	 |	 0.9956 	 |	 0.0017 |
+|adult 	 |	 0.9103 	 |	 0.9196 	 |	 0.0093 	 | 	 0.915 	 |	 0.9328 	 |	 0.0178 |
+|banknote 	 |	 0.9966 	 |	 1.0 	 |	 0.0034 	 | 	 1.0 	 |	 1.0 	 |	 0.0 |
+|voice 	 |	 0.994 	 |	 0.996 	 |	 0.002 	 | 	 0.9986 	 |	 0.9995 	 |	 0.0009 |
+|waveform 	 |	 0.9605 	 |	 0.9627 	 |	 0.0022 	 | 	 0.9466 	 |	 0.9574 	 |	 0.0108 |
+|wind 	 |	 0.9246 	 |	 0.9282 	 |	 0.0036 	 | 	 0.9347 	 |	 0.9463 	 |	 0.0116 |
+|speech 	 |	 0.7473 	 |	 0.7711 	 |	 0.0238 	 | 	 0.8587 	 |	 1.0 	 |	 0.1413 |
+
+
+|Dataset       | Splitted Dataset    |  Original Dataset | ROC-AUC Delta  | Splitted Dataset    |  Original Dataset | ROC-AUC Delta |
+|----|----|----|----|-----|-----|-----|
+|breast\_cancer 	 |	 0.9997 	 |	 0.998 	 |	 -0.0017 	 | 	 0.9964 	 |	 0.9966 	 |	 0.0002 |
+|covtype 	 |	 0.9852 	 |	 0.9873 	 |	 0.0021 	 | 	 0.9847 	 |	 0.9862 	 |	 0.0015 |
+|codrna 	 |	 0.9928 	 |	 0.994 	 |	 0.0012 	 | 	 0.9929 	 |	 0.9941 	 |	 0.0012 |
+|diabetes 	 |	 0.7477 	 |	 0.8268 	 |	 0.0791 	 | 	 0.7765 	 |	 0.8072 	 |	 0.0307 |
+|fashion 	 |	 0.9903 	 |	 0.9925 	 |	 0.0022 	 | 	 0.99 	 |	 0.9927 	 |	 0.0027 |
+|ijcnn1 	 |	 0.9948 	 |	 0.9959 	 |	 0.0011 	 | 	 0.9945 	 |	 0.9959 	 |	 0.0014 |
+|mnist 	 |	 0.9992 	 |	 0.9997 	 |	 0.0005 	 | 	 0.9992 	 |	 0.9997 	 |	 0.0005 |
+|mnist26 	 |	 0.9997 	 |	 1.0 	 |	 0.0003 	 | 	 0.9995 	 |	 0.9999 	 |	 0.0004 |
+|sensorless 	 |	 1.0 	 |	 1.0 	 |	 0.0 	 | 	 1.0 	 |	 1.0 	 |	 0.0 |
+|webspam 	 |	 0.9989 	 |	 0.9993 	 |	 0.0004 	 | 	 0.9989 	 |	 0.9993 	 |	 0.0004 |
+|electricity 	 |	 0.9619 	 |	 0.9801 	 |	 0.0182 	 | 	 0.9528 	 |	 0.9746 	 |	 0.0218 |
+|drybean 	 |	 0.9935 	 |	 0.9951 	 |	 0.0016 	 | 	 0.9942 	 |	 0.9956 	 |	 0.0014 |
+|adult 	 |	 0.9153 	 |	 0.9263 	 |	 0.011 	 | 	 0.9142 	 |	 0.9302 	 |	 0.016 |
+|banknote 	 |	 1.0 	 |	 1.0 	 |	 0.0 	 | 	 1.0 	 |	 1.0 	 |	 0.0 |
+|voice 	 |	 1.0 	 |	 1.0 	 |	 0.0 	 | 	 0.9949 	 |	 0.9973 	 |	 0.0024 |
+|waveform 	 |	 0.9475 	 |	 0.9599 	 |	 0.0124 	 | 	 0.9581 	 |	 0.9612 	 |	 0.0031 |
+|wind 	 |	 0.9373 	 |	 0.9451 	 |	 0.0078 	 | 	 0.9425 	 |	 0.937 	 |	 -0.0055 |
+
+
+
+|Dataset       | Splitted Dataset    |  Original Dataset | ROC-AUC Delta  | Splitted Dataset    |  Original Dataset | ROC-AUC Delta |
+|----|----|----|----|-----|-----|-----|
+|breast\_cancer 	 |	 0.9986 	 |	 0.9978 	 |	 -0.0008 	 | 	 0.9961 	 |	 0.9972 	 |	 0.0011 |
+|covtype 	 |	 0.9845 	 |	 0.9868 	 |	 0.0023 	 | 	 0.9842 	 |	 0.9869 	 |	 0.0027 |
+|codrna 	 |	 0.993 	 |	 0.994 	 |	 0.001 	 | 	 0.9928 	 |	 0.9939 	 |	 0.0011 |
+|diabetes 	 |	 0.7662 	 |	 0.8114 	 |	 0.0452 	 | 	 0.7695 	 |	 0.8298 	 |	 0.0603 |
+|fashion 	 |	 0.9902 	 |	 0.9923 	 |	 0.0021 	 | 	 0.99 	 |	 0.9925 	 |	 0.0025 |
+|ijcnn1 	 |	 0.9953 	 |	 0.9963 	 |	 0.001 	 | 	 0.9944 	 |	 0.9963 	 |	 0.0019 |
+|mnist 	 |	 0.9992 	 |	 0.9997 	 |	 0.0005 	 | 	 0.9992 	 |	 0.9997 	 |	 0.0005 |
+|mnist26 	 |	 0.9997 	 |	 0.9999 	 |	 0.0002 	 | 	 0.9997 	 |	 0.9999 	 |	 0.0002 |
+|sensorless 	 |	 1.0 	 |	 1.0 	 |	 0.0 	 | 	 1.0 	 |	 1.0 	 |	 0.0 |
+|webspam 	 |	 0.9989 	 |	 0.9993 	 |	 0.0004 	 | 	 0.999 	 |	 0.9993 	 |	 0.0003 |
+|electricity 	 |	 0.9553 	 |	 0.9726 	 |	 0.0173 	 | 	 0.9509 	 |	 0.9732 	 |	 0.0223 |
+|drybean 	 |	 0.9956 	 |	 0.9962 	 |	 0.0006 	 | 	 0.9962 	 |	 0.9963 	 |	 0.0001 |
+|adult 	 |	 0.9161 	 |	 0.928 	 |	 0.0119 	 | 	 0.9004 	 |	 0.9147 	 |	 0.0143 |
+|banknote 	 |	 1.0 	 |	 1.0 	 |	 0.0 	 | 	 1.0 	 |	 1.0 	 |	 0.0 |
+|voice 	 |	 0.9914 	 |	 0.9971 	 |	 0.0057 	 | 	 0.9919 	 |	 0.9948 	 |	 0.0029 |
+|waveform 	 |	 0.9598 	 |	 0.9716 	 |	 0.0118 	 | 	 0.9487 	 |	 0.9556 	 |	 0.0069 |
+|wind 	 |	 0.9328 	 |	 0.9529 	 |	 0.0201 	 | 	 0.9215 	 |	 0.9434 	 |	 0.0219 |
+|speech 	 |	 0.5328 	 |	 0.8716 	 |	 0.3388 	 | 	 0.6808 	 |	 0.8616 	 |	 0.1808 |
+
+
+|Dataset       | Splitted Dataset    |  Original Dataset | ROC-AUC Delta  | Splitted Dataset    |  Original Dataset | ROC-AUC Delta |
+|----|----|----|----|-----|-----|-----|
+|breast\_cancer 	 |	 0.9952 	 |	 0.9972 	 |	 0.002 	 | 	 0.9965 	 |	 0.9975 	 |	 0.001 |
+|covtype 	 |	 0.9841 	 |	 0.9862 	 |	 0.0021 	 | 	 0.9844 	 |	 0.9864 	 |	 0.002 |
+|codrna 	 |	 0.9926 	 |	 0.994 	 |	 0.0014 	 | 	 0.9929 	 |	 0.994 	 |	 0.0011 |
+|diabetes 	 |	 0.7954 	 |	 0.8083 	 |	 0.0129 	 | 	 0.7848 	 |	 0.8162 	 |	 0.0314 |
+|fashion 	 |	 0.9904 	 |	 0.9924 	 |	 0.002 	 | 	 0.9901 	 |	 0.9925 	 |	 0.0024 |
+|ijcnn1 	 |	 0.9946 	 |	 0.9964 	 |	 0.0018 	 | 	 0.9956 	 |	 0.9958 	 |	 0.0002 |
+|mnist 	 |	 0.9993 	 |	 0.9997 	 |	 0.0004 	 | 	 0.9992 	 |	 0.9997 	 |	 0.0005 |
+|mnist26 	 |	 0.9995 	 |	 0.9999 	 |	 0.0004 	 | 	 0.9997 	 |	 0.9999 	 |	 0.0002 |
+|sensorless 	 |	 1.0 	 |	 1.0 	 |	 0.0 	 | 	 1.0 	 |	 1.0 	 |	 0.0 |
+|webspam 	 |	 0.9989 	 |	 0.9993 	 |	 0.0004 	 | 	 0.9989 	 |	 0.9993 	 |	 0.0004 |
+|electricity 	 |	 0.9525 	 |	 0.9741 	 |	 0.0216 	 | 	 0.9541 	 |	 0.9776 	 |	 0.0235 |
+|drybean 	 |	 0.9968 	 |	 0.9967 	 |	 -0.0001 	 | 	 0.9946 	 |	 0.9952 	 |	 0.0006 |
+|adult 	 |	 0.9037 	 |	 0.9209 	 |	 0.0172 	 | 	 0.9146 	 |	 0.9218 	 |	 0.0072 |
+|banknote 	 |	 1.0 	 |	 1.0 	 |	 0.0 	 | 	 1.0 	 |	 1.0 	 |	 0.0 |
+|voice 	 |	 0.9894 	 |	 0.9975 	 |	 0.0081 	 | 	 0.9921 	 |	 0.993 	 |	 0.0009 |
+|waveform 	 |	 0.957 	 |	 0.98 	 |	 0.023 	 | 	 0.9535 	 |	 0.9748 	 |	 0.0213 |
+|wind 	 |	 0.9179 	 |	 0.9196 	 |	 0.0017 	 | 	 0.9176 	 |	 0.9366 	 |	 0.019 |
+|speech 	 |	 -	 |	-	 |	 -	 |	- |	 -	 |	- |
+
+
+|Dataset       | Splitted Dataset    |  Original Dataset | ROC-AUC Delta  | Splitted Dataset    |  Original Dataset | ROC-AUC Delta |
+|----|----|----|----|-----|-----|-----|
+|breast\_cancer 	 |	 0.9992 	 |	 0.9972 	 |	 -0.002 	 | 	 0.9994 	 |	 0.9975 	 |	 -0.0019 |
+|covtype 	 |	 0.9844 	 |	 0.9868 	 |	 0.0024 	 | 	 0.9851 	 |	 0.9867 	 |	 0.0016 |
+|codrna 	 |	 0.9929 	 |	 0.994 	 |	 0.0011 	 | 	 0.9928 	 |	 0.9941 	 |	 0.0013 |
+|diabetes 	 |	 0.7532 	 |	 0.8033 	 |	 0.0501 	 | 	 0.8241 	 |	 0.8033 	 |	 -0.0208 |
+|fashion 	 |	 0.9903 	 |	 0.9924 	 |	 0.0021 	 | 	 0.9902 	 |	 0.9924 	 |	 0.0022 |
+|ijcnn1 	 |	 0.9943 	 |	 0.9958 	 |	 0.0015 	 | 	 0.9958 	 |	 0.996 	 |	 0.0002 |
+|mnist 	 |	 0.9993 	 |	 0.9997 	 |	 0.0004 	 | 	 0.9992 	 |	 0.9997 	 |	 0.0005 |
+|mnist26 	 |	 0.9998 	 |	 0.9999 	 |	 0.0001 	 | 	 0.9997 	 |	 0.9999 	 |	 0.0002 |
+|sensorless 	 |	 1.0 	 |	 1.0 	 |	 0.0 	 | 	 1.0 	 |	 1.0 	 |	 0.0 |
+|webspam 	 |	 0.999 	 |	 0.9992 	 |	 0.0002 	 | 	 0.9989 	 |	 0.9992 	 |	 0.0003 |
+|electricity 	 |	 0.9595 	 |	 0.9787 	 |	 0.0192 	 | 	 0.9502 	 |	 0.971 	 |	 0.0208 |
+|drybean 	 |	 0.9949 	 |	 0.9958 	 |	 0.0009 	 | 	 0.9962 	 |	 0.9969 	 |	 0.0007 |
+|adult 	 |	 0.9147 	 |	 0.9307 	 |	 0.016 	 | 	 0.9106 	 |	 0.9207 	 |	 0.0101 |
+|banknote 	 |	 1.0 	 |	 1.0 	 |	 0.0 	 | 	 1.0 	 |	 1.0 	 |	 0.0 |
+|voice 	 |	 0.999 	 |	 1.0 	 |	 0.001 	 | 	 0.996 	 |	 0.999 	 |	 0.003 |
+|waveform 	 |	 0.9652 	 |	 0.9705 	 |	 0.0053 	 | 	 0.9442 	 |	 0.9519 	 |	 0.0077 |
+|wind 	 |	 0.9389 	 |	 0.9436 	 |	 0.0047 	 | 	 0.9452 	 |	 0.9553 	 |	 0.0101 |
+|speech |	 -	 |	-	 |	 -	 |	- |	 -	 |	-|
+
+|Dataset       | Splitted Dataset    |  Original Dataset | ROC-AUC Delta  | Splitted Dataset    |  Original Dataset | ROC-AUC Delta |
+|----|----|----|----|-----|-----|-----|
+|breast\_cancer 	 |	 0.998 	 |	 0.9975 	 |	 -0.0005 	 | 	 0.9997 	 |	 0.9983 	 |	 -0.0014 |
+|covtype 	 |	 0.9843 	 |	 0.9865 	 |	 0.0022 	 | 	 0.9847 	 |	 0.9865 	 |	 0.0018 |
+|codrna |	 -	 |	-	 |	 -	 |	- |	 -	 |	-|
+|diabetes |	 -	 |	-	 |	 -	 |	- |	 -	 |	-|
+|fashion 	 |	 0.9903 	 |	 0.9925 	 |	 0.0022 	 | 	 0.9901 	 |	 0.9925 	 |	 0.0024 |
+|ijcnn1 	 |	 0.9944 	 |	 0.9963 	 |	 0.0019 	 | 	 0.9951 	 |	 0.9955 	 |	 0.0004 |
+|mnist 	 |	 0.9992 	 |	 0.9997 	 |	 0.0005 	 | 	 0.9992 	 |	 0.9997 	 |	 0.0005 |
+|mnist26 	 |	 0.9995 	 |	 1.0 	 |	 0.0005 	 | 	 0.9997 	 |	 0.9999 	 |	 0.0002 |
+|sensorless 	 |	 1.0 	 |	 1.0 	 |	 0.0 	 | 	 1.0 	 |	 1.0 	 |	 0.0 |
+|webspam 	 |	 0.9989 	 |	 0.9992 	 |	 0.0003 	 | 	 0.9989 	 |	 0.9992 	 |	 0.0003 |
+|electricity 	 |	 0.9575 	 |	 0.9736 	 |	 0.0161 	 | 	 0.957 	 |	 0.976 	 |	 0.019 |
+|dry_bean 	 |	 0.995 	 |	 0.995 	 |	 0.0 	 | 	 0.9943 	 |	 0.9964 	 |	 0.0021 |
+|adult 	 |	 0.9049 	 |	 0.9154 	 |	 0.0105 	 | 	 0.8973 	 |	 0.9133 	 |	 0.016 |
+|banknote 	 |	 0.9966 	 |	 1.0 	 |	 0.0034 	 | 	 1.0 	 |	 1.0 	 |	 0.0 |
+|voice 	 |	 1.0 	 |	 1.0 	 |	 0.0 	 | 	 0.999 	 |	 1.0 	 |	 0.001 |
+|waveform 	 |	 0.9412 	 |	 0.9548 	 |	 0.0136 	 | 	 0.9329 	 |	 0.945 	 |	 0.0121 |
+|wind 	 |	 0.9345 	 |	 0.9432 	 |	 0.0087 	 | 	 0.9292 	 |	 0.9321 	 |	 0.0029 |
+|speech |	 -	 |	-	 |	 -	 |	- |	 -	 |	-|
+
+|Dataset       | Splitted Dataset    |  Original Dataset | ROC-AUC Delta  | Splitted Dataset    |  Original Dataset | ROC-AUC Delta |
+|----|----|----|----|-----|-----|-----|
+|breast\_cancer 	 |	 0.998 	 |	 0.9969 	 |	 -0.0011 	 | 	 1.0 	 |	 0.9964 	 |	 -0.0036 |
+|covtype 	 |	 0.9843 	 |	 0.9865 	 |	 0.0022 	 | 	 0.9844 	 |	 0.9864 	 |	 0.002 |
+|codrna 	 |	 0.9927 	 |	 0.994 	 |	 0.0013 	 | 	 0.9929 	 |	 0.994 	 |	 0.0011 |
+|diabetes 	 |	 0.8086 	 |	 0.8138 	 |	 0.0052 	 | 	 0.7576 	 |	 0.8123 	 |	 0.0547 |
+|fashion 	 |	 0.9901 	 |	 0.9925 	 |	 0.0024 	 | 	 0.9903 	 |	 0.9925 	 |	 0.0022 |
+|ijcnn1 	 |	 0.9941 	 |	 0.9958 	 |	 0.0017 	 | 	 0.9946 	 |	 0.9962 	 |	 0.0016 |
+|mnist 	 |	 0.9992 	 |	 0.9997 	 |	 0.0005 	 | 	 0.9991 	 |	 0.9997 	 |	 0.0006 |
+|mnist26 	 |	 0.9995 	 |	 0.9999 	 |	 0.0004 	 | 	 0.9996 	 |	 0.9999 	 |	 0.0003 |
+|sensorless 	 |	 1.0 	 |	 1.0 	 |	 0.0 	 | 	 1.0 	 |	 1.0 	 |	 0.0 |
+|webspam 	 |	 0.9989 	 |	 0.9992 	 |	 0.0003 	 | 	 0.9989 	 |	 0.9992 	 |	 0.0003 |
+|electricity 	 |	 0.9449 	 |	 0.9714 	 |	 0.0265 	 | 	 0.963 	 |	 0.977 	 |	 0.014 |
+|drybean 	 |	 0.9947 	 |	 0.9943 	 |	 -0.0004 	 | 	 0.9933 	 |	 0.9951 	 |	 0.0018 |
+|adult 	 |	 0.9047 	 |	 0.9158 	 |	 0.0111 	 | 	 0.9215 	 |	 0.934 	 |	 0.0125 |
+|banknote 	 |	 0.9958 	 |	 0.9958 	 |	 0.0 	 | 	 1.0 	 |	 1.0 	 |	 0.0 |
+|voice 	 |	 0.987 	 |	 0.9916 	 |	 0.0046 	 | 	 0.9954 	 |	 0.9986 	 |	 0.0032 |
+|waveform 	 |	 0.9731 	 |	 0.975 	 |	 0.0019 	 | 	 0.9567 	 |	 0.9676 	 |	 0.0109 |
+|wind |	 -	 |	-	 |	 -	 |	- |	 -	 |	-|
+|speech |	 -	 |	-	 |	 -	 |	- |	 -	 |	-|
+
+|Dataset       | Splitted Dataset    |  Original Dataset | ROC-AUC Delta  | Splitted Dataset    |  Original Dataset | ROC-AUC Delta |
+|----|----|----|----|-----|-----|-----|
+|breast\_cancer 	 |	 1.0 	 |	 0.9975 	 |	 -0.0025 	 | 	 0.9969 	 |	 0.9969 	 |	 0.0 |
+|covtype 	|	 -	 |	-	 |	 -	 |	- |	 -	 |	- |
+|codrna 	 |	 0.9927 	 |	 0.994 	 |	 0.0013 	 | 	 0.9928 	 |	 0.994 	 |	 0.0012 |
+|diabetes |	 -	 |	-	 |	 -	 |	- |	 -	 |	-|
+|fashion 	 |	 0.99 	 |	 0.9924 	 |	 0.0024 	 | 	 0.9899 	 |	 0.9925 	 |	 0.0026 |
+|ijcnn1 	 |	 0.995 	 |	 0.996 	 |	 0.001 	 | 	 0.9949 	 |	 0.9958 	 |	 0.0009 |
+|mnist 	 |	 0.9992 	 |	 0.9997 	 |	 0.0005 	 | 	 0.9992 	 |	 0.9997 	 |	 0.0005 |
+|mnist26 	 |	 0.9998 	 |	 0.9999 	 |	 0.0001 	 | 	 0.9997 	 |	 0.9999 	 |	 0.0002 |
+|sensorless 	 |	 1.0 	 |	 1.0 	 |	 0.0 	 | 	 1.0 	 |	 1.0 	 |	 0.0 |
+|webspam 	 |	 0.999 	 |	 0.9992 	 |	 0.0002 	 | 	 0.999 	 |	 0.9992 	 |	 0.0002 |
+|electricity 	 |	 0.9546 	 |	 0.9785 	 |	 0.0239 	 | 	 0.948 	 |	 0.9726 	 |	 0.0246 |
+|drybean 	 |	 0.9953 	 |	 0.9959 	 |	 0.0006 	 | 	 0.9942 	 |	 0.9951 	 |	 0.0009 |
+|adult 	 |	 0.9211 	 |	 0.9298 	 |	 0.0087 	 | 	 0.9002 	 |	 0.9208 	 |	 0.0206 |
+|banknote 	 |	 0.9966 	 |	 1.0 	 |	 0.0034 	 | 	 0.9974 	 |	 1.0 	 |	 0.0026 |
+|voice 	 |	 0.9992 	 |	 0.9986 	 |	 -0.0006 	 | 	 0.9941 	 |	 0.9974 	 |	 0.0033 |
+|waveform 	 |	 0.9536 	 |	 0.9677 	 |	 0.0141 	 | 	 0.9359 	 |	 0.9615 	 |	 0.0256 |
+|wind 	 |	 0.9249 	 |	 0.9431 	 |	 0.0182 	 | 	 0.9334 	 |	 0.9356 	 |	 0.0022 |
+|speech 	|	 -	 |	-	 |	 -	 |	- |	 -	 |	- |
 
 ## Inference Time Addition
 
-TODO!!!
+Our method adds new steps for the inference phase since we need to extract the new representation of new samples. To understand the full impact of our method, we also calculated how much time we added to the inference time in our code for a single sample from each of our experiments.
 
+### Original Inference Time
+
+First, we check how much time it takes to extract a prediction without any of our method steps. We can see the histogram in Figure \ref{fig:prediction_time_original}, which is the time of getting a prediction from a tree ensemble classifier.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\linewidth]{images/prediction_time_original.png}
+  \caption{Histogram of original representation prediction time latency in the resolution of seconds. }
+  \label{fig:prediction_time_original}
+  \Description{An histogram with a mean of 0.009 and std of 0.009 shows how long it takes to extract tree ensemble prediction without our method.}
+\end{figure}
+
+
+\subsection{Dataset Preperation} In Figure \ref{fig:prepare_dataset}, we can see the histogram in the resolution of seconds of how much time constructing a dataset of 1 million samples (a hyperparameter that needs to be optimized for each case) of sampled triplets as described in Subsection \ref{subsec:new_samples_embedding}.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\linewidth]{images/prepare_dataset.png}
+  \caption{Histogram of dataset preparation time latency in the resolution of seconds. }
+  \label{fig:prepare_dataset}
+  \Description{An histogram with a mean of 5.660 and std of 1.270 shows how long it takes to prepare a new dataset to optimize the new sample representations.}
+\end{figure}
+
+
+\subsection{Representation Optimization} When optimizing the representation of new samples using the embedding model, it is a gradient descent process to update a random initialized embeddings matrix. In Figure \ref{fig:rep_opt_time_addition}, we can see the histogram in the resolution of seconds of how much time the optimization phase adds. As we can see, extracting the new sample representation takes around 8 seconds on average. These numbers are for our experiments in which we used three epochs on a dataset of 1 million samples.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\linewidth]{images/optimizing_reps_hist.png}
+  \caption{Histogram of representation optimization time latency in the resolution of seconds. }
+  \label{fig:rep_opt_time_addition}
+  \Description{An histogram with a mean of 8.441 and std of 2.125 shows how long it takes to optimize the new sample representations.}
+\end{figure}
+
+\subsection{New Vector Inference Time} In Figure \ref{fig:prediction_time_ratio}, we can see the histogram of the ratio between the original prediction time latency and the prediction time latency of the new sample vector, which is a concatenation of our new representation and the original vector. As we can see, on average, the prediction time is about twice the original time, but there are cases the prediction time decreases, although we add 250 features (the size of samples embedding in our experiments). 
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\linewidth]{images/prediction_time_ratio.png}
+  \caption{Histogram of the ratio between new and original vector prediction time.}
+  \label{fig:prediction_time_ratio}
+  \Description{An histogram with a mean of 1.746 and std of 2.384 shows the ratio between the original prediction latency time to the new samples after contamination of the new embedding vector to the original features.}
+\end{figure}
+
+
+As a final note, we would like to comment that in all of the implementations we developed, there was no focus on creating optimized code. We believe this can be highly optimized by redesigning the code and choosing the relevant hyperparameters. 
