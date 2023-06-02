@@ -12,17 +12,17 @@
 
 ## Full Metrics Differences Figures
 
-Here are all the different figures comparing our method to OC-Score and a detector based on the original representations of the dataset. For the experiments compared to the OC-score (Figures 1, 2, 3, 4, 5, 6, 7, and 8) the total mean and the median of each section is positive in all of them, which means that our metrics yielded better results for the new representation in most of our experiments. When looking at figures that compare our new method to the original representations (Figures 9, 10, 11, 12, 13, 14, 15 and 16) we can see the ROC-AUC and PR-AUC overall mean of the experiments is positive beside the experiments targeted XGBoost with $L_\infty$ norm which the overall mean is negative.
+Here are all the different figures comparing our method to OC-Score and a detector based on the original representations of the dataset. For the experiments compared to the OC-score (Figures 1, 2, 3, 4, 5, 6, 7, and 8) the total mean and the median of each section is positive in all of them, which means that our metrics yielded better results for the new representation in most of our experiments. When looking at figures that compare our new method to the original representations (Figures 9, 10, 11, 12, 13, 14, 15 and 16) we can see the ROC-AUC and PR-AUC overall mean of the experiments is positive beside the experiments targeted XGBoost with L infinity  norm which the overall mean is negative.
 
 ### Figure 1: 
 
-ROC-AUC differences for XGBoost experiments between our method and OC-score for $L2$ norm:
+ROC-AUC differences for XGBoost experiments between our method and OC-score for L2 norm:
 
 <center><img src="xgboost_roc_diff_per_attack_2.png" alt="" width="700" height="400"></center>
 
 ### Figure 2: 
 
-PRC-AUC differences for XGBoost experiments between our method and OC-score for $L2$ norm:
+PRC-AUC differences for XGBoost experiments between our method and OC-score for L2 norm:
 
 <center><img src="xgboost_pr_diff_per_attack_2.png" alt="" width="700" height="400"></center>
 
@@ -40,7 +40,7 @@ PRC-AUC differences for XGBoost experiments between our method and OC-score for 
 
 ### Figure 5: 
 
-PRC-AUC differences for XGBoost experiments between the new method and original representation for $L2$ norm:
+PRC-AUC differences for XGBoost experiments between the new method and original representation for L2 norm:
 
 <center><img src="xgboost_roc_diff_per_attack_2_old_rep.png" alt="" width="700" height="400"></center>
 
@@ -68,13 +68,13 @@ PRC-AUC differences for XGBoost experiments between the new method and original 
 
 ### Figure 9: 
 
-ROC-AUC differences for RandomForest experiments between our method and OC-score for $L2$ norm:
+ROC-AUC differences for RandomForest experiments between our method and OC-score for L2 norm:
 
 <center><img src="rf_roc_diff_per_attack_2.png" alt="" width="700" height="400"></center>
 
 ### Figure 10: 
 
-PRC-AUC differences for RandomForest experiments between our method and OC-score for $L2$ norm:
+PRC-AUC differences for RandomForest experiments between our method and OC-score for L2 norm:
 
 <center><img src="rf_pr_diff_per_attack_2.png" alt="" width="700" height="400"></center>
 
@@ -92,14 +92,14 @@ PRC-AUC differences for RandomForest experiments between our method and OC-score
 
 ### Figure 13: 
 
-ROC-AUC differences for RandomForest experiments between the new method and original representation for $L2$ norm:
+ROC-AUC differences for RandomForest experiments between the new method and original representation for L2 norm:
 
 <center><img src="rf_roc_diff_per_attack_2_old_rep.png" alt="" width="700" height="400"></center>
 
 
 ### Figure 14: 
 
-PRC-AUC differences for RandomForest experiments between the new method and original representation for $L2$ norm:
+PRC-AUC differences for RandomForest experiments between the new method and original representation for L2 norm:
 
 <center><img src="rf_pr_diff_per_attack_2_old_rep.png" alt="" width="700" height="400"></center>
 
@@ -129,8 +129,8 @@ In Tables 1,2,3,4 and 5 we can see the raw metrics of the experiments for each d
   <thead>
     <tr>
       <th rowspan="2"></th>
-      <th colspan="6">Sign-OPT $L2$ </th>
-      <th colspan="6">Sign-OPT $L_\infty$ </th>
+      <th colspan="6">Sign-OPT L2 </th>
+      <th colspan="6">Sign-OPT L infinity  </th>
     </tr>
     <tr>
       <th colspan="3">PRC-AUC</th>
@@ -435,8 +435,8 @@ In Tables 1,2,3,4 and 5 we can see the raw metrics of the experiments for each d
   <thead>
     <tr>
       <th rowspan="2"></th>
-      <th colspan="6">OPT $L2$ </th>
-      <th colspan="6">OPT $L_\infty$ </th>
+      <th colspan="6">OPT L2 </th>
+      <th colspan="6">OPT L infinity  </th>
     </tr>
     <tr>
       <th colspan="3">PRC-AUC</th>
@@ -740,8 +740,8 @@ In Tables 1,2,3,4 and 5 we can see the raw metrics of the experiments for each d
   <thead>
     <tr>
       <th rowspan="2"></th>
-      <th colspan="6">HSJA $L2$ </th>
-      <th colspan="6">HSJA $L_\infty$ </th>
+      <th colspan="6">HSJA L2 </th>
+      <th colspan="6">HSJA L infinity  </th>
     </tr>
     <tr>
       <th colspan="3">PRC-AUC</th>
@@ -1045,8 +1045,8 @@ In Tables 1,2,3,4 and 5 we can see the raw metrics of the experiments for each d
   <thead>
     <tr>
       <th rowspan="2"></th>
-      <th colspan="6">Cube $L2$ </th>
-      <th colspan="6">Cube $L_\infty$ </th>
+      <th colspan="6">Cube L2 </th>
+      <th colspan="6">Cube L infinity  </th>
     </tr>
     <tr>
       <th colspan="3">PRC-AUC</th>
@@ -1351,8 +1351,8 @@ In Tables 1,2,3,4 and 5 we can see the raw metrics of the experiments for each d
   <thead>
     <tr>
       <th rowspan="2"></th>
-      <th colspan="6">Leaf-Tuple $L2$ </th>
-      <th colspan="6">Leaf-Tuple $L_\infty$ </th>
+      <th colspan="6">Leaf-Tuple L2 </th>
+      <th colspan="6">Leaf-Tuple L infinity  </th>
     </tr>
     <tr>
       <th colspan="3">PRC-AUC</th>
@@ -1660,8 +1660,8 @@ In Tables 6,7,8,9 and 10 we can see the raw metrics of the experiments for each 
   <thead>
     <tr>
       <th rowspan="2"></th>
-      <th colspan="6">Sign-OPT $L2$ </th>
-      <th colspan="6">Sign-OPT $L_\infty$ </th>
+      <th colspan="6">Sign-OPT L2 </th>
+      <th colspan="6">Sign-OPT L infinity  </th>
     </tr>
     <tr>
       <th colspan="3">PRC-AUC</th>
@@ -1965,8 +1965,8 @@ In Tables 6,7,8,9 and 10 we can see the raw metrics of the experiments for each 
   <thead>
     <tr>
       <th rowspan="2"></th>
-      <th colspan="6">OPT $L2$ </th>
-      <th colspan="6">OPT $L_\infty$ </th>
+      <th colspan="6">OPT L2 </th>
+      <th colspan="6">OPT L infinity  </th>
     </tr>
     <tr>
       <th colspan="3">PRC-AUC</th>
@@ -2271,8 +2271,8 @@ In Tables 6,7,8,9 and 10 we can see the raw metrics of the experiments for each 
   <thead>
     <tr>
       <th rowspan="2"></th>
-      <th colspan="6">HSJA $L2$ </th>
-      <th colspan="6">HSJA $L_\infty$ </th>
+      <th colspan="6">HSJA L2 </th>
+      <th colspan="6">HSJA L infinity  </th>
     </tr>
     <tr>
       <th colspan="3">PRC-AUC</th>
@@ -2576,8 +2576,8 @@ In Tables 6,7,8,9 and 10 we can see the raw metrics of the experiments for each 
   <thead>
     <tr>
       <th rowspan="2"></th>
-      <th colspan="6">Cube $L2$ </th>
-      <th colspan="6">Cube $L_\infty$ </th>
+      <th colspan="6">Cube L2 </th>
+      <th colspan="6">Cube L infinity  </th>
     </tr>
     <tr>
       <th colspan="3">PRC-AUC</th>
@@ -2881,8 +2881,8 @@ In Tables 6,7,8,9 and 10 we can see the raw metrics of the experiments for each 
   <thead>
     <tr>
       <th rowspan="2"></th>
-      <th colspan="6">Leaf-Tuple $L2$ </th>
-      <th colspan="6">Leaf-Tuple $L_\infty$ </th>
+      <th colspan="6">Leaf-Tuple L2 </th>
+      <th colspan="6">Leaf-Tuple L infinity  </th>
     </tr>
     <tr>
       <th colspan="3">PRC-AUC</th>
@@ -3196,14 +3196,14 @@ In Tables 11, 12, 13, 14, and 15 we can see the adversarial samples statistics f
   <thead>
     <tr>
       <th rowspan="1"></th>
-      <th colspan="3">Sign-OPT $L2$ </th>
-      <th colspan="3">Sign-OPT $L_\infty$ </th>
+      <th colspan="3">Sign-OPT L2 </th>
+      <th colspan="3">Sign-OPT L infinity  </th>
     </tr>
     <tr>
       <th>Dataset name</th>
       <th>Max #features changed</th>
       <th>Mean #features changed</th>
-      <th>Mean ||$L2$|| perturbations</th>
+      <th>Mean ||L2|| perturbations</th>
       <th>Max #features changed</th>
       <th>Mean #features changed</th>
       <th>Mean ||L infinity || perturbations</th>
@@ -3382,8 +3382,8 @@ In Tables 11, 12, 13, 14, and 15 we can see the adversarial samples statistics f
   <thead>
     <tr>
       <th rowspan="1"></th>
-      <th colspan="3">OPT $L2$ </th>
-      <th colspan="3">OPT $L_\infty$ </th>
+      <th colspan="3">OPT L2 </th>
+      <th colspan="3">OPT L infinity  </th>
     </tr>
     <tr>
       <th>Dataset name</th>
@@ -3567,8 +3567,8 @@ In Tables 11, 12, 13, 14, and 15 we can see the adversarial samples statistics f
   <thead>
     <tr>
       <th rowspan="1"></th>
-      <th colspan="3">HSJA $L2$ </th>
-      <th colspan="3">HSJA $L_\infty$ </th>
+      <th colspan="3">HSJA L2 </th>
+      <th colspan="3">HSJA L infinity  </th>
     </tr>
     <tr>
       <th>Dataset name</th>
@@ -3752,8 +3752,8 @@ In Tables 11, 12, 13, 14, and 15 we can see the adversarial samples statistics f
   <thead>
     <tr>
       <th rowspan="1"></th>
-      <th colspan="3">Cube $L2$ </th>
-      <th colspan="3">Cube $L_\infty$ </th>
+      <th colspan="3">Cube L2 </th>
+      <th colspan="3">Cube L infinity  </th>
     </tr>
     <tr>
       <th>Dataset name</th>
@@ -3929,8 +3929,8 @@ In Tables 11, 12, 13, 14, and 15 we can see the adversarial samples statistics f
   <thead>
     <tr>
       <th rowspan="1"></th>
-      <th colspan="3">Leaf-Tuple $L2$ </th>
-      <th colspan="3">Leaf-Tuple $L_\infty$ </th>
+      <th colspan="3">Leaf-Tuple L2 </th>
+      <th colspan="3">Leaf-Tuple L infinity  </th>
     </tr>
     <tr>
       <th>Dataset name</th>
@@ -4138,8 +4138,8 @@ In Tables 16, 17, 18, 19, and 20 we can see the adversarial samples statistics f
   <thead>
     <tr>
       <th rowspan="1"></th>
-      <th colspan="3">Sign-OPT $L2$ </th>
-      <th colspan="3">Sign-OPT $L_\infty$ </th>
+      <th colspan="3">Sign-OPT L2 </th>
+      <th colspan="3">Sign-OPT L infinity  </th>
     </tr>
     <tr>
       <th>Dataset name</th>
@@ -4323,8 +4323,8 @@ In Tables 16, 17, 18, 19, and 20 we can see the adversarial samples statistics f
   <thead>
      <tr>
       <th rowspan="1"></th>
-      <th colspan="3">OPT $L2$ </th>
-      <th colspan="3">OPT $L_\infty$ </th>
+      <th colspan="3">OPT L2 </th>
+      <th colspan="3">OPT L infinity  </th>
     </tr>
     <tr>
       <th>Dataset name</th>
@@ -4508,8 +4508,8 @@ In Tables 16, 17, 18, 19, and 20 we can see the adversarial samples statistics f
   <thead>
     <tr>
       <th rowspan="1"></th>
-      <th colspan="3">HSJA $L2$ </th>
-      <th colspan="3">HSJA $L_\infty$ </th>
+      <th colspan="3">HSJA L2 </th>
+      <th colspan="3">HSJA L infinity  </th>
     </tr>
     <tr>
       <th>Dataset name</th>
@@ -4693,8 +4693,8 @@ In Tables 16, 17, 18, 19, and 20 we can see the adversarial samples statistics f
   <thead>
     <tr>
       <th rowspan="1"></th>
-      <th colspan="3">Cube $L2$ </th>
-      <th colspan="3">Cube $L_\infty$ </th>
+      <th colspan="3">Cube L2 </th>
+      <th colspan="3">Cube L infinity  </th>
     </tr>
     <tr>
       <th>Dataset name</th>
@@ -4878,8 +4878,8 @@ In Tables 16, 17, 18, 19, and 20 we can see the adversarial samples statistics f
   <thead>
     <tr>
       <th rowspan="1"></th>
-      <th colspan="3">Leaf-Tuple $L2$ </th>
-      <th colspan="3">Leaf-Tuple $L_\infty$ </th>
+      <th colspan="3">Leaf-Tuple L2 </th>
+      <th colspan="3">Leaf-Tuple L infinity  </th>
     </tr>
     <tr>
       <th>Dataset name</th>
@@ -5083,13 +5083,13 @@ results in Figures 17, 18, 19, 20, 21, 22, 23, and 24 that in general the number
 
 ##### Figure 17: 
 
-Comparing ROC-AUC for detector based on XGBoost classifier with different hyperparameters. Target: XGBoost, dataset: codrna, attack method: OPT, norm: $L2$:
+Comparing ROC-AUC for detector based on XGBoost classifier with different hyperparameters. Target: XGBoost, dataset: codrna, attack method: OPT, norm: L2:
 
 <center><img src="xgboost_ablation_codrna_opt_2_roc.png" alt="" width="600" height="500"></center>
 
 ##### Figure 18: 
 
-Comparing PRC-AUC for detector based on XGBoost classifier with different hyperparameters. Target: XGBoost, dataset: codrna, attack method: OPT, norm: $L2$:
+Comparing PRC-AUC for detector based on XGBoost classifier with different hyperparameters. Target: XGBoost, dataset: codrna, attack method: OPT, norm: L2:
 
 <center><img src="xgboost_ablation_codrna_opt_2_pr.png" alt="" width="600" height="500"></center>
 
@@ -5109,14 +5109,14 @@ Comparing PRC-AUC for detector based on XGBoost classifier with different hyperp
 
 ##### Figure 21: 
 
-Comparing ROC-AUC for detector based on XGBoost classifier with different hyperparameters. Target: XGBoost, dataset: sensorless, attack method: HopSkipJumpAttack, norm: $L2$:
+Comparing ROC-AUC for detector based on XGBoost classifier with different hyperparameters. Target: XGBoost, dataset: sensorless, attack method: HopSkipJumpAttack, norm: L2:
 
 <center><img src="xgboost_ablation_sensorless_hsja_2_roc.png" alt="" width="600" height="500"></center>
 
 
 ##### Figure 22: 
 
-Comparing PRC-AUC for detector based on XGBoost classifier with different hyperparameters. Target: XGBoost, dataset: sensorless, attack method: HopSkipJumpAttack, norm: $L2$:
+Comparing PRC-AUC for detector based on XGBoost classifier with different hyperparameters. Target: XGBoost, dataset: sensorless, attack method: HopSkipJumpAttack, norm: L2:
 
 <center><img src="xgboost_ablation_sensorless_hsja_2_pr.png" alt="" width="600" height="500"></center>
 
@@ -5139,13 +5139,13 @@ As we can see from the results in Figures 25, 26, 27, 28, 29,30 ,31 and 32 that 
 
 ##### Figure 25: 
 
-Comparing ROC-AUC for detector based on XGBoost classifier with different hyperparameters. Target: RandomForest, dataset: codrna, attack method: OPT, norm: $L2$:
+Comparing ROC-AUC for detector based on XGBoost classifier with different hyperparameters. Target: RandomForest, dataset: codrna, attack method: OPT, norm: L2:
 
 <center><img src="randomforest_ablation_codrna_opt_2_roc.png" alt="" width="600" height="500"></center>
 
 ##### Figure 26: 
 
-Comparing PRC-AUC for detector based on XGBoost classifier with different hyperparameters. Target: RandomForest, dataset: codrna, attack method: OPT, norm: $L2$:
+Comparing PRC-AUC for detector based on XGBoost classifier with different hyperparameters. Target: RandomForest, dataset: codrna, attack method: OPT, norm: L2:
 
 <center><img src="randomforest_ablation_codrna_opt_2_pr.png" alt="" width="600" height="500"></center>
 
@@ -5198,7 +5198,7 @@ We used KNN based on Facebook AI fast similarity search implemented in DESlib (h
 
 ##### Figure 33:
 
-KNN classifier adversarial detector performance. Attack: OPT | Dataset: codrna | Norm: $L2$:
+KNN classifier adversarial detector performance. Attack: OPT | Dataset: codrna | Norm: L2:
 
 <center><img src="different_ks_codrna_opt_2.png" alt="" width="800" height="500"></center>
 
@@ -5210,7 +5210,7 @@ KNN classifier adversarial detector performance. Attack: OPT | Dataset: codrna |
 
 ##### Figure 35:
 
-KNN classifier adversarial detector performance. Attack: HopSkipJumpAttack | Dataset: sensorless | Norm: $L2$:
+KNN classifier adversarial detector performance. Attack: HopSkipJumpAttack | Dataset: sensorless | Norm: L2:
 
 <center><img src="different_ks_sensorless_hsja_2.png" alt="" width="800" height="500"></center>
 
@@ -5227,55 +5227,55 @@ The general pattern from the heatmaps in Figures 37, 38, 39 and 40 is that as ou
 
 ##### Figure 37:
 
-ROC-AUC of different embedding sizes for samples and nodes. Target: XGBoost, dataset: codrna, attack method: OPT, norm: $L2$:
+ROC-AUC of different embedding sizes for samples and nodes. Target: XGBoost, dataset: codrna, attack method: OPT, norm: L2:
 
 <center><img src="hidden_sizes_ablation_codrna_opt_2_roc.png" alt="" width="600" height="500"></center>
 
 ##### Figure 38:
 
-PRC-AUC of different embedding sizes for samples and nodes. Target: XGBoost, dataset: codrna, attack method: OPT, norm: $L2$:
+PRC-AUC of different embedding sizes for samples and nodes. Target: XGBoost, dataset: codrna, attack method: OPT, norm: L2:
 
 <center><img src="hidden_sizes_ablation_codrna_opt_2_pr.png" alt="" width="600" height="500"></center>
 
 
 ##### Figure 39:
 
-ROC-AUC of different embedding sizes for samples and nodes. Target: XGBoost, dataset: codrna, attack method: OPT, norm: $L_\infty$:
+ROC-AUC of different embedding sizes for samples and nodes. Target: XGBoost, dataset: codrna, attack method: OPT, norm: L infinity :
 
 <center><img src="hidden_sizes_ablation_codrna_opt_inf_roc.png" alt="" width="600" height="500"></center>
 
 
 ##### Figure 40:
 
-PRC-AUC of different embedding sizes for samples and nodes. Target: XGBoost, dataset: codrna, attack method: OPT, norm: $L_\infty$:
+PRC-AUC of different embedding sizes for samples and nodes. Target: XGBoost, dataset: codrna, attack method: OPT, norm: L infinity :
 
 <center><img src="hidden_sizes_ablation_codrna_opt_inf_pr.png" alt="" width="600" height="500"></center>
 
 
 ##### Figure 41:
 
-ROC-AUC of different embedding sizes for samples and nodes. Target: RandomForest, dataset: sensorless, attack method: HSJA, norm: $L2$:
+ROC-AUC of different embedding sizes for samples and nodes. Target: RandomForest, dataset: sensorless, attack method: HSJA, norm: L2:
 
 <center><img src="hidden_sizes_ablation_sensorless_hsja_2_roc.png" alt="" width="600" height="500"></center>
 
 
 ##### Figure 42:
 
-PRC-AUC of different embedding sizes for samples and nodes. Target: RandomForest, dataset: sensorless, attack method: HSJA, norm: $L2$:
+PRC-AUC of different embedding sizes for samples and nodes. Target: RandomForest, dataset: sensorless, attack method: HSJA, norm: L2:
 
 <center><img src="hidden_sizes_ablation_sensorless_hsja_2_pr.png" alt="" width="600" height="500"></center>
 
 
 ##### Figure 43:
 
-ROC-AUC of different embedding sizes for samples and nodes. Target: RandomForest, dataset: sensorless, attack method: HSJA, norm: $L_\infty$:
+ROC-AUC of different embedding sizes for samples and nodes. Target: RandomForest, dataset: sensorless, attack method: HSJA, norm: L infinity :
 
 <center><img src="hidden_sizes_ablation_sensorless_hsja_inf_roc.png" alt="" width="600" height="500"></center>
 
 
 ##### Figure 44:
 
-PRC-AUC of different embedding sizes for samples and nodes. Target: RandomForest, dataset: sensorless, attack method: HSJA, norm: $L_\infty$:
+PRC-AUC of different embedding sizes for samples and nodes. Target: RandomForest, dataset: sensorless, attack method: HSJA, norm: L infinity :
 
 <center><img src="hidden_sizes_ablation_sensorless_hsja_inf_pr.png" alt="" width="600" height="500"></center>
 
@@ -5294,8 +5294,8 @@ version of the model trained on all data besides the test set. In the paper ther
   <thead>
     <tr>
       <th rowspan="1"></th>
-      <th colspan="3">OPT $L2$ </th>
-      <th colspan="3">OPT $L_\infty$ </th>
+      <th colspan="3">OPT L2 </th>
+      <th colspan="3">OPT L infinity  </th>
     </tr>
     <tr>
       <th>Dataset</th>
@@ -5479,8 +5479,8 @@ version of the model trained on all data besides the test set. In the paper ther
   <thead>
     <tr>
       <th rowspan="1"></th>
-      <th colspan="3">OPT $L2$ </th>
-      <th colspan="3">OPT $L_\infty$ </th>
+      <th colspan="3">OPT L2 </th>
+      <th colspan="3">OPT L infinity  </th>
     </tr>
     <tr>
       <th>Dataset</th>
@@ -5664,8 +5664,8 @@ version of the model trained on all data besides the test set. In the paper ther
   <thead>
     <tr>
       <th rowspan="1"></th>
-      <th colspan="3">OPT $L2$ </th>
-      <th colspan="3">OPT $L_\infty$ </th>
+      <th colspan="3">OPT L2 </th>
+      <th colspan="3">OPT L infinity  </th>
     </tr>
     <tr>
       <th>Dataset</th>
@@ -5849,8 +5849,8 @@ version of the model trained on all data besides the test set. In the paper ther
   <thead>
     <tr>
       <th rowspan="1"></th>
-      <th colspan="3">OPT $L2$ </th>
-      <th colspan="3">OPT $L_\infty$ </th>
+      <th colspan="3">OPT L2 </th>
+      <th colspan="3">OPT L infinity  </th>
     </tr>
     <tr>
       <th>Dataset</th>
@@ -6025,8 +6025,8 @@ version of the model trained on all data besides the test set. In the paper ther
   <thead>
     <tr>
       <th rowspan="1"></th>
-      <th colspan="3">OPT $L2$ </th>
-      <th colspan="3">OPT $L_\infty$ </th>
+      <th colspan="3">OPT L2 </th>
+      <th colspan="3">OPT L infinity  </th>
     </tr>
     <tr>
       <th>Dataset</th>
@@ -6210,8 +6210,8 @@ version of the model trained on all data besides the test set. In the paper ther
   <thead>
     <tr>
       <th rowspan="1"></th>
-      <th colspan="3">OPT $L2$ </th>
-      <th colspan="3">OPT $L_\infty$ </th>
+      <th colspan="3">OPT L2 </th>
+      <th colspan="3">OPT L infinity  </th>
     </tr>
     <tr>
       <th>Dataset</th>
@@ -6395,8 +6395,8 @@ version of the model trained on all data besides the test set. In the paper ther
   <thead>
     <tr>
       <th rowspan="1"></th>
-      <th colspan="3">OPT $L2$ </th>
-      <th colspan="3">OPT $L_\infty$ </th>
+      <th colspan="3">OPT L2 </th>
+      <th colspan="3">OPT L infinity  </th>
     </tr>
     <tr>
       <th>Dataset</th>
@@ -6580,8 +6580,8 @@ version of the model trained on all data besides the test set. In the paper ther
   <thead>
     <tr>
       <th rowspan="1"></th>
-      <th colspan="3">OPT $L2$ </th>
-      <th colspan="3">OPT $L_\infty$ </th>
+      <th colspan="3">OPT L2 </th>
+      <th colspan="3">OPT L infinity  </th>
     </tr>
     <tr>
       <th>Dataset</th>
@@ -6765,8 +6765,8 @@ version of the model trained on all data besides the test set. In the paper ther
   <thead>
     <tr>
       <th rowspan="1"></th>
-      <th colspan="3">OPT $L2$ </th>
-      <th colspan="3">OPT $L_\infty$ </th>
+      <th colspan="3">OPT L2 </th>
+      <th colspan="3">OPT L infinity  </th>
     </tr>
     <tr>
       <th>Dataset</th>
@@ -6952,8 +6952,8 @@ version of the model trained on all data besides the test set. In the paper ther
   <thead>
     <tr>
       <th rowspan="1"></th>
-      <th colspan="3">OPT $L2$ </th>
-      <th colspan="3">OPT $L_\infty$ </th>
+      <th colspan="3">OPT L2 </th>
+      <th colspan="3">OPT L infinity  </th>
     </tr>
     <tr>
       <th>Dataset</th>
