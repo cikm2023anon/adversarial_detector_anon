@@ -5285,234 +5285,1796 @@ PRC-AUC of different embedding sizes for samples and nodes. Target: RandomForest
 
 ### Table 21: Sign-OPT XGBoost Experiments - ROC-AUC Degradation
 
-|Dataset       | Splitted Dataset    |  Original Dataset | ROC-AUC Delta  | Splitted Dataset    |  Original Dataset | ROC-AUC Delta |
-|----|----|----|----|-----|-----|-----|
-|breast\_cancer 	 |	 0.9958 	 |	 0.9975 	 |	 0.0017 	 | 	 1.0 	 |	 0.9989 	 |	 -0.0011 |
-|covtype 	 |	 0.9843 	 |	 0.9865 	 |	 0.0022 	 | 	 0.9847 	 |	 0.9868 	 |	 0.0021 |
-|codrna 	 |	 0.9928 	 |	 0.994 	 |	 0.0012 	 | 	 0.9928 	 |	 0.994 	 |	 0.0012 |
-|diabetes 	 |	 0.7706 	 |	 0.8154 	 |	 0.0448 	 | 	 0.8108 	 |	 0.8075 	 |	 -0.0033 |
-|fashion 	 |	 0.9903 	 |	 0.9924 	 |	 0.0021 	 | 	 0.9899 	 |	 0.9925 	 |	 0.0026 |
-|ijcnn1 	 |	 0.9954 	 |	 0.9961 	 |	 0.0007 	 | 	 0.9951 	 |	 0.9962 	 |	 0.0011 |
-|mnist 	 |	 0.9991 	 |	 0.9997 	 |	 0.0006 	 | 	 0.9991 	 |	 0.9997 	 |	 0.0006 |
-|mnist26 	 |	 0.9995 	 |	 0.9999 	 |	 0.0004 	 | 	 0.9997 	 |	 0.9999 	 |	 0.0002 |
-|sensorless 	 |	 1.0 	 |	 1.0 	 |	 0.0 	 | 	 1.0 	 |	 1.0 	 |	 0.0 |
-|webspam 	 |	 0.9989 	 |	 0.9992 	 |	 0.0003 	 | 	 0.9989 	 |	 0.9992 	 |	 0.0003 |
-|electricity 	 |	 0.9614 	 |	 0.9783 	 |	 0.0169 	 | 	 0.9579 	 |	 0.9782 	 |	 0.0203 |
-|drybean 	 |	 0.9957 	 |	 0.9964 	 |	 0.0007 	 | 	 0.9941 	 |	 0.9953 	 |	 0.0012 |
-|adult 	 |	 0.913 	 |	 0.9254 	 |	 0.0124 	 | 	 0.9149 	 |	 0.9235 	 |	 0.0086 |
-|banknote 	 |	 1.0 	 |	 0.9992 	 |	 -0.0008 	 | 	 0.9983 	 |	 1.0 	 |	 0.0017 |
-|voice 	 |	 0.9957 	 |	 0.9992 	 |	 0.0035 	 | 	 0.9806 	 |	 0.9817 	 |	 0.0011 |
-|waveform 	 |	 0.962 	 |	 0.9847 	 |	 0.0227 	 | 	 0.9274 	 |	 0.9322 	 |	 0.0048 |
-|wind 	 |	 0.9301 	 |	 0.9391 	 |	 0.009 	 | 	 0.9294 	 |	 0.9424 	 |	 0.013 |
-|speech 	 |	 0.959 	 |	 0.9126 	 |	 -0.0464 	 | 	 0.4699 	 |	 0.9208 	 |	 0.4509 |
+<table>
+  <thead>
+    <tr>
+      <th>Dataset</th>
+      <th>Splitted Dataset</th>
+      <th>Original Dataset</th>
+      <th>ROC-AUC Delta</th>
+      <th>Splitted Dataset</th>
+      <th>Original Dataset</th>
+      <th>ROC-AUC Delta</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>breast_cancer</td>
+      <td>0.9958</td>
+      <td>0.9975</td>
+      <td>0.0017</td>
+      <td>1.0</td>
+      <td>0.9989</td>
+      <td>-0.0011</td>
+    </tr>
+    <tr>
+      <td>covtype</td>
+      <td>0.9843</td>
+      <td>0.9865</td>
+      <td>0.0022</td>
+      <td>0.9847</td>
+      <td>0.9868</td>
+      <td>0.0021</td>
+    </tr>
+    <tr>
+      <td>codrna</td>
+      <td>0.9928</td>
+      <td>0.994</td>
+      <td>0.0012</td>
+      <td>0.9928</td>
+      <td>0.994</td>
+      <td>0.0012</td>
+    </tr>
+    <tr>
+      <td>diabetes</td>
+      <td>0.7706</td>
+      <td>0.8154</td>
+      <td>0.0448</td>
+      <td>0.8108</td>
+      <td>0.8075</td>
+      <td>-0.0033</td>
+    </tr>
+    <tr>
+      <td>fashion</td>
+      <td>0.9903</td>
+      <td>0.9924</td>
+      <td>0.0021</td>
+      <td>0.9899</td>
+      <td>0.9925</td>
+      <td>0.0026</td>
+    </tr>
+    <tr>
+      <td>ijcnn1</td>
+      <td>0.9954</td>
+      <td>0.9961</td>
+      <td>0.0007</td>
+      <td>0.9951</td>
+      <td>0.9962</td>
+      <td>0.0011</td>
+    </tr>
+    <tr>
+      <td>mnist</td>
+      <td>0.9991</td>
+      <td>0.9997</td>
+      <td>0.0006</td>
+      <td>0.9991</td>
+      <td>0.9997</td>
+      <td>0.0006</td>
+    </tr>
+    <tr>
+      <td>mnist26</td>
+      <td>0.9995</td>
+      <td>0.9999</td>
+      <td>0.0004</td>
+      <td>0.9997</td>
+      <td>0.9999</td>
+      <td>0.0002</td>
+    </tr>
+    <tr>
+      <td>sensorless</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>webspam</td>
+      <td>0.9989</td>
+      <td>0.9992</td>
+      <td>0.0003</td>
+      <td>0.9989</td>
+      <td>0.9992</td>
+      <td>0.0003</td>
+    </tr>
+    <tr>
+      <td>electricity</td>
+      <td>0.9614</td>
+      <td>0.9783</td>
+      <td>0.0169</td>
+      <td>0.9579</td>
+      <td>0.9782</td>
+      <td>0.0203</td>
+    </tr>
+    <tr>
+      <td>drybean</td>
+      <td>0.9957</td>
+      <td>0.9964</td>
+      <td>0.0007</td>
+      <td>0.9941</td>
+      <td>0.9953</td>
+      <td>0.0012</td>
+    </tr>
+    <tr>
+      <td>adult</td>
+      <td>0.913</td>
+      <td>0.9254</td>
+      <td>0.0124</td>
+      <td>0.9149</td>
+      <td>0.9235</td>
+      <td>0.0086</td>
+    </tr>
+    <tr>
+      <td>banknote</td>
+      <td>1.0</td>
+      <td>0.9992</td>
+      <td>-0.0008</td>
+      <td>0.9983</td>
+      <td>1.0</td>
+      <td>0.0017</td>
+    </tr>
+    <tr>
+      <td>voice</td>
+      <td>0.9957</td>
+      <td>0.9992</td>
+      <td>0.0035</td>
+      <td>0.9806</td>
+      <td>0.9817</td>
+      <td>0.0011</td>
+    </tr>
+    <tr>
+      <td>waveform</td>
+      <td>0.962</td>
+      <td>0.9847</td>
+      <td>0.0227</td>
+      <td>0.9274</td>
+      <td>0.9322</td>
+      <td>0.0048</td>
+    </tr>
+    <tr>
+      <td>wind</td>
+      <td>0.9301</td>
+      <td>0.9391</td>
+      <td>0.009</td>
+      <td>0.9294</td>
+      <td>0.9424</td>
+      <td>0.013</td>
+    </tr>
+    <tr>
+      <td>speech</td>
+      <td>0.959</td>
+      <td>0.9126</td>
+      <td>-0.0464</td>
+      <td>0.4699</td>
+      <td>0.9208</td>
+      <td>0.4509</td>
+    </tr>
+  </tbody>
+</table>
 
 ### Table 22: OPT XGBoost Experiments - ROC-AUC Degradation
 
-|Dataset       | Splitted Dataset    |  Original Dataset | ROC-AUC Delta  | Splitted Dataset    |  Original Dataset | ROC-AUC Delta |
-|----|----|----|----|-----|-----|-----|
-|breast\_cancer 	 |	 0.9958 	 |	 0.9969 	 |	 0.0011 	 | 	 0.9978 	 |	 0.9978 	 |	 0.0 |
-|covtype 	 |	 0.9846 	 |	 0.9868 	 |	 0.0022 	 | 	 0.9845 	 |	 0.9864 	 |	 0.0019 |
-|codrna 	 |	 0.9926 	 |	 0.9939 	 |	 0.0013 	 | 	 0.9929 	 |	 0.9941 	 |	 0.0012 |
-|diabetes 	 |	 0.7669 	 |	 0.8217 	 |	 0.0548 	 | 	 0.8103 	 |	 0.8055 	 |	 -0.0048 |
-|fashion 	 |	 0.99 	 |	 0.9924 	 |	 0.0024 	 | 	 0.9903 	 |	 0.9926 	 |	 0.0023 |
-|ijcnn1 	 |	 0.9942 	 |	 0.996 	 |	 0.0018 	 | 	 0.9941 	 |	 0.9959 	 |	 0.0018 |
-|mnist 	 |	 0.9992 	 |	 0.9997 	 |	 0.0005 	 | 	 0.9992 	 |	 0.9997 	 |	 0.0005 |
-|mnist26 	 |	 0.9997 	 |	 0.9999 	 |	 0.0002 	 | 	 0.9997 	 |	 0.9999 	 |	 0.0002 |
-|sensorless 	 |	 1.0 	 |	 1.0 	 |	 0.0 	 | 	 1.0 	 |	 1.0 	 |	 0.0 |
-|webspam 	 |	 0.9989 	 |	 0.9992 	 |	 0.0003 	 | 	 0.999 	 |	 0.9993 	 |	 0.0003 |
-|electricity 	 |	 0.9529 	 |	 0.9767 	 |	 0.0238 	 | 	 0.9546 	 |	 0.9735 	 |	 0.0189 |
-|drybean 	 |	 0.9945 	 |	 0.9967 	 |	 0.0022 	 | 	 0.9951 	 |	 0.9967 	 |	 0.0016 |
-|adult 	 |	 0.9191 	 |	 0.9291 	 |	 0.01 	 | 	 0.8808 	 |	 0.8952 	 |	 0.0144 |
-|banknote 	 |	 1.0 	 |	 1.0 	 |	 0.0 	 | 	 1.0 	 |	 1.0 	 |	 0.0 |
-|voice 	 |	 0.9986 	 |	 0.9997 	 |	 0.0011 	 | 	 1.0 	 |	 1.0 	 |	 0.0 |
-|waveform 	 |	 0.9287 	 |	 0.9341 	 |	 0.0054 	 | 	 0.9662 	 |	 0.9777 	 |	 0.0115 |
-|wind 	 |	 0.9258 	 |	 0.9395 	 |	 0.0137 	 | 	 0.9171 	 |	 0.9336 	 |	 0.0165 |
-|speech 	 |	 0.6603 	 |	 0.8665 	 |	 0.2062 	 | 	 0.8167 	 |	 0.8467 	 |	 0.03 |
+<table>
+  <thead>
+    <tr>
+      <th>Dataset</th>
+      <th>Splitted Dataset</th>
+      <th>Original Dataset</th>
+      <th>ROC-AUC Delta</th>
+      <th>Splitted Dataset</th>
+      <th>Original Dataset</th>
+      <th>ROC-AUC Delta</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>breast_cancer</td>
+      <td>0.9958</td>
+      <td>0.9969</td>
+      <td>0.0011</td>
+      <td>0.9978</td>
+      <td>0.9978</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>covtype</td>
+      <td>0.9846</td>
+      <td>0.9868</td>
+      <td>0.0022</td>
+      <td>0.9845</td>
+      <td>0.9864</td>
+      <td>0.0019</td>
+    </tr>
+    <tr>
+      <td>codrna</td>
+      <td>0.9926</td>
+      <td>0.9939</td>
+      <td>0.0013</td>
+      <td>0.9929</td>
+      <td>0.9941</td>
+      <td>0.0012</td>
+    </tr>
+    <tr>
+      <td>diabetes</td>
+      <td>0.7669</td>
+      <td>0.8217</td>
+      <td>0.0548</td>
+      <td>0.8103</td>
+      <td>0.8055</td>
+      <td>-0.0048</td>
+    </tr>
+    <tr>
+      <td>fashion</td>
+      <td>0.99</td>
+      <td>0.9924</td>
+      <td>0.0024</td>
+      <td>0.9903</td>
+      <td>0.9926</td>
+      <td>0.0023</td>
+    </tr>
+    <tr>
+      <td>ijcnn1</td>
+      <td>0.9942</td>
+      <td>0.996</td>
+      <td>0.0018</td>
+      <td>0.9941</td>
+      <td>0.9959</td>
+      <td>0.0018</td>
+    </tr>
+    <tr>
+      <td>mnist</td>
+      <td>0.9992</td>
+      <td>0.9997</td>
+      <td>0.0005</td>
+      <td>0.9992</td>
+      <td>0.9997</td>
+      <td>0.0005</td>
+    </tr>
+    <tr>
+      <td>mnist26</td>
+      <td>0.9997</td>
+      <td>0.9999</td>
+      <td>0.0002</td>
+      <td>0.9997</td>
+      <td>0.9999</td>
+      <td>0.0002</td>
+    </tr>
+    <tr>
+      <td>sensorless</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>webspam</td>
+      <td>0.9989</td>
+      <td>0.9992</td>
+      <td>0.0003</td>
+      <td>0.999</td>
+      <td>0.9993</td>
+      <td>0.0003</td>
+    </tr>
+    <tr>
+      <td>electricity</td>
+      <td>0.9529</td>
+      <td>0.9767</td>
+      <td>0.0238</td>
+      <td>0.9546</td>
+      <td>0.9735</td>
+      <td>0.0189</td>
+    </tr>
+    <tr>
+      <td>drybean</td>
+      <td>0.9945</td>
+      <td>0.9967</td>
+      <td>0.0022</td>
+      <td>0.9951</td>
+      <td>0.9967</td>
+      <td>0.0016</td>
+    </tr>
+    <tr>
+      <td>adult</td>
+      <td>0.9191</td>
+      <td>0.9291</td>
+      <td>0.01</td>
+      <td>0.8808</td>
+      <td>0.8952</td>
+      <td>0.0144</td>
+    </tr>
+    <tr>
+      <td>banknote</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>voice</td>
+      <td>0.9986</td>
+      <td>0.9997</td>
+      <td>0.0011</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>waveform</td>
+      <td>0.9287</td>
+      <td>0.9341</td>
+      <td>0.0054</td>
+      <td>0.9662</td>
+      <td>0.9777</td>
+      <td>0.0115</td>
+    </tr>
+    <tr>
+      <td>wind</td>
+      <td>0.9258</td>
+      <td>0.9395</td>
+      <td>0.0137</td>
+      <td>0.9171</td>
+      <td>0.9336</td>
+      <td>0.0165</td>
+    </tr>
+    <tr>
+      <td>speech</td>
+      <td>0.6603</td>
+      <td>0.8665</td>
+      <td>0.2062</td>
+      <td>0.8167</td>
+      <td>0.8467</td>
+      <td>0.03</td>
+    </tr>
+  </tbody>
+</table>
 
 ### Table 23: HSJA XGBoost Experiments - ROC-AUC Degradation
 
-|Dataset       | Splitted Dataset    |  Original Dataset | ROC-AUC Delta  | Splitted Dataset    |  Original Dataset | ROC-AUC Delta |
-|----|----|----|----|-----|-----|-----|
-|breast\_cancer 	 |	 0.9994 	 |	 0.9969 	 |	 -0.0025 	 | 	 0.9997 	 |	 0.9989 	 |	 -0.0005 |
-|covtype 	 |	 0.9851 	 |	 0.9856 	 |	 0.0005 	 | 	 0.9843 	 |	 0.9867 	 |	 0.0024 |
-|codrna 	 |	 0.9929 	 |	 0.9941 	 |	 0.0012 	 | 	 0.9927 	 |	 0.9939 	 |	 0.0012 |
-|diabetes 	 |	 0.7996 	 |	 0.8215 	 |	 0.0219 	 | 	 0.8119 	 |	 0.82 	 |	 0.0204 |
-|fashion 	 |	 0.99 	 |	 0.9925 	 |	 0.0025 	 | 	 0.9901 	 |	 0.9926 	 |	 0.0025 |
-|ijcnn1 	 |	 0.9949 	 |	 0.9956 	 |	 0.0007 	 | 	 0.9945 	 |	 0.9959 	 |	 0.0014 |
-|mnist 	 |	 0.9991 	 |	 0.9997 	 |	 0.0006 	 | 	 0.9992 	 |	 0.9997 	 |	 0.0005 |
-|mnist26 	 |	 0.9996 	 |	 0.9999 	 |	 0.0003 	 | 	 0.9998 	 |	 0.9999 	 |	 0.0001 |
-|sensorless 	 |	 1.0 	 |	 1.0 	 |	 0.0 	 | 	 1.0 	 |	 1.0 	 |	 0.0 |
-|webspam 	 |	 0.9989 	 |	 0.9992 	 |	 0.0003 	 | 	 0.9989 	 |	 0.9992 	 |	 0.0003 |
-|electricity 	 |	 0.9526 	 |	 0.9733 	 |	 0.0207 	 | 	 0.9567 	 |	 0.98 	 |	 0.0233 |
-|dry_bean 	 |	 0.9924 	 |	 0.9949 	 |	 0.0025 	 | 	 0.9939 	 |	 0.9956 	 |	 0.0017 |
-|adult 	 |	 0.9103 	 |	 0.9196 	 |	 0.0093 	 | 	 0.915 	 |	 0.9328 	 |	 0.0178 |
-|banknote 	 |	 0.9966 	 |	 1.0 	 |	 0.0034 	 | 	 1.0 	 |	 1.0 	 |	 0.0 |
-|voice 	 |	 0.994 	 |	 0.996 	 |	 0.002 	 | 	 0.9986 	 |	 0.9995 	 |	 0.0009 |
-|waveform 	 |	 0.9605 	 |	 0.9627 	 |	 0.0022 	 | 	 0.9466 	 |	 0.9574 	 |	 0.0108 |
-|wind 	 |	 0.9246 	 |	 0.9282 	 |	 0.0036 	 | 	 0.9347 	 |	 0.9463 	 |	 0.0116 |
-|speech 	 |	 0.7473 	 |	 0.7711 	 |	 0.0238 	 | 	 0.8587 	 |	 1.0 	 |	 0.1413 |
+<table>
+  <thead>
+    <tr>
+      <th>Dataset</th>
+      <th>Splitted Dataset</th>
+      <th>Original Dataset</th>
+      <th>ROC-AUC Delta</th>
+      <th>Splitted Dataset</th>
+      <th>Original Dataset</th>
+      <th>ROC-AUC Delta</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>breast_cancer</td>
+      <td>0.9994</td>
+      <td>0.9969</td>
+      <td>-0.0025</td>
+      <td>0.9997</td>
+      <td>0.9989</td>
+      <td>-0.0005</td>
+    </tr>
+    <tr>
+      <td>covtype</td>
+      <td>0.9851</td>
+      <td>0.9856</td>
+      <td>0.0005</td>
+      <td>0.9843</td>
+      <td>0.9867</td>
+      <td>0.0024</td>
+    </tr>
+    <tr>
+      <td>codrna</td>
+      <td>0.9929</td>
+      <td>0.9941</td>
+      <td>0.0012</td>
+      <td>0.9927</td>
+      <td>0.9939</td>
+      <td>0.0012</td>
+    </tr>
+    <tr>
+      <td>diabetes</td>
+      <td>0.7996</td>
+      <td>0.8215</td>
+      <td>0.0219</td>
+      <td>0.8119</td>
+      <td>0.82</td>
+      <td>0.0204</td>
+    </tr>
+    <tr>
+      <td>fashion</td>
+      <td>0.99</td>
+      <td>0.9925</td>
+      <td>0.0025</td>
+      <td>0.9901</td>
+      <td>0.9926</td>
+      <td>0.0025</td>
+    </tr>
+    <tr>
+      <td>ijcnn1</td>
+      <td>0.9949</td>
+      <td>0.9956</td>
+      <td>0.0007</td>
+      <td>0.9945</td>
+      <td>0.9959</td>
+      <td>0.0014</td>
+    </tr>
+    <tr>
+      <td>mnist</td>
+      <td>0.9991</td>
+      <td>0.9997</td>
+      <td>0.0006</td>
+      <td>0.9992</td>
+      <td>0.9997</td>
+      <td>0.0005</td>
+    </tr>
+    <tr>
+      <td>mnist26</td>
+      <td>0.9996</td>
+      <td>0.9999</td>
+      <td>0.0003</td>
+      <td>0.9998</td>
+      <td>0.9999</td>
+      <td>0.0001</td>
+    </tr>
+    <tr>
+      <td>sensorless</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>webspam</td>
+      <td>0.9989</td>
+      <td>0.9992</td>
+      <td>0.0003</td>
+      <td>0.9989</td>
+      <td>0.9992</td>
+      <td>0.0003</td>
+    </tr>
+    <tr>
+      <td>electricity</td>
+      <td>0.9526</td>
+      <td>0.9733</td>
+      <td>0.0207</td>
+      <td>0.9567</td>
+      <td>0.98</td>
+      <td>0.0233</td>
+    </tr>
+    <tr>
+      <td>dry_bean</td>
+      <td>0.9924</td>
+      <td>0.9949</td>
+      <td>0.0025</td>
+      <td>0.9939</td>
+      <td>0.9956</td>
+      <td>0.0017</td>
+    </tr>
+    <tr>
+      <td>adult</td>
+      <td>0.9103</td>
+      <td>0.9196</td>
+      <td>0.0093</td>
+      <td>0.915</td>
+      <td>0.9328</td>
+      <td>0.0178</td>
+    </tr>
+    <tr>
+      <td>banknote</td>
+      <td>0.9966</td>
+      <td>1.0</td>
+      <td>0.0034</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>voice</td>
+      <td>0.994</td>
+      <td>0.996</td>
+      <td>0.002</td>
+      <td>0.9986</td>
+      <td>0.9995</td>
+      <td>0.0009</td>
+    </tr>
+    <tr>
+      <td>waveform</td>
+      <td>0.9605</td>
+      <td>0.9627</td>
+      <td>0.0022</td>
+      <td>0.9466</td>
+      <td>0.9574</td>
+      <td>0.0108</td>
+    </tr>
+    <tr>
+      <td>wind</td>
+      <td>0.9246</td>
+      <td>0.9282</td>
+      <td>0.0036</td>
+      <td>0.9347</td>
+      <td>0.9463</td>
+      <td>0.0116</td>
+    </tr>
+    <tr>
+      <td>speech</td>
+      <td>0.7473</td>
+      <td>0.7711</td>
+      <td>0.0238</td>
+      <td>0.8587</td>
+      <td>1.0</td>
+      <td>0.1413</td>
+    </tr>
+  </tbody>
+</table>
 
 ### Table 24: Cube XGBoost Experiments - ROC-AUC Degradation
 
-|Dataset       | Splitted Dataset    |  Original Dataset | ROC-AUC Delta  | Splitted Dataset    |  Original Dataset | ROC-AUC Delta |
-|----|----|----|----|-----|-----|-----|
-|breast\_cancer 	 |	 0.9997 	 |	 0.998 	 |	 -0.0017 	 | 	 0.9964 	 |	 0.9966 	 |	 0.0002 |
-|covtype 	 |	 0.9852 	 |	 0.9873 	 |	 0.0021 	 | 	 0.9847 	 |	 0.9862 	 |	 0.0015 |
-|codrna 	 |	 0.9928 	 |	 0.994 	 |	 0.0012 	 | 	 0.9929 	 |	 0.9941 	 |	 0.0012 |
-|diabetes 	 |	 0.7477 	 |	 0.8268 	 |	 0.0791 	 | 	 0.7765 	 |	 0.8072 	 |	 0.0307 |
-|fashion 	 |	 0.9903 	 |	 0.9925 	 |	 0.0022 	 | 	 0.99 	 |	 0.9927 	 |	 0.0027 |
-|ijcnn1 	 |	 0.9948 	 |	 0.9959 	 |	 0.0011 	 | 	 0.9945 	 |	 0.9959 	 |	 0.0014 |
-|mnist 	 |	 0.9992 	 |	 0.9997 	 |	 0.0005 	 | 	 0.9992 	 |	 0.9997 	 |	 0.0005 |
-|mnist26 	 |	 0.9997 	 |	 1.0 	 |	 0.0003 	 | 	 0.9995 	 |	 0.9999 	 |	 0.0004 |
-|sensorless 	 |	 1.0 	 |	 1.0 	 |	 0.0 	 | 	 1.0 	 |	 1.0 	 |	 0.0 |
-|webspam 	 |	 0.9989 	 |	 0.9993 	 |	 0.0004 	 | 	 0.9989 	 |	 0.9993 	 |	 0.0004 |
-|electricity 	 |	 0.9619 	 |	 0.9801 	 |	 0.0182 	 | 	 0.9528 	 |	 0.9746 	 |	 0.0218 |
-|drybean 	 |	 0.9935 	 |	 0.9951 	 |	 0.0016 	 | 	 0.9942 	 |	 0.9956 	 |	 0.0014 |
-|adult 	 |	 0.9153 	 |	 0.9263 	 |	 0.011 	 | 	 0.9142 	 |	 0.9302 	 |	 0.016 |
-|banknote 	 |	 1.0 	 |	 1.0 	 |	 0.0 	 | 	 1.0 	 |	 1.0 	 |	 0.0 |
-|voice 	 |	 1.0 	 |	 1.0 	 |	 0.0 	 | 	 0.9949 	 |	 0.9973 	 |	 0.0024 |
-|waveform 	 |	 0.9475 	 |	 0.9599 	 |	 0.0124 	 | 	 0.9581 	 |	 0.9612 	 |	 0.0031 |
-|wind 	 |	 0.9373 	 |	 0.9451 	 |	 0.0078 	 | 	 0.9425 	 |	 0.937 	 |	 -0.0055 |
+<table>
+  <thead>
+    <tr>
+      <th>Dataset</th>
+      <th>Splitted Dataset</th>
+      <th>Original Dataset</th>
+      <th>ROC-AUC Delta</th>
+      <th>Splitted Dataset</th>
+      <th>Original Dataset</th>
+      <th>ROC-AUC Delta</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>breast_cancer</td>
+      <td>0.9997</td>
+      <td>0.998</td>
+      <td>-0.0017</td>
+      <td>0.9964</td>
+      <td>0.9966</td>
+      <td>0.0002</td>
+    </tr>
+    <tr>
+      <td>covtype</td>
+      <td>0.9852</td>
+      <td>0.9873</td>
+      <td>0.0021</td>
+      <td>0.9847</td>
+      <td>0.9862</td>
+      <td>0.0015</td>
+    </tr>
+    <tr>
+      <td>codrna</td>
+      <td>0.9928</td>
+      <td>0.994</td>
+      <td>0.0012</td>
+      <td>0.9929</td>
+      <td>0.9941</td>
+      <td>0.0012</td>
+    </tr>
+    <tr>
+      <td>diabetes</td>
+      <td>0.7477</td>
+      <td>0.8268</td>
+      <td>0.0791</td>
+      <td>0.7765</td>
+      <td>0.8072</td>
+      <td>0.0307</td>
+    </tr>
+    <tr>
+      <td>fashion</td>
+      <td>0.9903</td>
+      <td>0.9925</td>
+      <td>0.0022</td>
+      <td>0.99</td>
+      <td>0.9927</td>
+      <td>0.0027</td>
+    </tr>
+    <tr>
+      <td>ijcnn1</td>
+      <td>0.9948</td>
+      <td>0.9959</td>
+      <td>0.0011</td>
+      <td>0.9945</td>
+      <td>0.9959</td>
+      <td>0.0014</td>
+    </tr>
+    <tr>
+      <td>mnist</td>
+      <td>0.9992</td>
+      <td>0.9997</td>
+      <td>0.0005</td>
+      <td>0.9992</td>
+      <td>0.9997</td>
+      <td>0.0005</td>
+    </tr>
+    <tr>
+      <td>mnist26</td>
+      <td>0.9997</td>
+      <td>1.0</td>
+      <td>0.0003</td>
+      <td>0.9995</td>
+      <td>0.9999</td>
+      <td>0.0004</td>
+    </tr>
+    <tr>
+      <td>sensorless</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>webspam</td>
+      <td>0.9989</td>
+      <td>0.9993</td>
+      <td>0.0004</td>
+      <td>0.9989</td>
+      <td>0.9993</td>
+      <td>0.0004</td>
+    </tr>
+    <tr>
+      <td>electricity</td>
+      <td>0.9619</td>
+      <td>0.9801</td>
+      <td>0.0182</td>
+      <td>0.9528</td>
+      <td>0.9746</td>
+      <td>0.0218</td>
+    </tr>
+    <tr>
+      <td>drybean</td>
+      <td>0.9935</td>
+      <td>0.9951</td>
+      <td>0.0016</td>
+      <td>0.9942</td>
+      <td>0.9956</td>
+      <td>0.0014</td>
+    </tr>
+    <tr>
+      <td>adult</td>
+      <td>0.9153</td>
+      <td>0.9263</td>
+      <td>0.011</td>
+      <td>0.9142</td>
+      <td>0.9302</td>
+      <td>0.016</td>
+    </tr>
+    <tr>
+      <td>banknote</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>voice</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.9949</td>
+      <td>0.9973</td>
+      <td>0.0024</td>
+    </tr>
+    <tr>
+      <td>waveform</td>
+      <td>0.9475</td>
+      <td>0.9599</td>
+      <td>0.0124</td>
+      <td>0.9581</td>
+      <td>0.9612</td>
+      <td>0.0031</td>
+    </tr>
+    <tr>
+      <td>wind</td>
+      <td>0.9373</td>
+      <td>0.9451</td>
+      <td>0.0078</td>
+      <td>0.9425</td>
+      <td>0.937</td>
+      <td>-0.0055</td>
+    </tr>
+  </tbody>
+</table>
 
 ### Table 25: Leaf-Tuple XGBoost Experiments - ROC-AUC Degradation
 
-|Dataset       | Splitted Dataset    |  Original Dataset | ROC-AUC Delta  | Splitted Dataset    |  Original Dataset | ROC-AUC Delta |
-|----|----|----|----|-----|-----|-----|
-|breast\_cancer 	 |	 0.9986 	 |	 0.9978 	 |	 -0.0008 	 | 	 0.9961 	 |	 0.9972 	 |	 0.0011 |
-|covtype 	 |	 0.9845 	 |	 0.9868 	 |	 0.0023 	 | 	 0.9842 	 |	 0.9869 	 |	 0.0027 |
-|codrna 	 |	 0.993 	 |	 0.994 	 |	 0.001 	 | 	 0.9928 	 |	 0.9939 	 |	 0.0011 |
-|diabetes 	 |	 0.7662 	 |	 0.8114 	 |	 0.0452 	 | 	 0.7695 	 |	 0.8298 	 |	 0.0603 |
-|fashion 	 |	 0.9902 	 |	 0.9923 	 |	 0.0021 	 | 	 0.99 	 |	 0.9925 	 |	 0.0025 |
-|ijcnn1 	 |	 0.9953 	 |	 0.9963 	 |	 0.001 	 | 	 0.9944 	 |	 0.9963 	 |	 0.0019 |
-|mnist 	 |	 0.9992 	 |	 0.9997 	 |	 0.0005 	 | 	 0.9992 	 |	 0.9997 	 |	 0.0005 |
-|mnist26 	 |	 0.9997 	 |	 0.9999 	 |	 0.0002 	 | 	 0.9997 	 |	 0.9999 	 |	 0.0002 |
-|sensorless 	 |	 1.0 	 |	 1.0 	 |	 0.0 	 | 	 1.0 	 |	 1.0 	 |	 0.0 |
-|webspam 	 |	 0.9989 	 |	 0.9993 	 |	 0.0004 	 | 	 0.999 	 |	 0.9993 	 |	 0.0003 |
-|electricity 	 |	 0.9553 	 |	 0.9726 	 |	 0.0173 	 | 	 0.9509 	 |	 0.9732 	 |	 0.0223 |
-|drybean 	 |	 0.9956 	 |	 0.9962 	 |	 0.0006 	 | 	 0.9962 	 |	 0.9963 	 |	 0.0001 |
-|adult 	 |	 0.9161 	 |	 0.928 	 |	 0.0119 	 | 	 0.9004 	 |	 0.9147 	 |	 0.0143 |
-|banknote 	 |	 1.0 	 |	 1.0 	 |	 0.0 	 | 	 1.0 	 |	 1.0 	 |	 0.0 |
-|voice 	 |	 0.9914 	 |	 0.9971 	 |	 0.0057 	 | 	 0.9919 	 |	 0.9948 	 |	 0.0029 |
-|waveform 	 |	 0.9598 	 |	 0.9716 	 |	 0.0118 	 | 	 0.9487 	 |	 0.9556 	 |	 0.0069 |
-|wind 	 |	 0.9328 	 |	 0.9529 	 |	 0.0201 	 | 	 0.9215 	 |	 0.9434 	 |	 0.0219 |
-|speech 	 |	 0.5328 	 |	 0.8716 	 |	 0.3388 	 | 	 0.6808 	 |	 0.8616 	 |	 0.1808 |
+<table>
+  <thead>
+    <tr>
+      <th>Dataset</th>
+      <th>Splitted Dataset</th>
+      <th>Original Dataset</th>
+      <th>ROC-AUC Delta</th>
+      <th>Splitted Dataset</th>
+      <th>Original Dataset</th>
+      <th>ROC-AUC Delta</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>breast_cancer</td>
+      <td>0.9986</td>
+      <td>0.9978</td>
+      <td>-0.0008</td>
+      <td>0.9961</td>
+      <td>0.9972</td>
+      <td>0.0011</td>
+    </tr>
+    <tr>
+      <td>covtype</td>
+      <td>0.9845</td>
+      <td>0.9868</td>
+      <td>0.0023</td>
+      <td>0.9842</td>
+      <td>0.9869</td>
+      <td>0.0027</td>
+    </tr>
+    <tr>
+      <td>codrna</td>
+      <td>0.993</td>
+      <td>0.994</td>
+      <td>0.001</td>
+      <td>0.9928</td>
+      <td>0.9939</td>
+      <td>0.0011</td>
+    </tr>
+    <tr>
+      <td>diabetes</td>
+      <td>0.7662</td>
+      <td>0.8114</td>
+      <td>0.0452</td>
+      <td>0.7695</td>
+      <td>0.8298</td>
+      <td>0.0603</td>
+    </tr>
+    <tr>
+      <td>fashion</td>
+      <td>0.9902</td>
+      <td>0.9923</td>
+      <td>0.0021</td>
+      <td>0.99</td>
+      <td>0.9925</td>
+      <td>0.0025</td>
+    </tr>
+    <tr>
+      <td>ijcnn1</td>
+      <td>0.9953</td>
+      <td>0.9963</td>
+      <td>0.001</td>
+      <td>0.9944</td>
+      <td>0.9963</td>
+      <td>0.0019</td>
+    </tr>
+    <tr>
+      <td>mnist</td>
+      <td>0.9992</td>
+      <td>0.9997</td>
+      <td>0.0005</td>
+      <td>0.9992</td>
+      <td>0.9997</td>
+      <td>0.0005</td>
+    </tr>
+    <tr>
+      <td>mnist26</td>
+      <td>0.9997</td>
+      <td>0.9999</td>
+      <td>0.0002</td>
+      <td>0.9997</td>
+      <td>0.9999</td>
+      <td>0.0002</td>
+    </tr>
+    <tr>
+      <td>sensorless</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>webspam</td>
+      <td>0.9989</td>
+      <td>0.9993</td>
+      <td>0.0004</td>
+      <td>0.999</td>
+      <td>0.9993</td>
+      <td>0.0003</td>
+    </tr>
+    <tr>
+      <td>electricity</td>
+      <td>0.9553</td>
+      <td>0.9726</td>
+      <td>0.0173</td>
+      <td>0.9509</td>
+      <td>0.9732</td>
+      <td>0.0223</td>
+    </tr>
+    <tr>
+      <td>drybean</td>
+      <td>0.9956</td>
+      <td>0.9962</td>
+      <td>0.0006</td>
+      <td>0.9962</td>
+      <td>0.9963</td>
+      <td>0.0001</td>
+    </tr>
+    <tr>
+      <td>adult</td>
+      <td>0.9161</td>
+      <td>0.928</td>
+      <td>0.0119</td>
+      <td>0.9004</td>
+      <td>0.9147</td>
+      <td>0.0143</td>
+    </tr>
+    <tr>
+      <td>banknote</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>voice</td>
+      <td>0.9914</td>
+      <td>0.9971</td>
+      <td>0.0057</td>
+      <td>0.9919</td>
+      <td>0.9948</td>
+      <td>0.0029</td>
+    </tr>
+    <tr>
+      <td>waveform</td>
+      <td>0.9598</td>
+      <td>0.9716</td>
+      <td>0.0118</td>
+      <td>0.9487</td>
+      <td>0.9556</td>
+      <td>0.0069</td>
+    </tr>
+    <tr>
+      <td>wind</td>
+      <td>0.9328</td>
+      <td>0.9529</td>
+      <td>0.0201</td>
+      <td>0.9215</td>
+      <td>0.9434</td>
+      <td>0.0219</td>
+    </tr>
+    <tr>
+      <td>speech</td>
+      <td>0.5328</td>
+      <td>0.8716</td>
+      <td>0.3388</td>
+      <td>0.6808</td>
+      <td>0.8616</td>
+      <td>0.1808</td>
+    </tr>
+  </tbody>
+</table>
 
 ### Table 26: Sign-OPT RandomForest Experiments - ROC-AUC Degradation
 
-|Dataset       | Splitted Dataset    |  Original Dataset | ROC-AUC Delta  | Splitted Dataset    |  Original Dataset | ROC-AUC Delta |
-|----|----|----|----|-----|-----|-----|
-|breast\_cancer 	 |	 0.9952 	 |	 0.9972 	 |	 0.002 	 | 	 0.9965 	 |	 0.9975 	 |	 0.001 |
-|covtype 	 |	 0.9841 	 |	 0.9862 	 |	 0.0021 	 | 	 0.9844 	 |	 0.9864 	 |	 0.002 |
-|codrna 	 |	 0.9926 	 |	 0.994 	 |	 0.0014 	 | 	 0.9929 	 |	 0.994 	 |	 0.0011 |
-|diabetes 	 |	 0.7954 	 |	 0.8083 	 |	 0.0129 	 | 	 0.7848 	 |	 0.8162 	 |	 0.0314 |
-|fashion 	 |	 0.9904 	 |	 0.9924 	 |	 0.002 	 | 	 0.9901 	 |	 0.9925 	 |	 0.0024 |
-|ijcnn1 	 |	 0.9946 	 |	 0.9964 	 |	 0.0018 	 | 	 0.9956 	 |	 0.9958 	 |	 0.0002 |
-|mnist 	 |	 0.9993 	 |	 0.9997 	 |	 0.0004 	 | 	 0.9992 	 |	 0.9997 	 |	 0.0005 |
-|mnist26 	 |	 0.9995 	 |	 0.9999 	 |	 0.0004 	 | 	 0.9997 	 |	 0.9999 	 |	 0.0002 |
-|sensorless 	 |	 1.0 	 |	 1.0 	 |	 0.0 	 | 	 1.0 	 |	 1.0 	 |	 0.0 |
-|webspam 	 |	 0.9989 	 |	 0.9993 	 |	 0.0004 	 | 	 0.9989 	 |	 0.9993 	 |	 0.0004 |
-|electricity 	 |	 0.9525 	 |	 0.9741 	 |	 0.0216 	 | 	 0.9541 	 |	 0.9776 	 |	 0.0235 |
-|drybean 	 |	 0.9968 	 |	 0.9967 	 |	 -0.0001 	 | 	 0.9946 	 |	 0.9952 	 |	 0.0006 |
-|adult 	 |	 0.9037 	 |	 0.9209 	 |	 0.0172 	 | 	 0.9146 	 |	 0.9218 	 |	 0.0072 |
-|banknote 	 |	 1.0 	 |	 1.0 	 |	 0.0 	 | 	 1.0 	 |	 1.0 	 |	 0.0 |
-|voice 	 |	 0.9894 	 |	 0.9975 	 |	 0.0081 	 | 	 0.9921 	 |	 0.993 	 |	 0.0009 |
-|waveform 	 |	 0.957 	 |	 0.98 	 |	 0.023 	 | 	 0.9535 	 |	 0.9748 	 |	 0.0213 |
-|wind 	 |	 0.9179 	 |	 0.9196 	 |	 0.0017 	 | 	 0.9176 	 |	 0.9366 	 |	 0.019 |
-|speech 	 |	 -	 |	-	 |	 -	 |	- |	 -	 |	- |
+<table>
+  <thead>
+    <tr>
+      <th>Dataset</th>
+      <th>Splitted Dataset</th>
+      <th>Original Dataset</th>
+      <th>ROC-AUC Delta</th>
+      <th>Splitted Dataset</th>
+      <th>Original Dataset</th>
+      <th>ROC-AUC Delta</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>breast_cancer</td>
+      <td>0.9952</td>
+      <td>0.9972</td>
+      <td>0.002</td>
+      <td>0.9965</td>
+      <td>0.9975</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>covtype</td>
+      <td>0.9841</td>
+      <td>0.9862</td>
+      <td>0.0021</td>
+      <td>0.9844</td>
+      <td>0.9864</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <td>codrna</td>
+      <td>0.9926</td>
+      <td>0.994</td>
+      <td>0.0014</td>
+      <td>0.9929</td>
+      <td>0.994</td>
+      <td>0.0011</td>
+    </tr>
+    <tr>
+      <td>diabetes</td>
+      <td>0.7954</td>
+      <td>0.8083</td>
+      <td>0.0129</td>
+      <td>0.7848</td>
+      <td>0.8162</td>
+      <td>0.0314</td>
+    </tr>
+    <tr>
+      <td>fashion</td>
+      <td>0.9904</td>
+      <td>0.9924</td>
+      <td>0.002</td>
+      <td>0.9901</td>
+      <td>0.9925</td>
+      <td>0.0024</td>
+    </tr>
+    <tr>
+      <td>ijcnn1</td>
+      <td>0.9946</td>
+      <td>0.9964</td>
+      <td>0.0018</td>
+      <td>0.9956</td>
+      <td>0.9958</td>
+      <td>0.0002</td>
+    </tr>
+    <tr>
+      <td>mnist</td>
+      <td>0.9993</td>
+      <td>0.9997</td>
+      <td>0.0004</td>
+      <td>0.9992</td>
+      <td>0.9997</td>
+      <td>0.0005</td>
+    </tr>
+    <tr>
+      <td>mnist26</td>
+      <td>0.9995</td>
+      <td>0.9999</td>
+      <td>0.0004</td>
+      <td>0.9997</td>
+      <td>0.9999</td>
+      <td>0.0002</td>
+    </tr>
+    <tr>
+      <td>sensorless</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>webspam</td>
+      <td>0.9989</td>
+      <td>0.9993</td>
+      <td>0.0004</td>
+      <td>0.9989</td>
+      <td>0.9993</td>
+      <td>0.0004</td>
+    </tr>
+    <tr>
+      <td>electricity</td>
+      <td>0.9525</td>
+      <td>0.9741</td>
+      <td>0.0216</td>
+      <td>0.9541</td>
+      <td>0.9776</td>
+      <td>0.0235</td>
+    </tr>
+    <tr>
+      <td>drybean</td>
+      <td>0.9968</td>
+      <td>0.9967</td>
+      <td>-0.0001</td>
+      <td>0.9946</td>
+      <td>0.9952</td>
+      <td>0.0006</td>
+    </tr>
+    <tr>
+      <td>adult</td>
+      <td>0.9037</td>
+      <td>0.9209</td>
+      <td>0.0172</td>
+      <td>0.9146</td>
+      <td>0.9218</td>
+      <td>0.0072</td>
+    </tr>
+    <tr>
+      <td>banknote</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>voice</td>
+      <td>0.9894</td>
+      <td>0.9975</td>
+      <td>0.0081</td>
+      <td>0.9921</td>
+      <td>0.993</td>
+      <td>0.0009</td>
+    </tr>
+    <tr>
+      <td>waveform</td>
+      <td>0.957</td>
+      <td>0.98</td>
+      <td>0.023</td>
+      <td>0.9535</td>
+      <td>0.9748</td>
+      <td>0.0213</td>
+    </tr>
+    <tr>
+      <td>wind</td>
+      <td>0.9179</td>
+      <td>0.9196</td>
+      <td>0.0017</td>
+      <td>0.9176</td>
+      <td>0.9366</td>
+      <td>0.019</td>
+    </tr>
+    <tr>
+      <td>speech</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
 
 ### Table 27: OPT RandomForest Experiments - ROC-AUC Degradation
 
-|Dataset       | Splitted Dataset    |  Original Dataset | ROC-AUC Delta  | Splitted Dataset    |  Original Dataset | ROC-AUC Delta |
-|----|----|----|----|-----|-----|-----|
-|breast\_cancer 	 |	 0.9992 	 |	 0.9972 	 |	 -0.002 	 | 	 0.9994 	 |	 0.9975 	 |	 -0.0019 |
-|covtype 	 |	 0.9844 	 |	 0.9868 	 |	 0.0024 	 | 	 0.9851 	 |	 0.9867 	 |	 0.0016 |
-|codrna 	 |	 0.9929 	 |	 0.994 	 |	 0.0011 	 | 	 0.9928 	 |	 0.9941 	 |	 0.0013 |
-|diabetes 	 |	 0.7532 	 |	 0.8033 	 |	 0.0501 	 | 	 0.8241 	 |	 0.8033 	 |	 -0.0208 |
-|fashion 	 |	 0.9903 	 |	 0.9924 	 |	 0.0021 	 | 	 0.9902 	 |	 0.9924 	 |	 0.0022 |
-|ijcnn1 	 |	 0.9943 	 |	 0.9958 	 |	 0.0015 	 | 	 0.9958 	 |	 0.996 	 |	 0.0002 |
-|mnist 	 |	 0.9993 	 |	 0.9997 	 |	 0.0004 	 | 	 0.9992 	 |	 0.9997 	 |	 0.0005 |
-|mnist26 	 |	 0.9998 	 |	 0.9999 	 |	 0.0001 	 | 	 0.9997 	 |	 0.9999 	 |	 0.0002 |
-|sensorless 	 |	 1.0 	 |	 1.0 	 |	 0.0 	 | 	 1.0 	 |	 1.0 	 |	 0.0 |
-|webspam 	 |	 0.999 	 |	 0.9992 	 |	 0.0002 	 | 	 0.9989 	 |	 0.9992 	 |	 0.0003 |
-|electricity 	 |	 0.9595 	 |	 0.9787 	 |	 0.0192 	 | 	 0.9502 	 |	 0.971 	 |	 0.0208 |
-|drybean 	 |	 0.9949 	 |	 0.9958 	 |	 0.0009 	 | 	 0.9962 	 |	 0.9969 	 |	 0.0007 |
-|adult 	 |	 0.9147 	 |	 0.9307 	 |	 0.016 	 | 	 0.9106 	 |	 0.9207 	 |	 0.0101 |
-|banknote 	 |	 1.0 	 |	 1.0 	 |	 0.0 	 | 	 1.0 	 |	 1.0 	 |	 0.0 |
-|voice 	 |	 0.999 	 |	 1.0 	 |	 0.001 	 | 	 0.996 	 |	 0.999 	 |	 0.003 |
-|waveform 	 |	 0.9652 	 |	 0.9705 	 |	 0.0053 	 | 	 0.9442 	 |	 0.9519 	 |	 0.0077 |
-|wind 	 |	 0.9389 	 |	 0.9436 	 |	 0.0047 	 | 	 0.9452 	 |	 0.9553 	 |	 0.0101 |
-|speech |	 -	 |	-	 |	 -	 |	- |	 -	 |	-|
+<table>
+  <thead>
+    <tr>
+      <th>Dataset</th>
+      <th>Splitted Dataset</th>
+      <th>Original Dataset</th>
+      <th>ROC-AUC Delta</th>
+      <th>Splitted Dataset</th>
+      <th>Original Dataset</th>
+      <th>ROC-AUC Delta</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>breast_cancer</td>
+      <td>0.9992</td>
+      <td>0.9972</td>
+      <td>-0.002</td>
+      <td>0.9994</td>
+      <td>0.9975</td>
+      <td>-0.0019</td>
+    </tr>
+    <tr>
+      <td>covtype</td>
+      <td>0.9844</td>
+      <td>0.9868</td>
+      <td>0.0024</td>
+      <td>0.9851</td>
+      <td>0.9867</td>
+      <td>0.0016</td>
+    </tr>
+    <tr>
+      <td>codrna</td>
+      <td>0.9929</td>
+      <td>0.994</td>
+      <td>0.0011</td>
+      <td>0.9928</td>
+      <td>0.9941</td>
+      <td>0.0013</td>
+    </tr>
+    <tr>
+      <td>diabetes</td>
+      <td>0.7532</td>
+      <td>0.8033</td>
+      <td>0.0501</td>
+      <td>0.8241</td>
+      <td>0.8033</td>
+      <td>-0.0208</td>
+    </tr>
+    <tr>
+      <td>fashion</td>
+      <td>0.9903</td>
+      <td>0.9924</td>
+      <td>0.0021</td>
+      <td>0.9902</td>
+      <td>0.9924</td>
+      <td>0.0022</td>
+    </tr>
+    <tr>
+      <td>ijcnn1</td>
+      <td>0.9943</td>
+      <td>0.9958</td>
+      <td>0.0015</td>
+      <td>0.9958</td>
+      <td>0.996</td>
+      <td>0.0002</td>
+    </tr>
+    <tr>
+      <td>mnist</td>
+      <td>0.9993</td>
+      <td>0.9997</td>
+      <td>0.0004</td>
+      <td>0.9992</td>
+      <td>0.9997</td>
+      <td>0.0005</td>
+    </tr>
+    <tr>
+      <td>mnist26</td>
+      <td>0.9998</td>
+      <td>0.9999</td>
+      <td>0.0001</td>
+      <td>0.9997</td>
+      <td>0.9999</td>
+      <td>0.0002</td>
+    </tr>
+    <tr>
+      <td>sensorless</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>webspam</td>
+      <td>0.999</td>
+      <td>0.9992</td>
+      <td>0.0002</td>
+      <td>0.9989</td>
+      <td>0.9992</td>
+      <td>0.0003</td>
+    </tr>
+    <tr>
+      <td>electricity</td>
+      <td>0.9595</td>
+      <td>0.9787</td>
+      <td>0.0192</td>
+      <td>0.9502</td>
+      <td>0.971</td>
+      <td>0.0208</td>
+    </tr>
+    <tr>
+      <td>drybean</td>
+      <td>0.9949</td>
+      <td>0.9958</td>
+      <td>0.0009</td>
+      <td>0.9962</td>
+      <td>0.9969</td>
+      <td>0.0007</td>
+    </tr>
+    <tr>
+      <td>adult</td>
+      <td>0.9147</td>
+      <td>0.9307</td>
+      <td>0.016</td>
+      <td>0.9106</td>
+      <td>0.9207</td>
+      <td>0.0101</td>
+    </tr>
+    <tr>
+      <td>banknote</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>voice</td>
+      <td>0.999</td>
+      <td>1.0</td>
+      <td>0.001</td>
+      <td>0.996</td>
+      <td>0.999</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td>waveform</td>
+      <td>0.9652</td>
+      <td>0.9705</td>
+      <td>0.0053</td>
+      <td>0.9442</td>
+      <td>0.9519</td>
+      <td>0.0077</td>
+    </tr>
+    <tr>
+      <td>wind</td>
+      <td>0.9389</td>
+      <td>0.9436</td>
+      <td>0.0047</td>
+      <td>0.9452</td>
+      <td>0.9553</td>
+      <td>0.0101</td>
+    </tr>
+    <tr>
+      <td>speech</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
 
 ### Table 28: HSJA RandomForest Experiments - ROC-AUC Degradation
 
-|Dataset       | Splitted Dataset    |  Original Dataset | ROC-AUC Delta  | Splitted Dataset    |  Original Dataset | ROC-AUC Delta |
-|----|----|----|----|-----|-----|-----|
-|breast\_cancer 	 |	 0.998 	 |	 0.9975 	 |	 -0.0005 	 | 	 0.9997 	 |	 0.9983 	 |	 -0.0014 |
-|covtype 	 |	 0.9843 	 |	 0.9865 	 |	 0.0022 	 | 	 0.9847 	 |	 0.9865 	 |	 0.0018 |
-|codrna |	 -	 |	-	 |	 -	 |	- |	 -	 |	-|
-|diabetes |	 -	 |	-	 |	 -	 |	- |	 -	 |	-|
-|fashion 	 |	 0.9903 	 |	 0.9925 	 |	 0.0022 	 | 	 0.9901 	 |	 0.9925 	 |	 0.0024 |
-|ijcnn1 	 |	 0.9944 	 |	 0.9963 	 |	 0.0019 	 | 	 0.9951 	 |	 0.9955 	 |	 0.0004 |
-|mnist 	 |	 0.9992 	 |	 0.9997 	 |	 0.0005 	 | 	 0.9992 	 |	 0.9997 	 |	 0.0005 |
-|mnist26 	 |	 0.9995 	 |	 1.0 	 |	 0.0005 	 | 	 0.9997 	 |	 0.9999 	 |	 0.0002 |
-|sensorless 	 |	 1.0 	 |	 1.0 	 |	 0.0 	 | 	 1.0 	 |	 1.0 	 |	 0.0 |
-|webspam 	 |	 0.9989 	 |	 0.9992 	 |	 0.0003 	 | 	 0.9989 	 |	 0.9992 	 |	 0.0003 |
-|electricity 	 |	 0.9575 	 |	 0.9736 	 |	 0.0161 	 | 	 0.957 	 |	 0.976 	 |	 0.019 |
-|dry_bean 	 |	 0.995 	 |	 0.995 	 |	 0.0 	 | 	 0.9943 	 |	 0.9964 	 |	 0.0021 |
-|adult 	 |	 0.9049 	 |	 0.9154 	 |	 0.0105 	 | 	 0.8973 	 |	 0.9133 	 |	 0.016 |
-|banknote 	 |	 0.9966 	 |	 1.0 	 |	 0.0034 	 | 	 1.0 	 |	 1.0 	 |	 0.0 |
-|voice 	 |	 1.0 	 |	 1.0 	 |	 0.0 	 | 	 0.999 	 |	 1.0 	 |	 0.001 |
-|waveform 	 |	 0.9412 	 |	 0.9548 	 |	 0.0136 	 | 	 0.9329 	 |	 0.945 	 |	 0.0121 |
-|wind 	 |	 0.9345 	 |	 0.9432 	 |	 0.0087 	 | 	 0.9292 	 |	 0.9321 	 |	 0.0029 |
-|speech |	 -	 |	-	 |	 -	 |	- |	 -	 |	-|
+<table>
+  <thead>
+    <tr>
+      <th>Dataset</th>
+      <th>Splitted Dataset</th>
+      <th>Original Dataset</th>
+      <th>ROC-AUC Delta</th>
+      <th>Splitted Dataset</th>
+      <th>Original Dataset</th>
+      <th>ROC-AUC Delta</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>breast_cancer</td>
+      <td>0.998</td>
+      <td>0.9975</td>
+      <td>-0.0005</td>
+      <td>0.9997</td>
+      <td>0.9983</td>
+      <td>-0.0014</td>
+    </tr>
+    <tr>
+      <td>covtype</td>
+      <td>0.9843</td>
+      <td>0.9865</td>
+      <td>0.0022</td>
+      <td>0.9847</td>
+      <td>0.9865</td>
+      <td>0.0018</td>
+    </tr>
+    <tr>
+      <td>codrna</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>diabetes</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>fashion</td>
+      <td>0.9903</td>
+      <td>0.9925</td>
+      <td>0.0022</td>
+      <td>0.9901</td>
+      <td>0.9925</td>
+      <td>0.0024</td>
+    </tr>
+    <tr>
+      <td>ijcnn1</td>
+      <td>0.9944</td>
+      <td>0.9963</td>
+      <td>0.0019</td>
+      <td>0.9951</td>
+      <td>0.9955</td>
+      <td>0.0004</td>
+    </tr>
+    <tr>
+      <td>mnist</td>
+      <td>0.9992</td>
+      <td>0.9997</td>
+      <td>0.0005</td>
+      <td>0.9992</td>
+      <td>0.9997</td>
+      <td>0.0005</td>
+    </tr>
+    <tr>
+      <td>mnist26</td>
+      <td>0.9995</td>
+      <td>1.0</td>
+      <td>0.0005</td>
+      <td>0.9997</td>
+      <td>0.9999</td>
+      <td>0.0002</td>
+    </tr>
+    <tr>
+      <td>sensorless</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>webspam</td>
+      <td>0.9989</td>
+      <td>0.9992</td>
+      <td>0.0003</td>
+      <td>0.9989</td>
+      <td>0.9992</td>
+      <td>0.0003</td>
+    </tr>
+    <tr>
+      <td>electricity</td>
+      <td>0.9575</td>
+      <td>0.9736</td>
+      <td>0.0161</td>
+      <td>0.957</td>
+      <td>0.976</td>
+      <td>0.019</td>
+    </tr>
+    <tr>
+      <td>dry_bean</td>
+      <td>0.995</td>
+      <td>0.995</td>
+      <td>0.0</td>
+      <td>0.9943</td>
+      <td>0.9964</td>
+      <td>0.0021</td>
+    </tr>
+    <tr>
+      <td>adult</td>
+      <td>0.9049</td>
+      <td>0.9154</td>
+      <td>0.0105</td>
+      <td>0.8973</td>
+      <td>0.9133</td>
+      <td>0.016</td>
+    </tr>
+    <tr>
+      <td>banknote</td>
+      <td>0.9966</td>
+      <td>1.0</td>
+      <td>0.0034</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>voice</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.999</td>
+      <td>1.0</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>waveform</td>
+      <td>0.9412</td>
+      <td>0.9548</td>
+      <td>0.0136</td>
+      <td>0.9329</td>
+      <td>0.945</td>
+      <td>0.0121</td>
+    </tr>
+    <tr>
+      <td>wind</td>
+      <td>0.9345</td>
+      <td>0.9432</td>
+      <td>0.0087</td>
+      <td>0.9292</td>
+      <td>0.9321</td>
+      <td>0.0029</td>
+    </tr>
+    <tr>
+      <td>speech</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
 
 ### Table 29: Cube RandomForest Experiments - ROC-AUC Degradation
 
-|Dataset       | Splitted Dataset    |  Original Dataset | ROC-AUC Delta  | Splitted Dataset    |  Original Dataset | ROC-AUC Delta |
-|----|----|----|----|-----|-----|-----|
-|breast\_cancer 	 |	 0.998 	 |	 0.9969 	 |	 -0.0011 	 | 	 1.0 	 |	 0.9964 	 |	 -0.0036 |
-|covtype 	 |	 0.9843 	 |	 0.9865 	 |	 0.0022 	 | 	 0.9844 	 |	 0.9864 	 |	 0.002 |
-|codrna 	 |	 0.9927 	 |	 0.994 	 |	 0.0013 	 | 	 0.9929 	 |	 0.994 	 |	 0.0011 |
-|diabetes 	 |	 0.8086 	 |	 0.8138 	 |	 0.0052 	 | 	 0.7576 	 |	 0.8123 	 |	 0.0547 |
-|fashion 	 |	 0.9901 	 |	 0.9925 	 |	 0.0024 	 | 	 0.9903 	 |	 0.9925 	 |	 0.0022 |
-|ijcnn1 	 |	 0.9941 	 |	 0.9958 	 |	 0.0017 	 | 	 0.9946 	 |	 0.9962 	 |	 0.0016 |
-|mnist 	 |	 0.9992 	 |	 0.9997 	 |	 0.0005 	 | 	 0.9991 	 |	 0.9997 	 |	 0.0006 |
-|mnist26 	 |	 0.9995 	 |	 0.9999 	 |	 0.0004 	 | 	 0.9996 	 |	 0.9999 	 |	 0.0003 |
-|sensorless 	 |	 1.0 	 |	 1.0 	 |	 0.0 	 | 	 1.0 	 |	 1.0 	 |	 0.0 |
-|webspam 	 |	 0.9989 	 |	 0.9992 	 |	 0.0003 	 | 	 0.9989 	 |	 0.9992 	 |	 0.0003 |
-|electricity 	 |	 0.9449 	 |	 0.9714 	 |	 0.0265 	 | 	 0.963 	 |	 0.977 	 |	 0.014 |
-|drybean 	 |	 0.9947 	 |	 0.9943 	 |	 -0.0004 	 | 	 0.9933 	 |	 0.9951 	 |	 0.0018 |
-|adult 	 |	 0.9047 	 |	 0.9158 	 |	 0.0111 	 | 	 0.9215 	 |	 0.934 	 |	 0.0125 |
-|banknote 	 |	 0.9958 	 |	 0.9958 	 |	 0.0 	 | 	 1.0 	 |	 1.0 	 |	 0.0 |
-|voice 	 |	 0.987 	 |	 0.9916 	 |	 0.0046 	 | 	 0.9954 	 |	 0.9986 	 |	 0.0032 |
-|waveform 	 |	 0.9731 	 |	 0.975 	 |	 0.0019 	 | 	 0.9567 	 |	 0.9676 	 |	 0.0109 |
-|wind |	 -	 |	-	 |	 -	 |	- |	 -	 |	-|
-|speech |	 -	 |	-	 |	 -	 |	- |	 -	 |	-|
+<table>
+  <thead>
+    <tr>
+      <th>Dataset</th>
+      <th>Splitted Dataset</th>
+      <th>Original Dataset</th>
+      <th>ROC-AUC Delta</th>
+      <th>Splitted Dataset</th>
+      <th>Original Dataset</th>
+      <th>ROC-AUC Delta</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>breast_cancer</td>
+      <td>0.998</td>
+      <td>0.9969</td>
+      <td>-0.0011</td>
+      <td>1.0</td>
+      <td>0.9964</td>
+      <td>-0.0036</td>
+    </tr>
+    <tr>
+      <td>covtype</td>
+      <td>0.9843</td>
+      <td>0.9865</td>
+      <td>0.0022</td>
+      <td>0.9844</td>
+      <td>0.9864</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <td>codrna</td>
+      <td>0.9927</td>
+      <td>0.994</td>
+      <td>0.0013</td>
+      <td>0.9929</td>
+      <td>0.994</td>
+      <td>0.0011</td>
+    </tr>
+    <tr>
+      <td>diabetes</td>
+      <td>0.8086</td>
+      <td>0.8138</td>
+      <td>0.0052</td>
+      <td>0.7576</td>
+      <td>0.8123</td>
+      <td>0.0547</td>
+    </tr>
+    <tr>
+      <td>fashion</td>
+      <td>0.9901</td>
+      <td>0.9925</td>
+      <td>0.0024</td>
+      <td>0.9903</td>
+      <td>0.9925</td>
+      <td>0.0022</td>
+    </tr>
+    <tr>
+      <td>ijcnn1</td>
+      <td>0.9941</td>
+      <td>0.9958</td>
+      <td>0.0017</td>
+      <td>0.9946</td>
+      <td>0.9962</td>
+      <td>0.0016</td>
+    </tr>
+    <tr>
+      <td>mnist</td>
+      <td>0.9992</td>
+      <td>0.9997</td>
+      <td>0.0005</td>
+      <td>0.9991</td>
+      <td>0.9997</td>
+      <td>0.0006</td>
+    </tr>
+    <tr>
+      <td>mnist26</td>
+      <td>0.9995</td>
+      <td>0.9999</td>
+      <td>0.0004</td>
+      <td>0.9996</td>
+      <td>0.9999</td>
+      <td>0.0003</td>
+    </tr>
+    <tr>
+      <td>sensorless</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>webspam</td>
+      <td>0.9989</td>
+      <td>0.9992</td>
+      <td>0.0003</td>
+      <td>0.9989</td>
+      <td>0.9992</td>
+      <td>0.0003</td>
+    </tr>
+    <tr>
+      <td>electricity</td>
+      <td>0.9449</td>
+      <td>0.9714</td>
+      <td>0.0265</td>
+      <td>0.963</td>
+      <td>0.977</td>
+      <td>0.014</td>
+    </tr>
+    <tr>
+      <td>drybean</td>
+      <td>0.9947</td>
+      <td>0.9943</td>
+      <td>-0.0004</td>
+      <td>0.9933</td>
+      <td>0.9951</td>
+      <td>0.0018</td>
+    </tr>
+    <tr>
+      <td>adult</td>
+      <td>0.9047</td>
+      <td>0.9158</td>
+      <td>0.0111</td>
+      <td>0.9215</td>
+      <td>0.934</td>
+      <td>0.0125</td>
+    </tr>
+    <tr>
+      <td>banknote</td>
+      <td>0.9958</td>
+      <td>0.9958</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>voice</td>
+      <td>0.987</td>
+      <td>0.9916</td>
+      <td>0.0046</td>
+      <td>0.9954</td>
+      <td>0.9986</td>
+      <td>0.0032</td>
+    </tr>
+    <tr>
+      <td>waveform</td>
+      <td>0.9731</td>
+      <td>0.975</td>
+      <td>0.0019</td>
+      <td>0.9567</td>
+      <td>0.9676</td>
+      <td>0.0109</td>
+    </tr>
+    <tr>
+      <td>wind</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>speech</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
 
 
 ### Table 30: Leaf-Tuple RandomForest Experiments - ROC-AUC Degradation
 
 
-|Dataset       | Splitted Dataset    |  Original Dataset | ROC-AUC Delta  | Splitted Dataset    |  Original Dataset | ROC-AUC Delta |
-|----|----|----|----|-----|-----|-----|
-|breast\_cancer 	 |	 1.0 	 |	 0.9975 	 |	 -0.0025 	 | 	 0.9969 	 |	 0.9969 	 |	 0.0 |
-|covtype 	|	 -	 |	-	 |	 -	 |	- |	 -	 |	- |
-|codrna 	 |	 0.9927 	 |	 0.994 	 |	 0.0013 	 | 	 0.9928 	 |	 0.994 	 |	 0.0012 |
-|diabetes |	 -	 |	-	 |	 -	 |	- |	 -	 |	-|
-|fashion 	 |	 0.99 	 |	 0.9924 	 |	 0.0024 	 | 	 0.9899 	 |	 0.9925 	 |	 0.0026 |
-|ijcnn1 	 |	 0.995 	 |	 0.996 	 |	 0.001 	 | 	 0.9949 	 |	 0.9958 	 |	 0.0009 |
-|mnist 	 |	 0.9992 	 |	 0.9997 	 |	 0.0005 	 | 	 0.9992 	 |	 0.9997 	 |	 0.0005 |
-|mnist26 	 |	 0.9998 	 |	 0.9999 	 |	 0.0001 	 | 	 0.9997 	 |	 0.9999 	 |	 0.0002 |
-|sensorless 	 |	 1.0 	 |	 1.0 	 |	 0.0 	 | 	 1.0 	 |	 1.0 	 |	 0.0 |
-|webspam 	 |	 0.999 	 |	 0.9992 	 |	 0.0002 	 | 	 0.999 	 |	 0.9992 	 |	 0.0002 |
-|electricity 	 |	 0.9546 	 |	 0.9785 	 |	 0.0239 	 | 	 0.948 	 |	 0.9726 	 |	 0.0246 |
-|drybean 	 |	 0.9953 	 |	 0.9959 	 |	 0.0006 	 | 	 0.9942 	 |	 0.9951 	 |	 0.0009 |
-|adult 	 |	 0.9211 	 |	 0.9298 	 |	 0.0087 	 | 	 0.9002 	 |	 0.9208 	 |	 0.0206 |
-|banknote 	 |	 0.9966 	 |	 1.0 	 |	 0.0034 	 | 	 0.9974 	 |	 1.0 	 |	 0.0026 |
-|voice 	 |	 0.9992 	 |	 0.9986 	 |	 -0.0006 	 | 	 0.9941 	 |	 0.9974 	 |	 0.0033 |
-|waveform 	 |	 0.9536 	 |	 0.9677 	 |	 0.0141 	 | 	 0.9359 	 |	 0.9615 	 |	 0.0256 |
-|wind 	 |	 0.9249 	 |	 0.9431 	 |	 0.0182 	 | 	 0.9334 	 |	 0.9356 	 |	 0.0022 |
-|speech 	|	 -	 |	-	 |	 -	 |	- |	 -	 |	- |
+<table>
+  <thead>
+    <tr>
+      <th>Dataset</th>
+      <th>Splitted Dataset</th>
+      <th>Original Dataset</th>
+      <th>ROC-AUC Delta</th>
+      <th>Splitted Dataset</th>
+      <th>Original Dataset</th>
+      <th>ROC-AUC Delta</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>breast_cancer</td>
+      <td>1.0</td>
+      <td>0.9975</td>
+      <td>-0.0025</td>
+      <td>0.9969</td>
+      <td>0.9969</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>covtype</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>codrna</td>
+      <td>0.9927</td>
+      <td>0.994</td>
+      <td>0.0013</td>
+      <td>0.9928</td>
+      <td>0.994</td>
+      <td>0.0012</td>
+    </tr>
+    <tr>
+      <td>diabetes</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>fashion</td>
+      <td>0.99</td>
+      <td>0.9924</td>
+      <td>0.0024</td>
+      <td>0.9899</td>
+      <td>0.9925</td>
+      <td>0.0026</td>
+    </tr>
+    <tr>
+      <td>ijcnn1</td>
+      <td>0.995</td>
+      <td>0.996</td>
+      <td>0.001</td>
+      <td>0.9949</td>
+      <td>0.9958</td>
+      <td>0.0009</td>
+    </tr>
+    <tr>
+      <td>mnist</td>
+      <td>0.9992</td>
+      <td>0.9997</td>
+      <td>0.0005</td>
+      <td>0.9992</td>
+      <td>0.9997</td>
+      <td>0.0005</td>
+    </tr>
+    <tr>
+      <td>mnist26</td>
+      <td>0.9998</td>
+      <td>0.9999</td>
+      <td>0.0001</td>
+      <td>0.9997</td>
+      <td>0.9999</td>
+      <td>0.0002</td>
+    </tr>
+    <tr>
+      <td>sensorless</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>webspam</td>
+      <td>0.999</td>
+      <td>0.9992</td>
+      <td>0.0002</td>
+      <td>0.999</td>
+      <td>0.9992</td>
+      <td>0.0002</td>
+    </tr>
+    <tr>
+      <td>electricity</td>
+      <td>0.9546</td>
+      <td>0.9785</td>
+      <td>0.0239</td>
+      <td>0.948</td>
+      <td>0.9726</td>
+      <td>0.0246</td>
+    </tr>
+    <tr>
+      <td>drybean</td>
+      <td>0.9953</td>
+      <td>0.9959</td>
+      <td>0.0006</td>
+      <td>0.9942</td>
+      <td>0.9951</td>
+      <td>0.0009</td>
+    </tr>
+    <tr>
+      <td>adult</td>
+      <td>0.9211</td>
+      <td>0.9298</td>
+      <td>0.0087</td>
+      <td>0.9002</td>
+      <td>0.9208</td>
+      <td>0.0206</td>
+    </tr>
+    <tr>
+      <td>banknote</td>
+      <td>0.9966</td>
+      <td>1.0</td>
+      <td>0.0034</td>
+      <td>0.9974</td>
+      <td>1.0</td>
+      <td>0.0026</td>
+    </tr>
+    <tr>
+      <td>voice</td>
+      <td>0.9992</td>
+      <td>0.9986</td>
+      <td>-0.0006</td>
+      <td>0.9941</td>
+      <td>0.9974</td>
+      <td>0.0033</td>
+    </tr>
+    <tr>
+      <td>waveform</td>
+      <td>0.9536</td>
+      <td>0.9677</td>
+      <td>0.0141</td>
+      <td>0.9359</td>
+      <td>0.9615</td>
+      <td>0.0256</td>
+    </tr>
+    <tr>
+      <td>wind</td>
+      <td>0.9249</td>
+      <td>0.9431</td>
+      <td>0.0182</td>
+      <td>0.9334</td>
+      <td>0.9356</td>
+      <td>0.0022</td>
+    </tr>
+    <tr>
+      <td>speech</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Inference Time Addition
 
