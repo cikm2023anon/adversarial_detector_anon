@@ -5283,9 +5283,7 @@ PRC-AUC of different embedding sizes for samples and nodes. Target: RandomForest
 
 ## Tree Models Performance Using Less Data
 
-As described in the paper potential issue in our method is that we reduce the available data used to train the model; thus, the model performance might be affected. As part of our method, we split each dataset we experimented on into several subsets for different roles described in
-Subsection 4.1 in the paper. We took the original representation of the datasets and compared the trained models from our experiments to a new
-version of the model trained on all data besides the test set. In the paper there is Figures to display the general distribution on the deltas between the 2 versions' ROC-AUC. Below, a complete description of the numbers in every experiment in Tables 21, 22, 23, 24, 25, 26, 27, 28, 29 and 30.
+As described in the paper, a potential issue in our method is that we reduce the available data used to train the model; thus, the model performance might be affected. As part of our method, we split each dataset we experimented on into several subsets for different roles described in Subsection 4.1 in the paper. We took the original representation of the datasets and compared the trained models from our experiments to a new version of the model trained on all data besides the test set. In the paper, we added Figures displaying the general distribution of the deltas between the two models' ROC-AUC. Below is a complete description of the numbers in every experiment in Tables 21, 22, 23, 24, 25, 26, 27, 28, 29, and 30.
 
 
 ### Table 21: Sign-OPT XGBoost Experiments - ROC-AUC Degradation
